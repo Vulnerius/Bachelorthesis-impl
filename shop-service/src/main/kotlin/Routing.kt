@@ -31,16 +31,20 @@ fun Application.configureRouting() {
             call.respondText("Bachelorthesis 2026 Shop-Service")
         }
 
-        post("/shop/checkout") {
+        get("/shop") {
             if(ERROR_RATE > 0 && Random.nextDouble() < ERROR_RATE) {
-                call.respond(HttpStatusCode.InternalServerError, "Simulated error")
-                return@post
+                call.respond(HttpStatusCode.InternalServerError, "Simulated shop error")
+                return@get
             }
 
             if(LATENCY > 0) {
                 Thread.sleep((LATENCY * 1000).toLong())
             }
 
+            call.respond(HttpStatusCode.OK, "Welcome to the shop! Browse our products.")
+        }
+
+        post("/shop/checkout") {
             val testOrder = CheckoutRequest(
                 user_id = "user-${System.currentTimeMillis()}",
                 order_id = "order-${System.currentTimeMillis()}",

@@ -11,6 +11,6 @@ fun Application.module() {
     configureRouting()
 }
 
-val PAYMENT_SERVICE_URL = System.getenv("PAYMENT_SERVICE_URL") ?: "http://transaction-service:8080/pay"
+val PAYMENT_SERVICE_URL = System.getenv("PAYMENT_SERVICE_URL") ?: "http://transaction-service:8080/pay/simulate"
 val ERROR_RATE = System.getenv("ERROR_RATE")?.toDoubleOrNull() ?: 0.0
 val LATENCY = System.getenv("LATENCY")?.toDoubleOrNull() ?: 0.0

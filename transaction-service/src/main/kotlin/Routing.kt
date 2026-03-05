@@ -25,9 +25,21 @@ fun Application.configureRouting() {
             call.respondText("Bachelorthesis 2026 Transaction-Service")
         }
 
-        post("/pay") {
+        get("/pay") {
             if(ERROR_RATE > 0 && Random.nextDouble() < ERROR_RATE) {
-                call.respond(HttpStatusCode.InternalServerError, "Simulated error")
+                call.respond(HttpStatusCode.InternalServerError, "Simulated transaction error")
+                return@get
+            }
+
+            if(LATENCY > 0) {
+                Thread.sleep((LATENCY * 1000).toLong())
+            }
+            call.respond(HttpStatusCode.OK, "Welcome to the transactions! Pay your bill.")
+        }
+
+        post("/pay/simulate") {
+            if(ERROR_RATE > 0 && Random.nextDouble() < ERROR_RATE) {
+                call.respond(HttpStatusCode.InternalServerError, "Simulated transaction error")
                 return@post
             }
 
