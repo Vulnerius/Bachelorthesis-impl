@@ -1,0 +1,9 @@
+ktor:
+  application:
+    modules:
+      - dev.vulnerius.ApplicationKt.module
+  deployment:
+    port: 8080
+    shutdownGracePeriod: 5000
+    shutdownTimeout: 10000
+    host: 0.0.0.0
