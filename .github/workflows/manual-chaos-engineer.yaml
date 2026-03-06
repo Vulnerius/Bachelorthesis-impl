@@ -51,8 +51,7 @@ jobs:
 
       - name: Monitor Rollout Status
         run: |
-          echo "monitoring rollout status for service ${{ github.event.inputs.service_name }}..."
-          kubectl rollout status -n thesis ${{ github.event.inputs.service_name }}-rollout
-          # --watch -timeout=120s
+          kubectl get rollout -n thesis ${{ github.event.inputs.service_name }}-rollout
+
 permissions:
   id-token: write
