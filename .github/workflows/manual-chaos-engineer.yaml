@@ -41,7 +41,7 @@ jobs:
         run: |
           echo "starting rollout for service ${{ github.event.inputs.service_name }}..."
           
-          kubectl patch rollout ${{ github.event.inputs.service_name }}-rollout --type='json' -p='[
+          kubectl patch rollout -n thesis ${{ github.event.inputs.service_name }}-rollout --type='json' -p='[
             {"op": "replace", "path": "/spec/template/spec/containers/0/image", "value": "/${{ github.event.inputs.service_name }}:v1.1"},
             {"op": "replace", "path": "/spec/template/spec/containers/0/env", "value": [
               {"name": "ERROR_RATE", "value": "${{ github.event.inputs.failure_rate }}"},
@@ -50,7 +50,7 @@ jobs:
           ]'
 
       - name: Monitor Rollout
-        run: kubectl argo rollouts get rollout ${{ github.event.inputs.service_name }}-rollout --watch --timeout-seconds 60
+        run: kubectl argo rollouts get rollout -n thesis ${{ github.event.inputs.service_name }}-rollout --watch --timeout-seconds 60
 
 permissions:
   id-token: write
