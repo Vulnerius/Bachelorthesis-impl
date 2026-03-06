@@ -49,9 +49,10 @@ jobs:
             ]}
           ]'
 
-      - name: Monitor Rollout
-        run: kubectl argo rollouts get rollout -n thesis ${{ github.event.inputs.service_name }}-rollout --watch --timeout-seconds 60
-
+      - name: Monitor Rollout Status
+        run: |
+          echo "monitoring rollout status for service ${{ github.event.inputs.service_name }}..."
+          kubectl rollout status -n thesis ${{ github.event.inputs.service_name }}-rollout
+          # --watch -timeout=120s
 permissions:
   id-token: write
-  contents: read
