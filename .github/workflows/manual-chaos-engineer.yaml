@@ -33,6 +33,7 @@ jobs:
         with:
           role-to-assume: ${{ vars.ROLLOUT_AWS_ROLE_ARN }}
           aws-region: eu-central-1
+          audience: 'sts.amazonaws.com'
 
       - name: Update Kubeconfig
         run: aws eks update-kubeconfig --name ba-2026-eks
