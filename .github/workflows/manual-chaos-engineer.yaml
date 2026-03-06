@@ -51,3 +51,7 @@ jobs:
 
       - name: Monitor Rollout
         run: kubectl argo rollouts get rollout ${{ github.event.inputs.service_name }}-rollout --watch --timeout-seconds 60
+
+permissions:
+  id-token: write
+  contents: read
