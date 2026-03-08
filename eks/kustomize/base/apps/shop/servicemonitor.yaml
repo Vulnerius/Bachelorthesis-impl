@@ -1,0 +1,20 @@
+---
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: shop-service-monitor
+  namespace: thesis
+  labels:
+    version: 'stable'
+    app: shop
+spec:
+  namespaceSelector:
+    matchNames:
+      - thesis
+  selector:
+    matchLabels:
+      app: shop
+  endpoints:
+    - port: http
+      path: /metrics
+      interval: 10s

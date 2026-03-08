@@ -1,0 +1,4 @@
+---
+resources:
+  - apps/shop
+  - apps/transaction

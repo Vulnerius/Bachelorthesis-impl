@@ -1,0 +1,63 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: transaction-service-rollout
+  namespace: thesis
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: transaction
+  template:
+    metadata:
+      labels:
+        app: transaction
+        version: v1
+    spec:
+      nodeSelector:
+        role: app-node
+      containers:
+        - name: transaction
+          image: ghcr.io/vulnerius/transaction-service:v1.1
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+          env:
+            - name: ERROR_RATE
+              value: "0"
+            - name: LATENCY
+              value: "0"
+            - name: JAVA_TOOL_OPTIONS
+              value: "-Xmx512m -Xms256m"
+            - name: PAYMENT_SERVICE_URL
+              value: "http://transaction-service.thesis.svc.cluster.local:8080"
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "512Mi"
+            limits:
+              cpu: "500m"
+              memory: "1Gi"
+          readinessProbe:
+            httpGet:
+              path: /ready
+              port: 8080
+            initialDelaySeconds: 10
+            periodSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 10
+            periodSeconds: 5
+          lifecycle:
+            preStop:
+              exec:
+                command: ["/bin/sh", "-c", "sleep 10"]
+      imagePullSecrets:
+        - name: ghcr-image-pull-secret
+  strategy:
+    canary:
+      maxSurge: 1
+      maxUnavailable: 1

@@ -1,0 +1,20 @@
+---
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: transaction-service-monitor
+  namespace: thesis
+  labels:
+    version: 'stable'
+    app: transaction
+spec:
+  namespaceSelector:
+    matchNames:
+      - thesis
+  selector:
+    matchLabels:
+      app: transaction
+  endpoints:
+    - port: http
+      path: /metrics
+      interval: 10s
