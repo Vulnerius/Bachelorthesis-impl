@@ -1,0 +1,33 @@
+//@ts-ignore
+import http from 'k6/http';
+//@ts-ignore
+import {check, sleep} from 'k6';
+
+export const options = {
+    scenarios: {
+        baseline_load: {
+            executor: 'constant-arrival-rate',
+            rate: 2400,
+            timeUnit: '1s',
+            preAllocatedVUs: 75,
+            maxVUs: 1500,
+            duration: "20m"
+        },
+    },
+    thresholds: {
+        http_req_failed: ['rate<0.01'],
+        http_req_duration: ['p(95)<500'],
+        http_reqs: ['rate>100'],
+        checks: ['rate>0.98']
+    }
+};
+
+export default function () {
+    // shop
+    const resShop = http.get('http://shop-service.thesis.svc.cluster.local/shop');
+    check(resShop, {'shop service response status is 200': (r: Response) => r.status === 200});
+    // transaction
+    const resTrans = http.get('http://transaction-service.thesis.svc.cluster.local/pay');
+    check(resTrans, {'transaction service response status is 200': (r: Response) => r.status === 200});
+    sleep(.3)
+}
