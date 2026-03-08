@@ -1,7 +1,7 @@
 deprecated
 
 **/out/
-
+**/not-used/
 **/.gitignore
 **/.gradle
 **/build/
