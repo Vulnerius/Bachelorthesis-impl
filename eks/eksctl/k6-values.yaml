@@ -1,0 +1,15 @@
+---
+nodeSelector:
+  role: infra-node
+
+manager:
+  image:
+    repository: grafana/k6-operator
+    tag: latest
+  resources:
+    limits:
+      cpu: 200m
+      memory: 256Mi
+    requests:
+      cpu: 100m
+      memory: 128Mi

@@ -1,0 +1,51 @@
+---
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: ba-2026-eks
+  region: eu-central-1
+
+managedNodeGroups:
+    # m7i-flex.large - 2vCpu 8 GiB Memory x86_64
+  - name: worker-large
+    instanceType: m7i-flex.large
+    minSize: 1
+    maxSize: 4
+    desiredCapacity: 1
+    iam:
+      attachPolicyARNs:
+        - arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy
+        - arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy
+        - arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly
+        - arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore
+      withAddonPolicies:
+        ebs: true
+    privateNetworking: true
+    taints:
+      - key: "node.cilium.io/agent-not-ready"
+        value: "true"
+        effect: "NoSchedule"
+    labels:
+      role: app-node
+
+  - name: observability-large
+    instanceType: m7i-flex.large
+    minSize: 1
+    maxSize: 4
+    desiredCapacity: 1
+    iam:
+      attachPolicyARNs:
+        - arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy
+        - arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy
+        - arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly
+        - arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore
+      withAddonPolicies:
+        ebs: true
+    labels:
+      role: infra-node
+    privateNetworking: true
+    taints:
+      - key: "node.cilium.io/agent-not-ready"
+        value: "true"
+        effect: "NoSchedule"
