@@ -2,14 +2,14 @@
 apiVersion: k6.io/v1alpha1
 kind: TestRun
 metadata:
-  name: thesis-load-test
+  name: k6-canary-benchmark-test
   namespace: thesis-load-test
 spec:
   parallelism: 2
   arguments: -o experimental-prometheus-rw
   script:
     configMap:
-      name: k6-cm-bm-5m-test
+      name: k6-cm-canary-5m-script
       file: test.js
   runner:
     nodeSelector:
@@ -24,5 +24,5 @@ spec:
         cpu: "800m"
         memory: "3Gi"
       requests:
-        cpu: "500m"
+        cpu: "300m"
         memory: "1Gi"

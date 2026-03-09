@@ -2,30 +2,41 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
-  name: transaction-service-rollout
+  name: shop-service-rollout
   namespace: thesis
 spec:
   replicas: 3
+  strategy:
+    canary:
+      steps:
+        - setWeight: 10
+        - pause: { duration: 5m }
+        - setWeight: 50
+        - pause: { duration: 5m }
+        - setWeight: 75
+        - pause: { duration: 5m }
+        - setWeight: 100
+        - pause: { }
   selector:
     matchLabels:
-      app: transaction
+      app: shop
   template:
     metadata:
       labels:
-        app: transaction
-        version: v1
+        app: shop
+        version: canary
     spec:
       nodeSelector:
         role: app-node
       containers:
-        - name: transaction
-          image: ghcr.io/vulnerius/transaction-service:v1.1
+        - name: shop
+          image: ghcr.io/vulnerius/shop-service:v1.1
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
           env:
             - name: VERSION
-              value: "stable"
+              value: "canary"
             - name: ERROR_RATE
               value: "0"
             - name: LATENCY
@@ -56,10 +67,6 @@ spec:
           lifecycle:
             preStop:
               exec:
-                command: ["/bin/sh", "-c", "sleep 10"]
+                command: [ "/bin/sh", "-c", "sleep 10" ]
       imagePullSecrets:
         - name: ghcr-image-pull-secret
-  strategy:
-    canary:
-      maxSurge: 1
-      maxUnavailable: 1

@@ -6,6 +6,17 @@ metadata:
   namespace: thesis
 spec:
   replicas: 3
+  strategy:
+    canary:
+      steps:
+        - setWeight: 10
+        - pause: { duration: 3m }
+        - setWeight: 50
+        - pause: { duration: 5m }
+        - setWeight: 75
+        - pause: { duration: 5m }
+        - setWeight: 100
+        - pause: { }
   selector:
     matchLabels:
       app: transaction
@@ -13,7 +24,7 @@ spec:
     metadata:
       labels:
         app: transaction
-        version: v1
+        version: canary
     spec:
       nodeSelector:
         role: app-node
@@ -25,15 +36,13 @@ spec:
             - containerPort: 8080
           env:
             - name: VERSION
-              value: "stable"
+              value: "canary"
             - name: ERROR_RATE
               value: "0"
             - name: LATENCY
               value: "0"
             - name: JAVA_TOOL_OPTIONS
               value: "-Xmx512m -Xms256m"
-            - name: PAYMENT_SERVICE_URL
-              value: "http://transaction-service.thesis.svc.cluster.local/pay"
           resources:
             requests:
               cpu: "100m"
@@ -56,10 +65,6 @@ spec:
           lifecycle:
             preStop:
               exec:
-                command: ["/bin/sh", "-c", "sleep 10"]
+                command: [ "/bin/sh", "-c", "sleep 10" ]
       imagePullSecrets:
         - name: ghcr-image-pull-secret
-  strategy:
-    canary:
-      maxSurge: 1
-      maxUnavailable: 1
