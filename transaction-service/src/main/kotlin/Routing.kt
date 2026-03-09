@@ -34,7 +34,7 @@ fun Application.configureRouting() {
             if(LATENCY > 0) {
                 Thread.sleep((LATENCY * 1000).toLong())
             }
-            call.respond(HttpStatusCode.OK, "Welcome to the transactions! Pay your bill.")
+            call.respond(HttpStatusCode.OK, "Welcome to the transactions! version: ${VERSION}")
         }
 
         post("/pay/simulate") {

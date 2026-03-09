@@ -28,7 +28,7 @@ fun Application.configureRouting() {
 
     routing {
         get("/") {
-            call.respondText("Bachelorthesis 2026 Shop-Service")
+            call.respondText("Bachelorthesis 2026 Shop-Service ${VERSION}")
         }
 
         get("/shop") {
@@ -41,7 +41,7 @@ fun Application.configureRouting() {
                 Thread.sleep((LATENCY * 1000).toLong())
             }
 
-            call.respond(HttpStatusCode.OK, "Welcome to the shop! Browse our products.")
+            call.respond(HttpStatusCode.OK, "Welcome to the shop! version: ${VERSION}")
         }
 
         post("/shop/checkout") {

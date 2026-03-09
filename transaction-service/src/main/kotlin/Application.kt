@@ -11,5 +11,6 @@ fun Application.module() {
     configureRouting()
 }
 
+val VERSION = System.getenv("VERSION") ?: "stable"
 val ERROR_RATE = System.getenv("ERROR_RATE")?.toDoubleOrNull() ?: 0.0
 val LATENCY = System.getenv("LATENCY")?.toDoubleOrNull() ?: 0.0
