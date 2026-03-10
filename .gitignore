@@ -1,4 +1,5 @@
 deprecated
+**/unusable/
 
 **/not-used/
 **/.gitignore
