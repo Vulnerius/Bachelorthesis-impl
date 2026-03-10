@@ -48,4 +48,4 @@ jobs:
           tags: |
             ghcr.io/vulnerius/${{ matrix.service }}:latest
             ghcr.io/vulnerius/${{ matrix.service }}:${{ github.sha }}
-            ghcr.io/vulnerius/${{ matrix.service }}:v1.1
+            ghcr.io/vulnerius/${{ matrix.service }}:v1.1.1
