@@ -43,8 +43,8 @@ data:
             
             check(resShop, {
                 'shop service response status is 200': (r) => r.status === 200,
-                [`is version stable`]: () => version === 'stable',
-                [`is version canary`]: () => version === 'canary',
+                [`shop version stable`]: () => version === 'stable',
+                [`shop version canary`]: () => version === 'canary',
             });
         })
         
@@ -60,8 +60,8 @@ data:
             
             check(resTrans, {
                 'transaction service response status is 200': (r) => r.status === 200,
-                [`is version stable`]: () => version === 'stable',
-                [`is version canary`]: () => version === 'canary',
+                [`transaction version stable`]: () => version === 'stable',
+                [`transaction version canary`]: () => version === 'canary',
             });
         })
         sleep(0.3);

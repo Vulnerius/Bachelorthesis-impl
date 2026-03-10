@@ -6,6 +6,7 @@ metadata:
   namespace: thesis
 spec:
   replicas: 3
+  minReadySeconds: 20
   selector:
     matchLabels:
       app: transaction
@@ -19,8 +20,8 @@ spec:
         role: app-node
       containers:
         - name: transaction
-          image: ghcr.io/vulnerius/transaction-service:v1.1
-          imagePullPolicy: Always
+          image: ghcr.io/vulnerius/transaction-service:v1.1.1
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
           env:
@@ -52,14 +53,14 @@ spec:
               path: /health
               port: 8080
             initialDelaySeconds: 10
-            periodSeconds: 5
+            periodSeconds: 3
           lifecycle:
             preStop:
               exec:
-                command: ["/bin/sh", "-c", "sleep 10"]
+                command: ["/bin/sh", "-c", "sleep 20"]
       imagePullSecrets:
         - name: ghcr-image-pull-secret
   strategy:
     canary:
       maxSurge: 1
-      maxUnavailable: 1
+      maxUnavailable: 0

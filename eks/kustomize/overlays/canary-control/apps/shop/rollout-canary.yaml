@@ -6,6 +6,7 @@ metadata:
   namespace: thesis
 spec:
   replicas: 3
+  minReadySeconds: 20
   strategy:
     canary:
       steps:
@@ -30,8 +31,8 @@ spec:
         role: app-node
       containers:
         - name: shop
-          image: ghcr.io/vulnerius/shop-service:v1.1
-          imagePullPolicy: Always
+          image: ghcr.io/vulnerius/shop-service:v1.1.1
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
           env:
@@ -63,10 +64,10 @@ spec:
               path: /health
               port: 8080
             initialDelaySeconds: 10
-            periodSeconds: 5
+            periodSeconds: 3
           lifecycle:
             preStop:
               exec:
-                command: [ "/bin/sh", "-c", "sleep 10" ]
+                command: [ "/bin/sh", "-c", "sleep 20" ]
       imagePullSecrets:
         - name: ghcr-image-pull-secret

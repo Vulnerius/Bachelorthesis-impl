@@ -9,6 +9,7 @@ spec:
   arguments: -o experimental-prometheus-rw
   script:
     configMap:
+      # k6-cm-bm-5m-test || k6-cm-bm-30m-test || k6-cm-bm-120m-test
       name: k6-cm-bm-5m-test
       file: test.js
   runner:
