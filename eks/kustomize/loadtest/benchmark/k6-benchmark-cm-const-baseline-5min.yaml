@@ -7,7 +7,7 @@ metadata:
 data:
   test.js: |
     import http from 'k6/http';
-    import {check, sleep, group} from 'k6';
+    import {check, group} from 'k6';
     
     export const options = {
         scenarios: {
@@ -38,5 +38,4 @@ data:
             'transaction version is stable': (res) => res.body.toString().includes("version: stable")
             });
         })
-        sleep(.3)
     }

@@ -1,5 +1,0 @@
----
-resources:
-  - k6-benchmark-cm-const-canary-5min.yaml
-  - k6-benchmark-cm-const-canary-30min.yaml
-  - k6-benchmark-test.yaml

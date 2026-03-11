@@ -10,7 +10,7 @@ spec:
   script:
     configMap:
       # k6-cm-bm-5m-test || k6-cm-bm-30m-test || k6-cm-bm-120m-test
-      name: k6-cm-bm-5m-test
+      name: k6-cm-bm-30m-test
       file: test.js
   runner:
     nodeSelector:
@@ -19,7 +19,9 @@ spec:
       - name: K6_PROMETHEUS_RW_SERVER_URL
         value: "http://kube-prometheus-kube-prome-prometheus.monitoring.svc.cluster.local:9090/api/v1/write"
       - name: K6_PROMETHEUS_RW_TREND_STATS
-        value: "p(95),p(99),max,min,avg"
+        value: "p(90),p(95),p(99),max,min"
+      - name: K6_SUMMARY_MODE
+        value: "full"
     resources:
       limits:
         cpu: "800m"

@@ -1,0 +1,46 @@
+
+
+  █ THRESHOLDS 
+
+    checks
+    ✓ 'rate>0.98' rate=100.00%
+
+    http_req_duration
+    ✓ 'p(95)<100' p(95)=1.26ms
+    ✓ 'p(99)<500' p(99)=1.64ms
+
+    http_req_failed
+    ✓ 'rate<0.01' rate=0.00%
+
+    http_reqs
+    ✓ 'rate>100' rate=1197.203189/s
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 359524  1197.203189/s
+    checks_succeeded...: 100.00% 359524 out of 359524
+    checks_failed......: 0.00%   0 out of 359524
+
+    ✓ shop service response status is 200
+    ✓ transaction service response status is 200
+
+    HTTP
+    http_req_duration..............: avg=1.08ms   min=897.45µs med=1.03ms   max=63.05ms  p(90)=1.17ms   p(95)=1.26ms  
+      { expected_response:true }...: avg=1.08ms   min=897.45µs med=1.03ms   max=63.05ms  p(90)=1.17ms   p(95)=1.26ms  
+    http_req_failed................: 0.00%  0 out of 359524
+    http_reqs......................: 359524 1197.203189/s
+
+    EXECUTION
+    dropped_iterations.............: 239    0.795862/s
+    iteration_duration.............: avg=302.77ms min=301.94ms med=302.65ms max=365.03ms p(90)=303.17ms p(95)=303.36ms
+    iterations.....................: 179762 598.601594/s
+    vus............................: 182    min=0           max=187
+    vus_max........................: 213    min=38          max=213
+
+    NETWORK
+    data_received..................: 44 MB  146 kB/s
+    data_sent......................: 36 MB  120 kB/s
+
+
+

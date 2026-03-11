@@ -63,7 +63,7 @@ helm install kube-prometheus prometheus-community/kube-prometheus-stack \
 kubectl create namespace argo-rollouts
 helm install argo-rollouts argo/argo-rollouts \
    --namespace argo-rollouts \
-   --set dashboard.enabled=true \
+   -f argo-rollout-values.yaml \
    --wait
 
 kubectl create namespace k6

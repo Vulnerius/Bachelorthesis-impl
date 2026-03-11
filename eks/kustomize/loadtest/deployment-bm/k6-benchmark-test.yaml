@@ -2,15 +2,15 @@
 apiVersion: k6.io/v1alpha1
 kind: TestRun
 metadata:
-  name: k6-canary-benchmark-test
+  name: k6-deployment-benchmark-test
   namespace: thesis-load-test
 spec:
   parallelism: 2
   arguments: -o experimental-prometheus-rw
   script:
     configMap:
-      # k6-cm-canary-5m-test || k6-cm-canary-30m-test
-      name: k6-cm-canary-5m-script
+      # k6-cm-deployment-5m-test || k6-cm-deployment-30m-test
+      name: k6-cm-deployment-30m-script
       file: test.js
   runner:
     nodeSelector:
@@ -19,7 +19,9 @@ spec:
       - name: K6_PROMETHEUS_RW_SERVER_URL
         value: "http://kube-prometheus-kube-prome-prometheus.monitoring.svc.cluster.local:9090/api/v1/write"
       - name: K6_PROMETHEUS_RW_TREND_STATS
-        value: "p(95),p(99),max,min,avg"
+        value: "p(90),p(95),p(99),max,min,avg"
+      - name: K6_SUMMARY_MODE
+        value: "full"
     resources:
       limits:
         cpu: "800m"

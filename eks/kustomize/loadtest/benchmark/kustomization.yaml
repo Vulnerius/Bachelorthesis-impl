@@ -2,5 +2,4 @@
 resources:
   - k6-benchmark-cm-const-baseline-5min.yaml
   - k6-benchmark-cm-const-baseline-30min.yaml
-  - k6-benchmark-cm-const-baseline-soak-120m.yaml
   - k6-benchmark-test.yaml

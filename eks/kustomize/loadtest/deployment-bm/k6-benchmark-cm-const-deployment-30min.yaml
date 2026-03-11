@@ -2,12 +2,12 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: k6-cm-canary-30m-script
+  name: k6-cm-deployment-30m-script
   namespace: thesis-load-test
 data:
   test.js: |
     import http from 'k6/http';
-    import { check, sleep, group } from 'k6';
+    import { check, group } from 'k6';
     import { Counter, Rate } from 'k6/metrics';
     
     
@@ -22,8 +22,8 @@ data:
                 executor: 'constant-arrival-rate',
                 rate: 1200,
                 timeUnit: '1s',
-                preAllocatedVUs: 300,
-                maxVUs: 800,
+                preAllocatedVUs: 75,
+                maxVUs: 400,
                 duration: "30m"
             },
         }
@@ -64,5 +64,4 @@ data:
                 [`transaction version canary`]: () => version === 'canary',
             });
         })
-        sleep(0.3);
     }

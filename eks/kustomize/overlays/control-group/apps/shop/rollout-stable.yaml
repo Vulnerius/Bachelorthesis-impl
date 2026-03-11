@@ -34,13 +34,13 @@ spec:
         - name: JAVA_TOOL_OPTIONS
           value: "-Xmx512m -Xms256m"
         - name: PAYMENT_SERVICE_URL
-          value: "http://transaction-service.thesis.svc.cluster.local:8080"
+          value: "http://transaction-service.thesis.svc.cluster.local/pay"
         resources:
           requests:
             cpu: "100m"
             memory: "512Mi"
           limits:
-            cpu: "200m"
+            cpu: "250m"
             memory: "1Gi"
         readinessProbe:
           httpGet:

@@ -1,0 +1,30 @@
+installCRDs: true
+
+keepCRDs: true
+
+controller:
+  replicas: 1
+
+  resources:
+    requests:
+      cpu: 100m
+      memory: 128Mi
+    limits:
+      cpu: 500m
+      memory: 512Mi
+
+  metrics:
+    enabled: true
+    serviceMonitor:
+      enabled: true
+      namespace: argo-rollouts
+      additionalLabels:
+        release: kube-prometheus
+
+  nodeSelector:
+    role: infra-node
+
+dashboard:
+  enabled: true
+  nodeSelector:
+    role: infra-node

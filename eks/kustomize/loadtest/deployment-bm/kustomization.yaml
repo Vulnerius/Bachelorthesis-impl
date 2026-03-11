@@ -1,0 +1,5 @@
+---
+resources:
+  - k6-benchmark-cm-const-deployment-5min.yaml
+  - k6-benchmark-cm-const-deployment-30min.yaml
+  - k6-benchmark-test.yaml
