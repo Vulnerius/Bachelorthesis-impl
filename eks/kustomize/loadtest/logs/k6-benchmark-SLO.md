@@ -25,19 +25,19 @@ Basierend auf den Ergebnissen des Benchmark Tests, können wir folgenden Service
 1. **Error-Rate**: Die Verfügbarkeit des jeweiligen Dienstes beträgt 99%.
 2. **Latenz**:
    - shop-service:
-     - 90% der Anfragen werden innerhalb von 15 ms beantwortet
-     - 95% der Anfragen werden innerhalb von 50 ms beantwortet
-     - 99% der Anfragen werden innerhalb von 100 ms beantwortet
+     - 90% der Anfragen werden innerhalb von 8 ms beantwortet
+     - 95% der Anfragen werden innerhalb von 20 ms beantwortet
+     - 99% der Anfragen werden innerhalb von 150 ms beantwortet
    - transaction-service:
-     - 90% der Anfragen werden innerhalb von 15 ms beantwortet
-     - 95% der Anfragen werden innerhalb von 50 ms beantwortet
-     - 99% der Anfragen werden innerhalb von 100 ms beantwortet
+     - 90% der Anfragen werden innerhalb von 8 ms beantwortet
+     - 95% der Anfragen werden innerhalb von 20 ms beantwortet
+     - 99% der Anfragen werden innerhalb von 150 ms beantwortet
 
 ## Error Budget
 
 Das Error Budget für die Fehlerquote beträgt 1%, (maximal 1% der HTTP-Anfragen dürfen fehlschlagen)
 
 Das Error Budget für die Latenz ist so definiert, 
- dass 10% der Anfragen über 15ms, 5% der Anfragen über 50ms und 1% der Anfragen über 100ms Antwortzeit betragen dürfen.
+ dass 10% der Anfragen über 8ms, 5% der Anfragen über 20ms und 1% der Anfragen über 150ms Antwortzeit betragen dürfen.
 
 
