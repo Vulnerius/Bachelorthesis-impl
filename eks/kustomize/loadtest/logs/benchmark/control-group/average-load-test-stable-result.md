@@ -24,30 +24,19 @@ baseline test:
         sleep(.3)
     }
 
-Grafana-Dashboard-Results über alle Test-Runs:
-
-    shop-service:
-        http_req_duration:
-            p(95)=1.73ms
-            p(99)=4.88ms
-    transaction-service:
-        http_req_duration:
-            p(95)=1.67ms
-            p(99)=4.20ms
-
 Average-Load-Test of 5 runs:
 
-    http_reqs: 1199.997224/s
+    http_reqs: 2.399,99/s
     error_rate: 0.00%
 
     shop-service:
-        RPS: 599.9985373
+        RPS: 1.200,00
         http_req_duration:
             p(90)=1,51ms
             p(95)=1,99ms
             p(99)=4,73ms
     transaction-service:
-        RPS: 599.9985373
+        RPS: 1.200,00
         http_req_duration:
             p(90)=1,47ms   
             p(95)=1,85ms
@@ -247,3 +236,14 @@ POD 2:
             p(90)=1.44ms   
             p(95)=1.8ms
 [Average-Load-Test-30m-5_2](avg-load-30m/avg-load-5_2.log)
+
+Grafana-Dashboard-Results über alle Test-Runs:
+
+    shop-service:
+        http_req_duration:
+            p(95)=1.73ms
+            p(99)=4.88ms
+    transaction-service:
+        http_req_duration:
+            p(95)=1.67ms
+            p(99)=4.20ms
