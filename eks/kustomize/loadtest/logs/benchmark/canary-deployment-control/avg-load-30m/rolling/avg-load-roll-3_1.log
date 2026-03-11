@@ -1,0 +1,160 @@
+time="2026-03-11T14:16:29Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.151.117:80: connect: connection refused"
+time="2026-03-11T14:16:29Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-11T14:16:29Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.151.117:80: connect: connection refused"
+time="2026-03-11T14:16:29Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-11T14:16:29Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.151.117:80: connect: connection refused"
+time="2026-03-11T14:16:29Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-11T14:16:29Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.151.117:80: connect: connection refused"
+time="2026-03-11T14:16:29Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-11T14:16:30Z" level=warning msg="Request Failed" error="Get \"http://shop-service.thesis.svc.cluster.local/shop\": dial tcp 10.100.175.49:80: connect: connection refused"
+time="2026-03-11T14:16:30Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:29:38(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:26:10(5))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-11T14:16:30Z" level=warning msg="Request Failed" error="Get \"http://shop-service.thesis.svc.cluster.local/shop\": dial tcp 10.100.175.49:80: connect: connection refused"
+time="2026-03-11T14:16:30Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:29:38(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:26:10(5))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 6478968 3599.42165/s
+    checks_succeeded...: 66.66%  4319312 out of 6478968
+    checks_failed......: 33.33%  2159656 out of 6478968
+
+    ✓ shop service response status is 200
+    ✗ shop version stable
+      ↳  93% — ✓ 1007374 / ✗ 72456
+    ✗ shop version canary
+      ↳  6% — ✓ 72456 / ✗ 1007374
+    ✓ transaction service response status is 200
+    ✗ transaction version stable
+      ↳  93% — ✓ 1006949 / ✗ 72877
+    ✗ transaction version canary
+      ↳  6% — ✓ 72877 / ✗ 1006949
+
+    CUSTOM
+    shop_version_count.................: 1079830 599.90472/s
+    shop_version_distribution..........: 100.00% 1079830 out of 1079830
+    transaction_version_count..........: 1079826 599.902497/s
+    transaction_version_distribution...: 100.00% 1079826 out of 1079826
+
+    HTTP
+    http_req_blocked...................: avg=5.89µs  min=0s       med=2.72µs  max=210.41ms p(90)=4.52µs  p(95)=5.06µs  
+    http_req_connecting................: avg=950ns   min=0s       med=0s      max=67.75ms  p(90)=0s      p(95)=0s      
+    http_req_duration..................: avg=3.18ms  min=0s       med=1.33ms  max=1.21s    p(90)=3.6ms   p(95)=7.14ms  
+      { expected_response:true }.......: avg=3.18ms  min=890.56µs med=1.33ms  max=1.21s    p(90)=3.6ms   p(95)=7.14ms  
+    http_req_failed....................: 0.00%   6 out of 2159662
+    http_req_receiving.................: avg=53.8µs  min=0s       med=24.76µs max=94.28ms  p(90)=95.05µs p(95)=141.01µs
+    http_req_sending...................: avg=22.44µs min=0s       med=7.76µs  max=659.3ms  p(90)=17.92µs p(95)=28.73µs 
+    http_req_tls_handshaking...........: avg=0s      min=0s       med=0s      max=0s       p(90)=0s      p(95)=0s      
+    http_req_waiting...................: avg=3.11ms  min=0s       med=1.28ms  max=1.21s    p(90)=3.49ms  p(95)=6.98ms  
+    http_reqs..........................: 2159662 1199.81055/s
+
+    EXECUTION
+    dropped_iterations.................: 169     0.093889/s
+    iteration_duration.................: avg=6.62ms  min=1.56ms   med=2.99ms  max=1.8s     p(90)=8.72ms  p(95)=16.94ms 
+    iterations.........................: 1079832 599.905831/s
+    vus................................: 2       min=0                  max=89 
+    vus_max............................: 119     min=38                 max=119
+
+    NETWORK
+    data_received......................: 259 MB  144 kB/s
+    data_sent..........................: 216 MB  120 kB/s
+
+
+  █ SCENARIO: baseline_load 
+
+    checks_total.......: 6478968 3599.42165/s
+    checks_succeeded...: 66.66%  4319312 out of 6478968
+    checks_failed......: 33.33%  2159656 out of 6478968
+
+    ✓ shop service response status is 200
+    ✗ shop version stable
+      ↳  93% — ✓ 1007374 / ✗ 72456
+    ✗ shop version canary
+      ↳  6% — ✓ 72456 / ✗ 1007374
+    ✓ transaction service response status is 200
+    ✗ transaction version stable
+      ↳  93% — ✓ 1006949 / ✗ 72877
+    ✗ transaction version canary
+      ↳  6% — ✓ 72877 / ✗ 1006949
+
+    CUSTOM
+    shop_version_count.................: 1079830 599.90472/s
+    shop_version_distribution..........: 100.00% 1079830 out of 1079830
+    transaction_version_count..........: 1079826 599.902497/s
+    transaction_version_distribution...: 100.00% 1079826 out of 1079826
+
+    HTTP
+    http_req_blocked...................: avg=5.89µs  min=0s     med=2.72µs  max=210.41ms p(90)=4.52µs  p(95)=5.06µs  
+    http_req_connecting................: avg=950ns   min=0s     med=0s      max=67.75ms  p(90)=0s      p(95)=0s      
+    http_req_duration..................: avg=3.18ms  min=0s     med=1.33ms  max=1.21s    p(90)=3.6ms   p(95)=7.14ms  
+    http_req_failed....................: 0.00%   6 out of 2159662
+    http_req_receiving.................: avg=53.8µs  min=0s     med=24.76µs max=94.28ms  p(90)=95.05µs p(95)=141.01µs
+    http_req_sending...................: avg=22.44µs min=0s     med=7.76µs  max=659.3ms  p(90)=17.92µs p(95)=28.73µs 
+    http_req_tls_handshaking...........: avg=0s      min=0s     med=0s      max=0s       p(90)=0s      p(95)=0s      
+    http_req_waiting...................: avg=3.11ms  min=0s     med=1.28ms  max=1.21s    p(90)=3.49ms  p(95)=6.98ms  
+    http_reqs..........................: 2159662 1199.81055/s
+
+    EXECUTION
+    dropped_iterations.................: 169     0.093889/s
+    iteration_duration.................: avg=6.62ms  min=1.56ms med=2.99ms  max=1.8s     p(90)=8.72ms  p(95)=16.94ms 
+    iterations.........................: 1079832 599.905831/s
+
+    NETWORK
+    data_received......................: 259 MB  144 kB/s
+    data_sent..........................: 216 MB  120 kB/s
+
+    ↳ GROUP: shop 
+
+      checks_total.......: 3239490 1799.714159/s
+      checks_succeeded...: 66.66%  2159660 out of 3239490
+      checks_failed......: 33.33%  1079830 out of 3239490
+
+      ✓ shop service response status is 200
+      ✗ shop version stable
+          ↳  93% — ✓ 1007374 / ✗ 72456
+      ✗ shop version canary
+          ↳  6% — ✓ 72456 / ✗ 1007374
+
+      CUSTOM
+      shop_version_count..........: 1079830 599.90472/s
+      shop_version_distribution...: 100.00% 1079830 out of 1079830
+
+      HTTP
+      http_req_blocked............: avg=6.19µs  min=0s med=3.2µs   max=210.41ms p(90)=4.87µs   p(95)=5.53µs  
+      http_req_connecting.........: avg=652ns   min=0s med=0s      max=55.29ms  p(90)=0s       p(95)=0s      
+      http_req_duration...........: avg=3.2ms   min=0s med=1.34ms  max=1.21s    p(90)=3.75ms   p(95)=7.36ms  
+      http_req_failed.............: 0.00%   2 out of 1079832
+      http_req_receiving..........: avg=56.39µs min=0s med=26.02µs max=94.28ms  p(90)=100.08µs p(95)=143.18µs
+      http_req_sending............: avg=22.36µs min=0s med=8.58µs  max=659.3ms  p(90)=18.47µs  p(95)=24.78µs 
+      http_req_tls_handshaking....: avg=0s      min=0s med=0s      max=0s       p(90)=0s       p(95)=0s      
+      http_req_waiting............: avg=3.12ms  min=0s med=1.28ms  max=1.21s    p(90)=3.64ms   p(95)=7.2ms   
+      http_reqs...................: 1079832 599.905831/s
+
+    ↳ GROUP: transaction 
+
+      checks_total.......: 3239478 1799.707492/s
+      checks_succeeded...: 66.66%  2159652 out of 3239478
+      checks_failed......: 33.33%  1079826 out of 3239478
+
+      ✓ transaction service response status is 200
+      ✗ transaction version stable
+          ↳  93% — ✓ 1006949 / ✗ 72877
+      ✗ transaction version canary
+          ↳  6% — ✓ 72877 / ✗ 1006949
+
+      CUSTOM
+      transaction_version_count..........: 1079826 599.902497/s
+      transaction_version_distribution...: 100.00% 1079826 out of 1079826
+
+      HTTP
+      http_req_blocked...................: avg=5.6µs   min=0s med=2.2µs   max=105.52ms p(90)=3.25µs  p(95)=3.72µs  
+      http_req_connecting................: avg=1.24µs  min=0s med=0s      max=67.75ms  p(90)=0s      p(95)=0s      
+      http_req_duration..................: avg=3.17ms  min=0s med=1.32ms  max=925.53ms p(90)=3.44ms  p(95)=6.92ms  
+      http_req_failed....................: 0.00%   4 out of 1079830
+      http_req_receiving.................: avg=51.21µs min=0s med=23.54µs max=89.79ms  p(90)=88.47µs p(95)=138.25µs
+      http_req_sending...................: avg=22.51µs min=0s med=7.12µs  max=533.54ms p(90)=17.16µs p(95)=44.31µs 
+      http_req_tls_handshaking...........: avg=0s      min=0s med=0s      max=0s       p(90)=0s      p(95)=0s      
+      http_req_waiting...................: avg=3.1ms   min=0s med=1.27ms  max=925.47ms p(90)=3.33ms  p(95)=6.75ms  
+      http_reqs..........................: 1079830 599.90472/s
+
+
+
