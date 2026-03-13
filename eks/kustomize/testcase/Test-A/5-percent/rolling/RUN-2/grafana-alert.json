@@ -1,0 +1,5 @@
+{
+  "info" : "due to grafana not sending resolved message while (NoData) there is also no new firing alert sent to the webhook - completely using grafana alert history for the validification",
+  "firingAt" : "2026-03-13 15:10:25",
+  "full-line" : "Alerting\ntransaction-error-rate - A=4.847042, C=1.000000\n2026-03-13 15:10:25"
+}

@@ -1,5 +1,4 @@
 {
-  "info": "due to considerably fast rollback failures went to 0%, therefore Grafana didn't had the chance to send resolved notification, because query 'sum(rate(k6_http_reqs_total{status=\"500\", group=\"::transaction\"}[1m]))' has no data",
   "receiver": "hsmw-contact-alert",
   "status": "firing",
   "alerts": [
@@ -10,7 +9,7 @@
         "grafana_folder": "error-rate"
       },
       "annotations": {},
-      "startsAt": "2026-03-13T12:18:20Z",
+      "startsAt": "2026-03-13T13:32:20Z",
       "endsAt": "0001-01-01T00:00:00Z",
       "generatorURL": "http://localhost:3000/alerting/grafana/effqse0yivwg0a/view?orgId=1",
       "fingerprint": "99ee6eaaca3b3045",
@@ -19,10 +18,10 @@
       "panelURL": "",
       "ruleUID": "effqse0yivwg0a",
       "values": {
-        "A": 4.869935030827212,
+        "A": 5.113798177071883,
         "C": 1
       },
-      "valueString": "[ var='A' labels={} type='query' value=4.869935030827212 ], [ var='C' labels={} type='threshold' value=1 ]",
+      "valueString": "[ var='A' labels={} type='query' value=5.113798177071883 ], [ var='C' labels={} type='threshold' value=1 ]",
       "orgId": 1
     }
   ],
@@ -43,5 +42,5 @@
   "orgId": 1,
   "title": "[FIRING:1] transaction-error-rate error-rate ",
   "state": "alerting",
-  "message": "**Firing**\n\nValue: A=4.869935030827212, C=1\nLabels:\n - alertname = transaction-error-rate\n - grafana_folder = error-rate\nAnnotations:\nSource: http://localhost:3000/alerting/grafana/effqse0yivwg0a/view?orgId=1\nSilence: http://localhost:3000/alerting/silence/new?alertmanager=grafana\u0026matcher=__alert_rule_uid__%3Deffqse0yivwg0a\u0026orgId=1\n"
+  "message": "**Firing**\n\nValue: A=5.113798177071883, C=1\nLabels:\n - alertname = transaction-error-rate\n - grafana_folder = error-rate\nAnnotations:\nSource: http://localhost:3000/alerting/grafana/effqse0yivwg0a/view?orgId=1\nSilence: http://localhost:3000/alerting/silence/new?alertmanager=grafana\u0026matcher=__alert_rule_uid__%3Deffqse0yivwg0a\u0026orgId=1\n"
 }
