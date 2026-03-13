@@ -1,0 +1,44 @@
+--- # Szenario A
+apiVersion: argoproj.io/v1alpha1
+kind: AnalysisTemplate
+metadata:
+  name: error-rate-check
+  namespace: thesis
+spec:
+  args:
+    - name: service-name
+  metrics:
+    - name: error-rate
+      interval: 60s
+      failureLimit: 1
+      successCondition: result[0] <= 1
+      provider:
+        prometheus:
+          address: http://kube-prometheus-kube-prome-prometheus.monitoring.svc.cluster.local:9090
+          query: |
+            ( sum(rate(k6_http_reqs_total{status="500", group="::{{args.service-name}}"}[1m]))
+              /
+            sum(rate(k6_http_reqs_total{group="::{{args.service-name}}"}[1m])) ) * 100
+# k6_http_req_failed_rate{group="::transaction"}
+# k6_http_req_failed_rate{group="::shop"}
+--- # Szenario B
+apiVersion: argoproj.io/v1alpha1
+kind: AnalysisTemplate
+metadata:
+  name: latency-check
+  namespace: thesis
+spec:
+  args:
+    - name: service-name
+  metrics:
+    - name: p95-latency
+      interval: 60s
+      failureLimit: 1
+      successCondition: result[0] <= 20
+      provider:
+        prometheus:
+          address: http://kube-prometheus-kube-prome-prometheus.monitoring.svc.cluster.local:9090
+          query: |
+            avg(avg_over_time(k6_http_req_duration_p95{group="::{{args.service-name}}", status="200"}[1m]))*1000
+# k6_http_req_duration_p95{group="::transaction"}
+# k6_http_req_duration_p95{group="::shop"}

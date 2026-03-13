@@ -1,0 +1,225 @@
+{
+    "apiVersion": "argoproj.io/v1alpha1",
+    "kind": "Rollout",
+    "metadata": {
+        "annotations": {
+            "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"argoproj.io/v1alpha1\",\"kind\":\"Rollout\",\"metadata\":{\"annotations\":{},\"name\":\"shop-service-rollout\",\"namespace\":\"thesis\"},\"spec\":{\"minReadySeconds\":20,\"replicas\":3,\"selector\":{\"matchLabels\":{\"app\":\"shop\"}},\"strategy\":{\"canary\":{\"analysis\":{\"args\":[{\"name\":\"service-name\",\"value\":\"shop\"}],\"templates\":[{\"templateName\":\"error-rate-check\"}]},\"steps\":[{\"setWeight\":10},{\"pause\":{\"duration\":\"5m\"}},{\"setWeight\":50},{\"pause\":{\"duration\":\"5m\"}},{\"setWeight\":75},{\"pause\":{\"duration\":\"5m\"}},{\"setWeight\":100},{\"pause\":{\"duration\":\"5m\"}}]}},\"template\":{\"metadata\":{\"labels\":{\"app\":\"shop\",\"version\":\"canary\"}},\"spec\":{\"containers\":[{\"env\":[{\"name\":\"VERSION\",\"value\":\"canary\"},{\"name\":\"ERROR_RATE\",\"value\":\"0\"},{\"name\":\"LATENCY\",\"value\":\"0\"},{\"name\":\"JAVA_TOOL_OPTIONS\",\"value\":\"-Xmx512m -Xms256m\"},{\"name\":\"PAYMENT_SERVICE_URL\",\"value\":\"http://transaction-service.thesis.svc.cluster.local/pay\"}],\"image\":\"ghcr.io/vulnerius/shop-service:v1.1.1\",\"imagePullPolicy\":\"IfNotPresent\",\"lifecycle\":{\"preStop\":{\"exec\":{\"command\":[\"/bin/sh\",\"-c\",\"sleep 20\"]}}},\"livenessProbe\":{\"httpGet\":{\"path\":\"/health\",\"port\":8080},\"initialDelaySeconds\":10,\"periodSeconds\":3},\"name\":\"shop\",\"ports\":[{\"containerPort\":8080}],\"readinessProbe\":{\"httpGet\":{\"path\":\"/ready\",\"port\":8080},\"initialDelaySeconds\":10,\"periodSeconds\":5},\"resources\":{\"limits\":{\"cpu\":\"250m\",\"memory\":\"1Gi\"},\"requests\":{\"cpu\":\"100m\",\"memory\":\"512Mi\"}}}],\"imagePullSecrets\":[{\"name\":\"ghcr-image-pull-secret\"}],\"nodeSelector\":{\"role\":\"app-node\"}}}}}\n",
+            "rollout.argoproj.io/revision": "2"
+        },
+        "creationTimestamp": "2026-03-12T14:27:51Z",
+        "generation": 3,
+        "name": "shop-service-rollout",
+        "namespace": "thesis",
+        "resourceVersion": "2414261",
+        "uid": "974795fd-3b87-4375-9476-489ef9583773"
+    },
+    "spec": {
+        "minReadySeconds": 20,
+        "replicas": 3,
+        "selector": {
+            "matchLabels": {
+                "app": "shop"
+            }
+        },
+        "strategy": {
+            "canary": {
+                "analysis": {
+                    "analysisRunMetadata": {},
+                    "args": [
+                        {
+                            "name": "service-name",
+                            "value": "shop"
+                        }
+                    ],
+                    "templates": [
+                        {
+                            "templateName": "error-rate-check"
+                        }
+                    ]
+                },
+                "steps": [
+                    {
+                        "setWeight": 10
+                    },
+                    {
+                        "pause": {
+                            "duration": "5m"
+                        }
+                    },
+                    {
+                        "setWeight": 50
+                    },
+                    {
+                        "pause": {
+                            "duration": "5m"
+                        }
+                    },
+                    {
+                        "setWeight": 75
+                    },
+                    {
+                        "pause": {
+                            "duration": "5m"
+                        }
+                    },
+                    {
+                        "setWeight": 100
+                    },
+                    {
+                        "pause": {
+                            "duration": "5m"
+                        }
+                    }
+                ]
+            }
+        },
+        "template": {
+            "metadata": {
+                "labels": {
+                    "app": "shop",
+                    "version": "canary"
+                }
+            },
+            "spec": {
+                "containers": [
+                    {
+                        "env": [
+                            {
+                                "name": "VERSION",
+                                "value": "canary"
+                            },
+                            {
+                                "name": "ERROR_RATE",
+                                "value": "0"
+                            },
+                            {
+                                "name": "LATENCY",
+                                "value": "0"
+                            },
+                            {
+                                "name": "JAVA_TOOL_OPTIONS",
+                                "value": "-Xmx512m -Xms256m"
+                            },
+                            {
+                                "name": "PAYMENT_SERVICE_URL",
+                                "value": "http://transaction-service.thesis.svc.cluster.local/pay"
+                            }
+                        ],
+                        "image": "ghcr.io/vulnerius/shop-service:v1.1.1",
+                        "imagePullPolicy": "IfNotPresent",
+                        "lifecycle": {
+                            "preStop": {
+                                "exec": {
+                                    "command": [
+                                        "/bin/sh",
+                                        "-c",
+                                        "sleep 20"
+                                    ]
+                                }
+                            }
+                        },
+                        "livenessProbe": {
+                            "httpGet": {
+                                "path": "/health",
+                                "port": 8080
+                            },
+                            "initialDelaySeconds": 10,
+                            "periodSeconds": 3
+                        },
+                        "name": "shop",
+                        "ports": [
+                            {
+                                "containerPort": 8080,
+                                "protocol": "TCP"
+                            }
+                        ],
+                        "readinessProbe": {
+                            "httpGet": {
+                                "path": "/ready",
+                                "port": 8080
+                            },
+                            "initialDelaySeconds": 10,
+                            "periodSeconds": 5
+                        },
+                        "resources": {
+                            "limits": {
+                                "cpu": "250m",
+                                "memory": "1Gi"
+                            },
+                            "requests": {
+                                "cpu": "100m",
+                                "memory": "512Mi"
+                            }
+                        }
+                    }
+                ],
+                "imagePullSecrets": [
+                    {
+                        "name": "ghcr-image-pull-secret"
+                    }
+                ],
+                "nodeSelector": {
+                    "role": "app-node"
+                }
+            }
+        }
+    },
+    "status": {
+        "HPAReplicas": 3,
+        "availableReplicas": 3,
+        "blueGreen": {},
+        "canary": {},
+        "conditions": [
+            {
+                "lastTransitionTime": "2026-03-12T14:28:29Z",
+                "lastUpdateTime": "2026-03-12T14:28:29Z",
+                "message": "Rollout has minimum availability",
+                "reason": "AvailableReason",
+                "status": "True",
+                "type": "Available"
+            },
+            {
+                "lastTransitionTime": "2026-03-12T14:53:38Z",
+                "lastUpdateTime": "2026-03-12T14:53:38Z",
+                "message": "Rollout is healthy",
+                "reason": "RolloutHealthy",
+                "status": "True",
+                "type": "Healthy"
+            },
+            {
+                "lastTransitionTime": "2026-03-12T14:53:38Z",
+                "lastUpdateTime": "2026-03-12T14:53:38Z",
+                "message": "ReplicaSet \"shop-service-rollout-bc76fbf89\" has successfully progressed.",
+                "reason": "NewReplicaSetAvailable",
+                "status": "True",
+                "type": "Progressing"
+            },
+            {
+                "lastTransitionTime": "2026-03-12T14:53:38Z",
+                "lastUpdateTime": "2026-03-12T14:53:38Z",
+                "message": "RolloutCompleted",
+                "reason": "RolloutCompleted",
+                "status": "True",
+                "type": "Completed"
+            },
+            {
+                "lastTransitionTime": "2026-03-12T14:53:38Z",
+                "lastUpdateTime": "2026-03-12T14:53:38Z",
+                "message": "Rollout is paused",
+                "reason": "RolloutPaused",
+                "status": "False",
+                "type": "Paused"
+            }
+        ],
+        "currentPodHash": "bc76fbf89",
+        "currentStepHash": "74cc54dc74",
+        "currentStepIndex": 8,
+        "observedGeneration": "3",
+        "phase": "Healthy",
+        "readyReplicas": 3,
+        "replicas": 3,
+        "selector": "app=shop",
+        "stableRS": "bc76fbf89",
+        "updatedReplicas": 3
+    }
+}

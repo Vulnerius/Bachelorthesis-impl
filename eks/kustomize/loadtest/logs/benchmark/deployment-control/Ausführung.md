@@ -19,5 +19,6 @@ Die Ergebnisse der 5 Testläufe werden analysiert und die gemittelten Werte für
 
 Folgend erfolgt die Definition der Service Level Objectives (SLOs) für den jeweiligen Service basierend auf den analysierten Latenz-Perzentilen und der Fehlerquote.
 Aus diesen SLOs werden dementsprechend der Alertmanager für das Rolling-Deployment und das Analysis-Template für den Canary Release erstellt,
-um die Einhaltung der definierten SLOs während des Deployment-Prozesses zu überwachen und bei der Überschreitung Benachrichtigungen zu verfassen, bzw. das Canary Release abzubrechen.
+um die Einhaltung der definierten SLOs während des Deployment-Prozesses zu überwachen und bei der Überschreitung Benachrichtigungen zu verfassen, bzw. das Canary Release abzubrechen. 
 
+Weiter geht es zur [Definition der Service Level Objective](../../k6-benchmark-SLO.md)

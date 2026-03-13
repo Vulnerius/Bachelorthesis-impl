@@ -18,4 +18,4 @@ Aus der Zusammenfassung der K6-Testergebnisse wird die p99-Latenz nicht angegebe
 
 Die Ergebnisse der 5 Testläufe werden analysiert und die gemittelten Werte für die P90- P95- und P99-Latenz sowie die Fehlerquote festgestellt.
 
-Es folgt die [Ermittlung der Latenz und Fehlerquote während des Deployments](../canary-deployment-control/Ausführung.md)
+Es folgt die [Ermittlung der Latenz und Fehlerquote während des Deployments](../deployment-control/Ausführung.md)

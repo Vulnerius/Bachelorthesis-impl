@@ -1,0 +1,6 @@
+---
+resources:
+  - ../../../../base
+  - apps/analysistemplate.yaml
+  - apps/shop
+  - apps/transaction

@@ -40,4 +40,8 @@ Das Error Budget für die Fehlerquote beträgt 1%, (maximal 1% der HTTP-Anfragen
 Das Error Budget für die Latenz ist so definiert, 
  dass 10% der Anfragen über 8ms, 5% der Anfragen über 20ms und 1% der Anfragen über 150ms Antwortzeit betragen dürfen.
 
+## Bedeutung
 
+Diese Definitionen gelten für jeden Microservice und definieren das Error Budget. Zur Einhaltung des Error-Budgets werden
+der Grafana Alertmanager für das Rolling Update, sowie das AnalysisTemplate für die Canary Releases geringere Zeitabstände überwachen.
+Weiter zum [Grafana Alertmanager](../../../../docs-without-code/grafana-alertmanager.md) und zum [AnalysisTemplate](TODO)

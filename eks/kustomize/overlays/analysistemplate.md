@@ -1,0 +1,2 @@
+Das [AnalysisTemplate](general-analysistemplate.yaml) ist hier einmal gesammelt für beide Testszenarien aufgeschlüsselt.
+In den einzelnen Szenarien wird nur der für das Szenario relevante Teil eingefügt.
