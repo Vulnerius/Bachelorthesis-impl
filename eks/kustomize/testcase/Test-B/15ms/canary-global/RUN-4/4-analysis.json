@@ -1,0 +1,1708 @@
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "argoproj.io/v1alpha1",
+            "kind": "AnalysisRun",
+            "metadata": {
+                "annotations": {
+                    "rollout.argoproj.io/revision": "10"
+                },
+                "creationTimestamp": "2026-03-13T10:54:37Z",
+                "generation": 25,
+                "labels": {
+                    "app": "shop",
+                    "rollout-type": "Background",
+                    "rollouts-pod-template-hash": "bc76fbf89"
+                },
+                "name": "shop-service-rollout-bc76fbf89-10",
+                "namespace": "thesis",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "argoproj.io/v1alpha1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "Rollout",
+                        "name": "shop-service-rollout",
+                        "uid": "a61b57fa-8ca0-481d-888c-b84e8db45a3b"
+                    }
+                ],
+                "resourceVersion": "2759512",
+                "uid": "04d6d18f-3368-4429-b6f2-48c8a480de12"
+            },
+            "spec": {
+                "args": [
+                    {
+                        "name": "service-name",
+                        "value": "shop"
+                    }
+                ],
+                "metrics": [
+                    {
+                        "failureCondition": "len(result) \u003e 0 \u0026\u0026 result[0] \u003e 1",
+                        "failureLimit": 1,
+                        "interval": "60s",
+                        "name": "error-rate",
+                        "provider": {
+                            "prometheus": {
+                                "address": "http://kube-prometheus-kube-prome-prometheus.monitoring.svc.cluster.local:9090",
+                                "authentication": {
+                                    "oauth2": {},
+                                    "sigv4": {}
+                                },
+                                "query": "( sum(rate(k6_http_reqs_total{status=\"500\", group=\"::{{args.service-name}}\"}[1m]))\n  /\nsum(rate(k6_http_reqs_total{group=\"::{{args.service-name}}\"}[1m])) ) * 100"
+                            }
+                        }
+                    }
+                ],
+                "terminate": true
+            },
+            "status": {
+                "completedAt": "2026-03-13T11:16:29Z",
+                "dryRunSummary": {},
+                "message": "Run Terminated",
+                "metricResults": [
+                    {
+                        "consecutiveSuccess": 22,
+                        "count": 22,
+                        "measurements": [
+                            {
+                                "finishedAt": "2026-03-13T11:06:37Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T11:06:37Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T11:07:37Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T11:07:37Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T11:08:37Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T11:08:37Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T11:09:37Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T11:09:37Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T11:10:37Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T11:10:37Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T11:11:37Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T11:11:37Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T11:12:37Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T11:12:37Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T11:13:37Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T11:13:37Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T11:14:37Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T11:14:37Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T11:15:37Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T11:15:37Z",
+                                "value": "[]"
+                            }
+                        ],
+                        "metadata": {
+                            "ResolvedPrometheusQuery": "( sum(rate(k6_http_reqs_total{status=\"500\", group=\"::shop\"}[1m]))\n  /\nsum(rate(k6_http_reqs_total{group=\"::shop\"}[1m])) ) * 100"
+                        },
+                        "name": "error-rate",
+                        "phase": "Successful",
+                        "successful": 22
+                    }
+                ],
+                "phase": "Successful",
+                "runSummary": {
+                    "count": 1,
+                    "successful": 1
+                },
+                "startedAt": "2026-03-13T10:54:37Z"
+            }
+        },
+        {
+            "apiVersion": "argoproj.io/v1alpha1",
+            "kind": "AnalysisRun",
+            "metadata": {
+                "annotations": {
+                    "rollout.argoproj.io/revision": "12"
+                },
+                "creationTimestamp": "2026-03-13T11:33:52Z",
+                "generation": 25,
+                "labels": {
+                    "app": "shop",
+                    "rollout-type": "Background",
+                    "rollouts-pod-template-hash": "bc76fbf89"
+                },
+                "name": "shop-service-rollout-bc76fbf89-12",
+                "namespace": "thesis",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "argoproj.io/v1alpha1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "Rollout",
+                        "name": "shop-service-rollout",
+                        "uid": "a61b57fa-8ca0-481d-888c-b84e8db45a3b"
+                    }
+                ],
+                "resourceVersion": "2770936",
+                "uid": "c9de1bce-52a4-4e32-8bc9-d1d73a6fb882"
+            },
+            "spec": {
+                "args": [
+                    {
+                        "name": "service-name",
+                        "value": "shop"
+                    }
+                ],
+                "metrics": [
+                    {
+                        "failureCondition": "len(result) \u003e 0 \u0026\u0026 result[0] \u003e 1",
+                        "failureLimit": 1,
+                        "interval": "60s",
+                        "name": "error-rate",
+                        "provider": {
+                            "prometheus": {
+                                "address": "http://kube-prometheus-kube-prome-prometheus.monitoring.svc.cluster.local:9090",
+                                "authentication": {
+                                    "oauth2": {},
+                                    "sigv4": {}
+                                },
+                                "query": "( sum(rate(k6_http_reqs_total{status=\"500\", group=\"::{{args.service-name}}\"}[1m]))\n  /\nsum(rate(k6_http_reqs_total{group=\"::{{args.service-name}}\"}[1m])) ) * 100"
+                            }
+                        }
+                    }
+                ],
+                "terminate": true
+            },
+            "status": {
+                "completedAt": "2026-03-13T11:55:39Z",
+                "dryRunSummary": {},
+                "message": "Run Terminated",
+                "metricResults": [
+                    {
+                        "consecutiveSuccess": 22,
+                        "count": 22,
+                        "measurements": [
+                            {
+                                "finishedAt": "2026-03-13T11:45:52Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T11:45:52Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T11:46:52Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T11:46:52Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T11:47:52Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T11:47:52Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T11:48:52Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T11:48:52Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T11:49:52Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T11:49:52Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T11:50:52Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T11:50:52Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T11:51:52Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T11:51:52Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T11:52:52Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T11:52:52Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T11:53:52Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T11:53:52Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T11:54:52Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T11:54:52Z",
+                                "value": "[]"
+                            }
+                        ],
+                        "metadata": {
+                            "ResolvedPrometheusQuery": "( sum(rate(k6_http_reqs_total{status=\"500\", group=\"::shop\"}[1m]))\n  /\nsum(rate(k6_http_reqs_total{group=\"::shop\"}[1m])) ) * 100"
+                        },
+                        "name": "error-rate",
+                        "phase": "Successful",
+                        "successful": 22
+                    }
+                ],
+                "phase": "Successful",
+                "runSummary": {
+                    "count": 1,
+                    "successful": 1
+                },
+                "startedAt": "2026-03-13T11:33:52Z"
+            }
+        },
+        {
+            "apiVersion": "argoproj.io/v1alpha1",
+            "kind": "AnalysisRun",
+            "metadata": {
+                "annotations": {
+                    "rollout.argoproj.io/revision": "4"
+                },
+                "creationTimestamp": "2026-03-13T08:49:47Z",
+                "generation": 25,
+                "labels": {
+                    "app": "shop",
+                    "rollout-type": "Background",
+                    "rollouts-pod-template-hash": "bc76fbf89"
+                },
+                "name": "shop-service-rollout-bc76fbf89-4",
+                "namespace": "thesis",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "argoproj.io/v1alpha1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "Rollout",
+                        "name": "shop-service-rollout",
+                        "uid": "a61b57fa-8ca0-481d-888c-b84e8db45a3b"
+                    }
+                ],
+                "resourceVersion": "2723248",
+                "uid": "72181b78-a8dc-4194-b2bb-bed7931e907c"
+            },
+            "spec": {
+                "args": [
+                    {
+                        "name": "service-name",
+                        "value": "shop"
+                    }
+                ],
+                "metrics": [
+                    {
+                        "failureCondition": "len(result) \u003e 0 \u0026\u0026 result[0] \u003e 1",
+                        "failureLimit": 1,
+                        "interval": "60s",
+                        "name": "error-rate",
+                        "provider": {
+                            "prometheus": {
+                                "address": "http://kube-prometheus-kube-prome-prometheus.monitoring.svc.cluster.local:9090",
+                                "authentication": {
+                                    "oauth2": {},
+                                    "sigv4": {}
+                                },
+                                "query": "( sum(rate(k6_http_reqs_total{status=\"500\", group=\"::{{args.service-name}}\"}[1m]))\n  /\nsum(rate(k6_http_reqs_total{group=\"::{{args.service-name}}\"}[1m])) ) * 100"
+                            }
+                        }
+                    }
+                ],
+                "terminate": true
+            },
+            "status": {
+                "completedAt": "2026-03-13T09:11:35Z",
+                "dryRunSummary": {},
+                "message": "Run Terminated",
+                "metricResults": [
+                    {
+                        "consecutiveSuccess": 22,
+                        "count": 22,
+                        "measurements": [
+                            {
+                                "finishedAt": "2026-03-13T09:01:47Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T09:01:47Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T09:02:47Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T09:02:47Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T09:03:47Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T09:03:47Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T09:04:47Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T09:04:47Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T09:05:47Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T09:05:47Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T09:06:47Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T09:06:47Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T09:07:47Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T09:07:47Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T09:08:47Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T09:08:47Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T09:09:47Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T09:09:47Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T09:10:47Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T09:10:47Z",
+                                "value": "[]"
+                            }
+                        ],
+                        "metadata": {
+                            "ResolvedPrometheusQuery": "( sum(rate(k6_http_reqs_total{status=\"500\", group=\"::shop\"}[1m]))\n  /\nsum(rate(k6_http_reqs_total{group=\"::shop\"}[1m])) ) * 100"
+                        },
+                        "name": "error-rate",
+                        "phase": "Successful",
+                        "successful": 22
+                    }
+                ],
+                "phase": "Successful",
+                "runSummary": {
+                    "count": 1,
+                    "successful": 1
+                },
+                "startedAt": "2026-03-13T08:49:47Z"
+            }
+        },
+        {
+            "apiVersion": "argoproj.io/v1alpha1",
+            "kind": "AnalysisRun",
+            "metadata": {
+                "annotations": {
+                    "rollout.argoproj.io/revision": "6"
+                },
+                "creationTimestamp": "2026-03-13T09:30:10Z",
+                "generation": 25,
+                "labels": {
+                    "app": "shop",
+                    "rollout-type": "Background",
+                    "rollouts-pod-template-hash": "bc76fbf89"
+                },
+                "name": "shop-service-rollout-bc76fbf89-6",
+                "namespace": "thesis",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "argoproj.io/v1alpha1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "Rollout",
+                        "name": "shop-service-rollout",
+                        "uid": "a61b57fa-8ca0-481d-888c-b84e8db45a3b"
+                    }
+                ],
+                "resourceVersion": "2735022",
+                "uid": "88e37646-ec31-46a0-b001-7ee9cf002d8f"
+            },
+            "spec": {
+                "args": [
+                    {
+                        "name": "service-name",
+                        "value": "shop"
+                    }
+                ],
+                "metrics": [
+                    {
+                        "failureCondition": "len(result) \u003e 0 \u0026\u0026 result[0] \u003e 1",
+                        "failureLimit": 1,
+                        "interval": "60s",
+                        "name": "error-rate",
+                        "provider": {
+                            "prometheus": {
+                                "address": "http://kube-prometheus-kube-prome-prometheus.monitoring.svc.cluster.local:9090",
+                                "authentication": {
+                                    "oauth2": {},
+                                    "sigv4": {}
+                                },
+                                "query": "( sum(rate(k6_http_reqs_total{status=\"500\", group=\"::{{args.service-name}}\"}[1m]))\n  /\nsum(rate(k6_http_reqs_total{group=\"::{{args.service-name}}\"}[1m])) ) * 100"
+                            }
+                        }
+                    }
+                ],
+                "terminate": true
+            },
+            "status": {
+                "completedAt": "2026-03-13T09:52:03Z",
+                "dryRunSummary": {},
+                "message": "Run Terminated",
+                "metricResults": [
+                    {
+                        "consecutiveSuccess": 22,
+                        "count": 22,
+                        "measurements": [
+                            {
+                                "finishedAt": "2026-03-13T09:42:10Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T09:42:10Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T09:43:10Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T09:43:10Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T09:44:10Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T09:44:10Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T09:45:10Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T09:45:10Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T09:46:10Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T09:46:10Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T09:47:10Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T09:47:10Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T09:48:10Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T09:48:10Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T09:49:10Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T09:49:10Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T09:50:10Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T09:50:10Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T09:51:10Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T09:51:10Z",
+                                "value": "[]"
+                            }
+                        ],
+                        "metadata": {
+                            "ResolvedPrometheusQuery": "( sum(rate(k6_http_reqs_total{status=\"500\", group=\"::shop\"}[1m]))\n  /\nsum(rate(k6_http_reqs_total{group=\"::shop\"}[1m])) ) * 100"
+                        },
+                        "name": "error-rate",
+                        "phase": "Successful",
+                        "successful": 22
+                    }
+                ],
+                "phase": "Successful",
+                "runSummary": {
+                    "count": 1,
+                    "successful": 1
+                },
+                "startedAt": "2026-03-13T09:30:10Z"
+            }
+        },
+        {
+            "apiVersion": "argoproj.io/v1alpha1",
+            "kind": "AnalysisRun",
+            "metadata": {
+                "annotations": {
+                    "rollout.argoproj.io/revision": "8"
+                },
+                "creationTimestamp": "2026-03-13T10:15:14Z",
+                "generation": 25,
+                "labels": {
+                    "app": "shop",
+                    "rollout-type": "Background",
+                    "rollouts-pod-template-hash": "bc76fbf89"
+                },
+                "name": "shop-service-rollout-bc76fbf89-8",
+                "namespace": "thesis",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "argoproj.io/v1alpha1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "Rollout",
+                        "name": "shop-service-rollout",
+                        "uid": "a61b57fa-8ca0-481d-888c-b84e8db45a3b"
+                    }
+                ],
+                "resourceVersion": "2748051",
+                "uid": "4a4d16a8-eb44-4c99-b523-bd1b121b73c6"
+            },
+            "spec": {
+                "args": [
+                    {
+                        "name": "service-name",
+                        "value": "shop"
+                    }
+                ],
+                "metrics": [
+                    {
+                        "failureCondition": "len(result) \u003e 0 \u0026\u0026 result[0] \u003e 1",
+                        "failureLimit": 1,
+                        "interval": "60s",
+                        "name": "error-rate",
+                        "provider": {
+                            "prometheus": {
+                                "address": "http://kube-prometheus-kube-prome-prometheus.monitoring.svc.cluster.local:9090",
+                                "authentication": {
+                                    "oauth2": {},
+                                    "sigv4": {}
+                                },
+                                "query": "( sum(rate(k6_http_reqs_total{status=\"500\", group=\"::{{args.service-name}}\"}[1m]))\n  /\nsum(rate(k6_http_reqs_total{group=\"::{{args.service-name}}\"}[1m])) ) * 100"
+                            }
+                        }
+                    }
+                ],
+                "terminate": true
+            },
+            "status": {
+                "completedAt": "2026-03-13T10:37:08Z",
+                "dryRunSummary": {},
+                "message": "Run Terminated",
+                "metricResults": [
+                    {
+                        "consecutiveSuccess": 22,
+                        "count": 22,
+                        "measurements": [
+                            {
+                                "finishedAt": "2026-03-13T10:27:14Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T10:27:14Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T10:28:14Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T10:28:14Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T10:29:14Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T10:29:14Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T10:30:14Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T10:30:14Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T10:31:14Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T10:31:14Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T10:32:14Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T10:32:14Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T10:33:14Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T10:33:14Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T10:34:14Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T10:34:14Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T10:35:14Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T10:35:14Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-13T10:36:14Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-13T10:36:14Z",
+                                "value": "[]"
+                            }
+                        ],
+                        "metadata": {
+                            "ResolvedPrometheusQuery": "( sum(rate(k6_http_reqs_total{status=\"500\", group=\"::shop\"}[1m]))\n  /\nsum(rate(k6_http_reqs_total{group=\"::shop\"}[1m])) ) * 100"
+                        },
+                        "name": "error-rate",
+                        "phase": "Successful",
+                        "successful": 22
+                    }
+                ],
+                "phase": "Successful",
+                "runSummary": {
+                    "count": 1,
+                    "successful": 1
+                },
+                "startedAt": "2026-03-13T10:15:14Z"
+            }
+        },
+        {
+            "apiVersion": "argoproj.io/v1alpha1",
+            "kind": "AnalysisRun",
+            "metadata": {
+                "annotations": {
+                    "rollout.argoproj.io/revision": "28"
+                },
+                "creationTimestamp": "2026-03-14T10:30:07Z",
+                "generation": 38,
+                "labels": {
+                    "app": "transaction",
+                    "rollout-type": "Background",
+                    "rollouts-pod-template-hash": "584cdcfbbf"
+                },
+                "name": "transaction-service-rollout-584cdcfbbf-28",
+                "namespace": "thesis",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "argoproj.io/v1alpha1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "Rollout",
+                        "name": "transaction-service-rollout",
+                        "uid": "dc46c54d-3be6-4d17-af5a-1128b55b9f67"
+                    }
+                ],
+                "resourceVersion": "3155033",
+                "uid": "44bcd53d-2723-438c-8bbf-9cfb9124adeb"
+            },
+            "spec": {
+                "args": [
+                    {
+                        "name": "service-name",
+                        "value": "transaction"
+                    }
+                ],
+                "metrics": [
+                    {
+                        "failureCondition": "len(result) \u003e 0 \u0026\u0026 result[0] \u003e 20",
+                        "failureLimit": 1,
+                        "interval": "60s",
+                        "name": "latency",
+                        "provider": {
+                            "prometheus": {
+                                "address": "http://kube-prometheus-kube-prome-prometheus.monitoring.svc.cluster.local:9090",
+                                "authentication": {
+                                    "oauth2": {},
+                                    "sigv4": {}
+                                },
+                                "query": "avg(avg_over_time(k6_http_req_duration_p95{group=\"::{{args.service-name}}\", status=\"200\"}[1m]))*1000"
+                            }
+                        }
+                    }
+                ],
+                "terminate": true
+            },
+            "status": {
+                "completedAt": "2026-03-14T11:04:15Z",
+                "dryRunSummary": {},
+                "message": "Run Terminated",
+                "metricResults": [
+                    {
+                        "consecutiveSuccess": 35,
+                        "count": 35,
+                        "measurements": [
+                            {
+                                "finishedAt": "2026-03-14T10:55:07Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T10:55:07Z",
+                                "value": "[4.896769566666644]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T10:56:07Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T10:56:07Z",
+                                "value": "[5.232653358333306]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T10:57:07Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T10:57:07Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T10:58:07Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T10:58:07Z",
+                                "value": "[5.522523153571423]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T10:59:07Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T10:59:07Z",
+                                "value": "[5.789210664999971]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T11:00:07Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T11:00:07Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T11:01:07Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T11:01:07Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T11:02:07Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T11:02:07Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T11:03:07Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T11:03:07Z",
+                                "value": "[]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T11:04:07Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T11:04:07Z",
+                                "value": "[]"
+                            }
+                        ],
+                        "metadata": {
+                            "ResolvedPrometheusQuery": "avg(avg_over_time(k6_http_req_duration_p95{group=\"::transaction\", status=\"200\"}[1m]))*1000"
+                        },
+                        "name": "latency",
+                        "phase": "Successful",
+                        "successful": 35
+                    }
+                ],
+                "phase": "Successful",
+                "runSummary": {
+                    "count": 1,
+                    "successful": 1
+                },
+                "startedAt": "2026-03-14T10:30:07Z"
+            }
+        },
+        {
+            "apiVersion": "argoproj.io/v1alpha1",
+            "kind": "AnalysisRun",
+            "metadata": {
+                "annotations": {
+                    "rollout.argoproj.io/revision": "32"
+                },
+                "creationTimestamp": "2026-03-14T11:47:22Z",
+                "generation": 17,
+                "labels": {
+                    "app": "transaction",
+                    "rollout-type": "Background",
+                    "rollouts-pod-template-hash": "64f7964d79"
+                },
+                "name": "transaction-service-rollout-64f7964d79-32",
+                "namespace": "thesis",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "argoproj.io/v1alpha1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "Rollout",
+                        "name": "transaction-service-rollout",
+                        "uid": "dc46c54d-3be6-4d17-af5a-1128b55b9f67"
+                    }
+                ],
+                "resourceVersion": "3171930",
+                "uid": "20425c48-9a04-4a47-94dd-72fabeabd67a"
+            },
+            "spec": {
+                "args": [
+                    {
+                        "name": "service-name",
+                        "value": "transaction"
+                    }
+                ],
+                "metrics": [
+                    {
+                        "failureCondition": "len(result) \u003e 0 \u0026\u0026 result[0] \u003e 20",
+                        "failureLimit": 1,
+                        "interval": "60s",
+                        "name": "latency",
+                        "provider": {
+                            "prometheus": {
+                                "address": "http://kube-prometheus-kube-prome-prometheus.monitoring.svc.cluster.local:9090",
+                                "authentication": {
+                                    "oauth2": {},
+                                    "sigv4": {}
+                                },
+                                "query": "avg(avg_over_time(k6_http_req_duration_p95{group=\"::{{args.service-name}}\", status=\"200\"}[1m]))*1000"
+                            }
+                        }
+                    }
+                ]
+            },
+            "status": {
+                "completedAt": "2026-03-14T12:02:22Z",
+                "dryRunSummary": {},
+                "message": "Metric \"latency\" assessed Failed due to failed (2) \u003e failureLimit (1)",
+                "metricResults": [
+                    {
+                        "count": 16,
+                        "failed": 2,
+                        "measurements": [
+                            {
+                                "finishedAt": "2026-03-14T11:53:22Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T11:53:22Z",
+                                "value": "[1.5247236354166662]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T11:54:22Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T11:54:22Z",
+                                "value": "[1.6359915333333326]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T11:55:22Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T11:55:22Z",
+                                "value": "[1.779485814583333]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T11:56:22Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T11:56:22Z",
+                                "value": "[1.9414314791666665]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T11:57:22Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T11:57:22Z",
+                                "value": "[2.164026804166665]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T11:58:22Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T11:58:22Z",
+                                "value": "[2.546820377083329]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T11:59:22Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T11:59:22Z",
+                                "value": "[3.777307139583322]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T12:00:22Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T12:00:22Z",
+                                "value": "[18.77156803333316]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T12:01:22Z",
+                                "phase": "Failed",
+                                "startedAt": "2026-03-14T12:01:22Z",
+                                "value": "[25.677043924999985]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T12:02:22Z",
+                                "phase": "Failed",
+                                "startedAt": "2026-03-14T12:02:22Z",
+                                "value": "[33.12723125624959]"
+                            }
+                        ],
+                        "metadata": {
+                            "ResolvedPrometheusQuery": "avg(avg_over_time(k6_http_req_duration_p95{group=\"::transaction\", status=\"200\"}[1m]))*1000"
+                        },
+                        "name": "latency",
+                        "phase": "Failed",
+                        "successful": 14
+                    }
+                ],
+                "phase": "Failed",
+                "runSummary": {
+                    "count": 1,
+                    "failed": 1
+                },
+                "startedAt": "2026-03-14T11:47:22Z"
+            }
+        },
+        {
+            "apiVersion": "argoproj.io/v1alpha1",
+            "kind": "AnalysisRun",
+            "metadata": {
+                "annotations": {
+                    "rollout.argoproj.io/revision": "34"
+                },
+                "creationTimestamp": "2026-03-14T12:36:39Z",
+                "generation": 21,
+                "labels": {
+                    "app": "transaction",
+                    "rollout-type": "Background",
+                    "rollouts-pod-template-hash": "64f7964d79"
+                },
+                "name": "transaction-service-rollout-64f7964d79-34",
+                "namespace": "thesis",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "argoproj.io/v1alpha1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "Rollout",
+                        "name": "transaction-service-rollout",
+                        "uid": "dc46c54d-3be6-4d17-af5a-1128b55b9f67"
+                    }
+                ],
+                "resourceVersion": "3187391",
+                "uid": "7c367025-b7b0-49b5-9f5e-8c599b36258f"
+            },
+            "spec": {
+                "args": [
+                    {
+                        "name": "service-name",
+                        "value": "transaction"
+                    }
+                ],
+                "metrics": [
+                    {
+                        "failureCondition": "len(result) \u003e 0 \u0026\u0026 result[0] \u003e 20",
+                        "failureLimit": 1,
+                        "interval": "60s",
+                        "name": "latency",
+                        "provider": {
+                            "prometheus": {
+                                "address": "http://kube-prometheus-kube-prome-prometheus.monitoring.svc.cluster.local:9090",
+                                "authentication": {
+                                    "oauth2": {},
+                                    "sigv4": {}
+                                },
+                                "query": "avg(avg_over_time(k6_http_req_duration_p95{group=\"::{{args.service-name}}\", status=\"200\"}[1m]))*1000"
+                            }
+                        }
+                    }
+                ]
+            },
+            "status": {
+                "completedAt": "2026-03-14T12:55:39Z",
+                "dryRunSummary": {},
+                "message": "Metric \"latency\" assessed Failed due to failed (2) \u003e failureLimit (1)",
+                "metricResults": [
+                    {
+                        "count": 20,
+                        "failed": 2,
+                        "measurements": [
+                            {
+                                "finishedAt": "2026-03-14T12:46:39Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T12:46:39Z",
+                                "value": "[3.0217715041666637]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T12:47:39Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T12:47:39Z",
+                                "value": "[3.4130983041666605]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T12:48:39Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T12:48:39Z",
+                                "value": "[4.061131020833327]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T12:49:39Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T12:49:39Z",
+                                "value": "[5.047263581249989]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T12:50:39Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T12:50:39Z",
+                                "value": "[5.997463906249978]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T12:51:39Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T12:51:39Z",
+                                "value": "[7.7144679458332766]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T12:52:39Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T12:52:39Z",
+                                "value": "[10.62206450833329]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T12:53:39Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T12:53:39Z",
+                                "value": "[16.713643918749632]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T12:54:39Z",
+                                "phase": "Failed",
+                                "startedAt": "2026-03-14T12:54:39Z",
+                                "value": "[81.53220142083231]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T12:55:39Z",
+                                "phase": "Failed",
+                                "startedAt": "2026-03-14T12:55:39Z",
+                                "value": "[208.2854843166666]"
+                            }
+                        ],
+                        "metadata": {
+                            "ResolvedPrometheusQuery": "avg(avg_over_time(k6_http_req_duration_p95{group=\"::transaction\", status=\"200\"}[1m]))*1000"
+                        },
+                        "name": "latency",
+                        "phase": "Failed",
+                        "successful": 18
+                    }
+                ],
+                "phase": "Failed",
+                "runSummary": {
+                    "count": 1,
+                    "failed": 1
+                },
+                "startedAt": "2026-03-14T12:36:39Z"
+            }
+        },
+        {
+            "apiVersion": "argoproj.io/v1alpha1",
+            "kind": "AnalysisRun",
+            "metadata": {
+                "annotations": {
+                    "rollout.argoproj.io/revision": "36"
+                },
+                "creationTimestamp": "2026-03-14T13:22:36Z",
+                "generation": 15,
+                "labels": {
+                    "app": "transaction",
+                    "rollout-type": "Background",
+                    "rollouts-pod-template-hash": "b88d845c9"
+                },
+                "name": "transaction-service-rollout-b88d845c9-36",
+                "namespace": "thesis",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "argoproj.io/v1alpha1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "Rollout",
+                        "name": "transaction-service-rollout",
+                        "uid": "dc46c54d-3be6-4d17-af5a-1128b55b9f67"
+                    }
+                ],
+                "resourceVersion": "3199193",
+                "uid": "8566e594-79bb-4c05-8d1b-3e6c3de6574e"
+            },
+            "spec": {
+                "args": [
+                    {
+                        "name": "service-name",
+                        "value": "transaction"
+                    }
+                ],
+                "metrics": [
+                    {
+                        "failureCondition": "len(result) \u003e 0 \u0026\u0026 result[0] \u003e 15",
+                        "failureLimit": 1,
+                        "interval": "60s",
+                        "name": "latency",
+                        "provider": {
+                            "prometheus": {
+                                "address": "http://kube-prometheus-kube-prome-prometheus.monitoring.svc.cluster.local:9090",
+                                "authentication": {
+                                    "oauth2": {},
+                                    "sigv4": {}
+                                },
+                                "query": "avg(avg_over_time(k6_http_req_duration_p95{group=\"::{{args.service-name}}\", status=\"200\"}[1m]))*1000"
+                            }
+                        }
+                    }
+                ]
+            },
+            "status": {
+                "completedAt": "2026-03-14T13:35:36Z",
+                "dryRunSummary": {},
+                "message": "Metric \"latency\" assessed Failed due to failed (2) \u003e failureLimit (1)",
+                "metricResults": [
+                    {
+                        "count": 14,
+                        "failed": 2,
+                        "measurements": [
+                            {
+                                "finishedAt": "2026-03-14T13:26:36Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T13:26:36Z",
+                                "value": "[2.3277381749999995]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T13:27:36Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T13:27:36Z",
+                                "value": "[2.1906418166666652]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T13:28:36Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T13:28:36Z",
+                                "value": "[2.101579947916664]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T13:29:36Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T13:29:36Z",
+                                "value": "[2.2897823749999993]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T13:30:36Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T13:30:36Z",
+                                "value": "[2.7209603231060573]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T13:31:36Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T13:31:36Z",
+                                "value": "[3.3415100613636315]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T13:32:36Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T13:32:36Z",
+                                "value": "[4.553228193181812]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T13:33:36Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T13:33:36Z",
+                                "value": "[7.651445320454489]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T13:34:36Z",
+                                "phase": "Failed",
+                                "startedAt": "2026-03-14T13:34:36Z",
+                                "value": "[34.21315624318168]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T13:35:36Z",
+                                "phase": "Failed",
+                                "startedAt": "2026-03-14T13:35:36Z",
+                                "value": "[129.6419886318181]"
+                            }
+                        ],
+                        "metadata": {
+                            "ResolvedPrometheusQuery": "avg(avg_over_time(k6_http_req_duration_p95{group=\"::transaction\", status=\"200\"}[1m]))*1000"
+                        },
+                        "name": "latency",
+                        "phase": "Failed",
+                        "successful": 12
+                    }
+                ],
+                "phase": "Failed",
+                "runSummary": {
+                    "count": 1,
+                    "failed": 1
+                },
+                "startedAt": "2026-03-14T13:22:36Z"
+            }
+        },
+        {
+            "apiVersion": "argoproj.io/v1alpha1",
+            "kind": "AnalysisRun",
+            "metadata": {
+                "annotations": {
+                    "rollout.argoproj.io/revision": "38"
+                },
+                "creationTimestamp": "2026-03-14T14:00:58Z",
+                "generation": 16,
+                "labels": {
+                    "app": "transaction",
+                    "rollout-type": "Background",
+                    "rollouts-pod-template-hash": "b88d845c9"
+                },
+                "name": "transaction-service-rollout-b88d845c9-38",
+                "namespace": "thesis",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "argoproj.io/v1alpha1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "Rollout",
+                        "name": "transaction-service-rollout",
+                        "uid": "dc46c54d-3be6-4d17-af5a-1128b55b9f67"
+                    }
+                ],
+                "resourceVersion": "3210634",
+                "uid": "f2a80871-a348-4fe1-8aef-db6c836c22f0"
+            },
+            "spec": {
+                "args": [
+                    {
+                        "name": "service-name",
+                        "value": "transaction"
+                    }
+                ],
+                "metrics": [
+                    {
+                        "failureCondition": "len(result) \u003e 0 \u0026\u0026 result[0] \u003e 15",
+                        "failureLimit": 1,
+                        "interval": "60s",
+                        "name": "latency",
+                        "provider": {
+                            "prometheus": {
+                                "address": "http://kube-prometheus-kube-prome-prometheus.monitoring.svc.cluster.local:9090",
+                                "authentication": {
+                                    "oauth2": {},
+                                    "sigv4": {}
+                                },
+                                "query": "avg(avg_over_time(k6_http_req_duration_p95{group=\"::{{args.service-name}}\", status=\"200\"}[1m]))*1000"
+                            }
+                        }
+                    }
+                ]
+            },
+            "status": {
+                "completedAt": "2026-03-14T14:14:58Z",
+                "dryRunSummary": {},
+                "message": "Metric \"latency\" assessed Failed due to failed (2) \u003e failureLimit (1)",
+                "metricResults": [
+                    {
+                        "count": 15,
+                        "failed": 2,
+                        "measurements": [
+                            {
+                                "finishedAt": "2026-03-14T14:05:58Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T14:05:58Z",
+                                "value": "[1.5767022583333332]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T14:06:58Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T14:06:58Z",
+                                "value": "[1.5784357416666663]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T14:07:58Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T14:07:58Z",
+                                "value": "[1.7198283083333328]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T14:08:58Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T14:08:58Z",
+                                "value": "[1.9575790583333321]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T14:09:58Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T14:09:58Z",
+                                "value": "[2.288507370833333]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T14:10:58Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T14:10:58Z",
+                                "value": "[2.8041362520833304]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T14:11:58Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T14:11:58Z",
+                                "value": "[4.028927979166657]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T14:12:58Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T14:12:58Z",
+                                "value": "[11.845022754166529]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T14:13:58Z",
+                                "phase": "Failed",
+                                "startedAt": "2026-03-14T14:13:58Z",
+                                "value": "[33.47487819374998]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T14:14:58Z",
+                                "phase": "Failed",
+                                "startedAt": "2026-03-14T14:14:58Z",
+                                "value": "[42.82243210833329]"
+                            }
+                        ],
+                        "metadata": {
+                            "ResolvedPrometheusQuery": "avg(avg_over_time(k6_http_req_duration_p95{group=\"::transaction\", status=\"200\"}[1m]))*1000"
+                        },
+                        "name": "latency",
+                        "phase": "Failed",
+                        "successful": 13
+                    }
+                ],
+                "phase": "Failed",
+                "runSummary": {
+                    "count": 1,
+                    "failed": 1
+                },
+                "startedAt": "2026-03-14T14:00:58Z"
+            }
+        },
+        {
+            "apiVersion": "argoproj.io/v1alpha1",
+            "kind": "AnalysisRun",
+            "metadata": {
+                "annotations": {
+                    "rollout.argoproj.io/revision": "40"
+                },
+                "creationTimestamp": "2026-03-14T14:38:17Z",
+                "generation": 15,
+                "labels": {
+                    "app": "transaction",
+                    "rollout-type": "Background",
+                    "rollouts-pod-template-hash": "b88d845c9"
+                },
+                "name": "transaction-service-rollout-b88d845c9-40",
+                "namespace": "thesis",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "argoproj.io/v1alpha1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "Rollout",
+                        "name": "transaction-service-rollout",
+                        "uid": "dc46c54d-3be6-4d17-af5a-1128b55b9f67"
+                    }
+                ],
+                "resourceVersion": "3221247",
+                "uid": "fdd05dee-3cc2-4a8f-a3d5-64b52cc589be"
+            },
+            "spec": {
+                "args": [
+                    {
+                        "name": "service-name",
+                        "value": "transaction"
+                    }
+                ],
+                "metrics": [
+                    {
+                        "failureCondition": "len(result) \u003e 0 \u0026\u0026 result[0] \u003e 15",
+                        "failureLimit": 1,
+                        "interval": "60s",
+                        "name": "latency",
+                        "provider": {
+                            "prometheus": {
+                                "address": "http://kube-prometheus-kube-prome-prometheus.monitoring.svc.cluster.local:9090",
+                                "authentication": {
+                                    "oauth2": {},
+                                    "sigv4": {}
+                                },
+                                "query": "avg(avg_over_time(k6_http_req_duration_p95{group=\"::{{args.service-name}}\", status=\"200\"}[1m]))*1000"
+                            }
+                        }
+                    }
+                ]
+            },
+            "status": {
+                "completedAt": "2026-03-14T14:51:17Z",
+                "dryRunSummary": {},
+                "message": "Metric \"latency\" assessed Failed due to failed (2) \u003e failureLimit (1)",
+                "metricResults": [
+                    {
+                        "count": 14,
+                        "failed": 2,
+                        "measurements": [
+                            {
+                                "finishedAt": "2026-03-14T14:42:17Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T14:42:17Z",
+                                "value": "[1.6736277562500002]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T14:43:17Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T14:43:17Z",
+                                "value": "[1.6517895291666662]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T14:44:17Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T14:44:17Z",
+                                "value": "[1.6566401479166661]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T14:45:17Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T14:45:17Z",
+                                "value": "[1.878443377083332]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T14:46:17Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T14:46:17Z",
+                                "value": "[2.2317214583333325]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T14:47:17Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T14:47:17Z",
+                                "value": "[3.3921017145833283]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T14:48:17Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T14:48:17Z",
+                                "value": "[11.838730164583328]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T14:49:17Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T14:49:17Z",
+                                "value": "[14.762879393749984]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T14:50:17Z",
+                                "phase": "Failed",
+                                "startedAt": "2026-03-14T14:50:17Z",
+                                "value": "[17.74034898541666]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T14:51:17Z",
+                                "phase": "Failed",
+                                "startedAt": "2026-03-14T14:51:17Z",
+                                "value": "[20.71907894166665]"
+                            }
+                        ],
+                        "metadata": {
+                            "ResolvedPrometheusQuery": "avg(avg_over_time(k6_http_req_duration_p95{group=\"::transaction\", status=\"200\"}[1m]))*1000"
+                        },
+                        "name": "latency",
+                        "phase": "Failed",
+                        "successful": 12
+                    }
+                ],
+                "phase": "Failed",
+                "runSummary": {
+                    "count": 1,
+                    "failed": 1
+                },
+                "startedAt": "2026-03-14T14:38:17Z"
+            }
+        },
+        {
+            "apiVersion": "argoproj.io/v1alpha1",
+            "kind": "AnalysisRun",
+            "metadata": {
+                "annotations": {
+                    "rollout.argoproj.io/revision": "42"
+                },
+                "creationTimestamp": "2026-03-14T15:20:14Z",
+                "generation": 15,
+                "labels": {
+                    "app": "transaction",
+                    "rollout-type": "Background",
+                    "rollouts-pod-template-hash": "b88d845c9"
+                },
+                "name": "transaction-service-rollout-b88d845c9-42",
+                "namespace": "thesis",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "argoproj.io/v1alpha1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "Rollout",
+                        "name": "transaction-service-rollout",
+                        "uid": "dc46c54d-3be6-4d17-af5a-1128b55b9f67"
+                    }
+                ],
+                "resourceVersion": "3233488",
+                "uid": "e7379c3a-9acc-47b1-b122-074472d525b9"
+            },
+            "spec": {
+                "args": [
+                    {
+                        "name": "service-name",
+                        "value": "transaction"
+                    }
+                ],
+                "metrics": [
+                    {
+                        "failureCondition": "len(result) \u003e 0 \u0026\u0026 result[0] \u003e 15",
+                        "failureLimit": 1,
+                        "interval": "60s",
+                        "name": "latency",
+                        "provider": {
+                            "prometheus": {
+                                "address": "http://kube-prometheus-kube-prome-prometheus.monitoring.svc.cluster.local:9090",
+                                "authentication": {
+                                    "oauth2": {},
+                                    "sigv4": {}
+                                },
+                                "query": "avg(avg_over_time(k6_http_req_duration_p95{group=\"::{{args.service-name}}\", status=\"200\"}[1m]))*1000"
+                            }
+                        }
+                    }
+                ]
+            },
+            "status": {
+                "completedAt": "2026-03-14T15:33:14Z",
+                "dryRunSummary": {},
+                "message": "Metric \"latency\" assessed Failed due to failed (2) \u003e failureLimit (1)",
+                "metricResults": [
+                    {
+                        "count": 14,
+                        "failed": 2,
+                        "measurements": [
+                            {
+                                "finishedAt": "2026-03-14T15:24:14Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T15:24:14Z",
+                                "value": "[2.107024979166666]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T15:25:14Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T15:25:14Z",
+                                "value": "[2.008088262499999]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T15:26:14Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T15:26:14Z",
+                                "value": "[1.954852860416666]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T15:27:14Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T15:27:14Z",
+                                "value": "[2.1791078333333322]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T15:28:14Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T15:28:14Z",
+                                "value": "[2.5002803062499988]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T15:29:14Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T15:29:14Z",
+                                "value": "[2.9086820249999974]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T15:30:14Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T15:30:14Z",
+                                "value": "[3.5575644979166605]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T15:31:14Z",
+                                "phase": "Successful",
+                                "startedAt": "2026-03-14T15:31:14Z",
+                                "value": "[5.002182233333309]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T15:32:14Z",
+                                "phase": "Failed",
+                                "startedAt": "2026-03-14T15:32:14Z",
+                                "value": "[36.02492264166614]"
+                            },
+                            {
+                                "finishedAt": "2026-03-14T15:33:14Z",
+                                "phase": "Failed",
+                                "startedAt": "2026-03-14T15:33:14Z",
+                                "value": "[151.51238893958322]"
+                            }
+                        ],
+                        "metadata": {
+                            "ResolvedPrometheusQuery": "avg(avg_over_time(k6_http_req_duration_p95{group=\"::transaction\", status=\"200\"}[1m]))*1000"
+                        },
+                        "name": "latency",
+                        "phase": "Failed",
+                        "successful": 12
+                    }
+                ],
+                "phase": "Failed",
+                "runSummary": {
+                    "count": 1,
+                    "failed": 1
+                },
+                "startedAt": "2026-03-14T15:20:14Z"
+            }
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": "",
+        "selfLink": ""
+    }
+}

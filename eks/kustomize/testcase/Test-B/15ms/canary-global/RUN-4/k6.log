@@ -1,0 +1,440 @@
+time="2026-03-14T15:18:41Z" level=warning msg="Insufficient VUs, reached 200 active VUs and cannot initialize more" executor=constant-arrival-rate scenario=baseline_load
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": EOF"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": EOF"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": EOF"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": EOF"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": EOF"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": EOF"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": EOF"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": EOF"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": EOF"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": EOF"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": EOF"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:18Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:18Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:18Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:18Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:18Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:18Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 6471288 3595.152673/s
+    checks_succeeded...: 66.66%  4314192 out of 6471288
+    checks_failed......: 33.33%  2157096 out of 6471288
+
+    ✓ shop service response status is 200
+    ✗ shop version stable
+      ↳  50% — ✓ 548169 / ✗ 530395
+    ✗ shop version canary
+      ↳  49% — ✓ 530395 / ✗ 548169
+    ✓ transaction service response status is 200
+    ✗ transaction version stable
+      ↳  97% — ✓ 1048125 / ✗ 30407
+    ✗ transaction version canary
+      ↳  2% — ✓ 30407 / ✗ 1048125
+
+    CUSTOM
+    shop_version_count.................: 1078564 599.201001/s
+    shop_version_distribution..........: 100.00% 1078564 out of 1078564
+    transaction_version_count..........: 1078532 599.183223/s
+    transaction_version_distribution...: 100.00% 1078532 out of 1078532
+
+    HTTP
+    http_req_blocked...................: avg=5.1µs   min=0s       med=2.65µs  max=49.72ms p(90)=4.38µs  p(95)=5.03µs  
+    http_req_connecting................: avg=830ns   min=0s       med=0s      max=49.68ms p(90)=0s      p(95)=0s      
+    http_req_duration..................: avg=9.52ms  min=0s       med=1.11ms  max=2.87s   p(90)=1.83ms  p(95)=3.84ms  
+      { expected_response:true }.......: avg=9.51ms  min=876.72µs med=1.11ms  max=2.87s   p(90)=1.83ms  p(95)=3.84ms  
+    http_req_failed....................: 0.00%   32 out of 2157128
+    http_req_receiving.................: avg=48.77µs min=0s       med=23.26µs max=90.73ms p(90)=89.65µs p(95)=127.64µs
+    http_req_sending...................: avg=66.62µs min=0s       med=7.43µs  max=1.77s   p(90)=16.88µs p(95)=26.5µs  
+    http_req_tls_handshaking...........: avg=0s      min=0s       med=0s      max=0s      p(90)=0s      p(95)=0s      
+    http_req_waiting...................: avg=9.4ms   min=0s       med=1.06ms  max=2.64s   p(90)=1.74ms  p(95)=3.68ms  
+    http_reqs..........................: 2157128 1198.402002/s
+
+    EXECUTION
+    dropped_iterations.................: 1437    0.798332/s
+    iteration_duration.................: avg=19.27ms min=1.89ms   med=2.49ms  max=2.87s   p(90)=5.08ms  p(95)=20.82ms 
+    iterations.........................: 1078564 599.201001/s
+    vus................................: 2       min=0                  max=200
+    vus_max............................: 200     min=38                 max=200
+
+    NETWORK
+    data_received......................: 259 MB  144 kB/s
+    data_sent..........................: 216 MB  120 kB/s
+
+
+  █ SCENARIO: baseline_load 
+
+    checks_total.......: 6471288 3595.152673/s
+    checks_succeeded...: 66.66%  4314192 out of 6471288
+    checks_failed......: 33.33%  2157096 out of 6471288
+
+    ✓ shop service response status is 200
+    ✗ shop version stable
+      ↳  50% — ✓ 548169 / ✗ 530395
+    ✗ shop version canary
+      ↳  49% — ✓ 530395 / ✗ 548169
+    ✓ transaction service response status is 200
+    ✗ transaction version stable
+      ↳  97% — ✓ 1048125 / ✗ 30407
+    ✗ transaction version canary
+      ↳  2% — ✓ 30407 / ✗ 1048125
+
+    CUSTOM
+    shop_version_count.................: 1078564 599.201001/s
+    shop_version_distribution..........: 100.00% 1078564 out of 1078564
+    transaction_version_count..........: 1078532 599.183223/s
+    transaction_version_distribution...: 100.00% 1078532 out of 1078532
+
+    HTTP
+    http_req_blocked...................: avg=5.1µs   min=0s     med=2.65µs  max=49.72ms p(90)=4.38µs  p(95)=5.03µs  
+    http_req_connecting................: avg=830ns   min=0s     med=0s      max=49.68ms p(90)=0s      p(95)=0s      
+    http_req_duration..................: avg=9.52ms  min=0s     med=1.11ms  max=2.87s   p(90)=1.83ms  p(95)=3.84ms  
+    http_req_failed....................: 0.00%   32 out of 2157128
+    http_req_receiving.................: avg=48.77µs min=0s     med=23.26µs max=90.73ms p(90)=89.65µs p(95)=127.64µs
+    http_req_sending...................: avg=66.62µs min=0s     med=7.43µs  max=1.77s   p(90)=16.88µs p(95)=26.5µs  
+    http_req_tls_handshaking...........: avg=0s      min=0s     med=0s      max=0s      p(90)=0s      p(95)=0s      
+    http_req_waiting...................: avg=9.4ms   min=0s     med=1.06ms  max=2.64s   p(90)=1.74ms  p(95)=3.68ms  
+    http_reqs..........................: 2157128 1198.402002/s
+
+    EXECUTION
+    dropped_iterations.................: 1437    0.798332/s
+    iteration_duration.................: avg=19.27ms min=1.89ms med=2.49ms  max=2.87s   p(90)=5.08ms  p(95)=20.82ms 
+    iterations.........................: 1078564 599.201001/s
+
+    NETWORK
+    data_received......................: 259 MB  144 kB/s
+    data_sent..........................: 216 MB  120 kB/s
+
+    ↳ GROUP: shop 
+
+      checks_total.......: 3235692 1797.603003/s
+      checks_succeeded...: 66.66%  2157128 out of 3235692
+      checks_failed......: 33.33%  1078564 out of 3235692
+
+      ✓ shop service response status is 200
+      ✗ shop version stable
+          ↳  50% — ✓ 548169 / ✗ 530395
+      ✗ shop version canary
+          ↳  49% — ✓ 530395 / ✗ 548169
+
+      CUSTOM
+      shop_version_count..........: 1078564 599.201001/s
+      shop_version_distribution...: 100.00% 1078564 out of 1078564
+
+      HTTP
+      http_req_blocked............: avg=5.2µs   min=1.11µs   med=3.15µs  max=48.6ms   p(90)=4.84µs  p(95)=5.43µs  
+      http_req_connecting.........: avg=571ns   min=0s       med=0s      max=48.56ms  p(90)=0s      p(95)=0s      
+      http_req_duration...........: avg=3.5ms   min=888.9µs  med=1.11ms  max=973.34ms p(90)=1.78ms  p(95)=3.37ms  
+      http_req_failed.............: 0.00%   0 out of 1078564
+      http_req_receiving..........: avg=50.2µs  min=4.5µs    med=23.87µs max=84.67ms  p(90)=87.08µs p(95)=123.35µs
+      http_req_sending............: avg=16.26µs min=2.83µs   med=8.25µs  max=58.93ms  p(90)=17.48µs p(95)=23.33µs 
+      http_req_tls_handshaking....: avg=0s      min=0s       med=0s      max=0s       p(90)=0s      p(95)=0s      
+      http_req_waiting............: avg=3.44ms  min=872.43µs med=1.05ms  max=973.31ms p(90)=1.7ms   p(95)=3.24ms  
+      http_reqs...................: 1078564 599.201001/s
+
+    ↳ GROUP: transaction 
+
+      checks_total.......: 3235596 1797.54967/s
+      checks_succeeded...: 66.66%  2157064 out of 3235596
+      checks_failed......: 33.33%  1078532 out of 3235596
+
+      ✓ transaction service response status is 200
+      ✗ transaction version stable
+          ↳  97% — ✓ 1048125 / ✗ 30407
+      ✗ transaction version canary
+          ↳  2% — ✓ 30407 / ✗ 1048125
+
+      CUSTOM
+      transaction_version_count..........: 1078532 599.183223/s
+      transaction_version_distribution...: 100.00% 1078532 out of 1078532
+
+      HTTP
+      http_req_blocked...................: avg=4.99µs   min=0s med=2.14µs  max=49.72ms p(90)=3.18µs  p(95)=3.6µs   
+      http_req_connecting................: avg=1.09µs   min=0s med=0s      max=49.68ms p(90)=0s      p(95)=0s      
+      http_req_duration..................: avg=15.53ms  min=0s med=1.12ms  max=2.87s   p(90)=1.89ms  p(95)=4.63ms  
+      http_req_failed....................: 0.00%   32 out of 1078564
+      http_req_receiving.................: avg=47.33µs  min=0s med=22.56µs max=90.73ms p(90)=92.06µs p(95)=132.07µs
+      http_req_sending...................: avg=116.99µs min=0s med=6.78µs  max=1.77s   p(90)=16.07µs p(95)=35.13µs 
+      http_req_tls_handshaking...........: avg=0s       min=0s med=0s      max=0s      p(90)=0s      p(95)=0s      
+      http_req_waiting...................: avg=15.37ms  min=0s med=1.06ms  max=2.64s   p(90)=1.79ms  p(95)=4.43ms  
+      http_reqs..........................: 1078564 599.201001/s
+
+
+
+time="2026-03-14T15:18:41Z" level=warning msg="Insufficient VUs, reached 200 active VUs and cannot initialize more" executor=constant-arrival-rate scenario=baseline_load
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": EOF"
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": EOF"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": EOF"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": EOF"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": EOF"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": EOF"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": EOF"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": EOF"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": EOF"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": EOF"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:17Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:17Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:18Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:18Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:18Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:18Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:18Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:18Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+time="2026-03-14T15:32:18Z" level=warning msg="Request Failed" error="Get \"http://transaction-service.thesis.svc.cluster.local/pay\": dial tcp 10.100.199.238:80: connect: connection refused"
+time="2026-03-14T15:32:18Z" level=error msg="TypeError: Cannot read property 'match' of undefined or null\n\tat file:///test/test.js:46:39(8)\n\tat go.k6.io/k6/internal/js/modules/k6.(*K6).Group-fm (native)\n\tat default (file:///test/test.js:43:10(11))\n" executor=constant-arrival-rate scenario=baseline_load source=stacktrace
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 6471315 3595.168038/s
+    checks_succeeded...: 66.66%  4314210 out of 6471315
+    checks_failed......: 33.33%  2157105 out of 6471315
+
+    ✓ shop service response status is 200
+    ✗ shop version stable
+      ↳  52% — ✓ 567607 / ✗ 510965
+    ✗ shop version canary
+      ↳  47% — ✓ 510965 / ✗ 567607
+    ✓ transaction service response status is 200
+    ✗ transaction version stable
+      ↳  97% — ✓ 1046796 / ✗ 31737
+    ✗ transaction version canary
+      ↳  2% — ✓ 31737 / ✗ 1046796
+
+    CUSTOM
+    shop_version_count.................: 1078572 599.205506/s
+    shop_version_distribution..........: 100.00% 1078572 out of 1078572
+    transaction_version_count..........: 1078533 599.18384/s
+    transaction_version_distribution...: 100.00% 1078533 out of 1078533
+
+    HTTP
+    http_req_blocked...................: avg=4.87µs  min=0s       med=2.62µs  max=63.74ms p(90)=4.34µs  p(95)=5.01µs  
+    http_req_connecting................: avg=697ns   min=0s       med=0s      max=62.04ms p(90)=0s      p(95)=0s      
+    http_req_duration..................: avg=9.27ms  min=0s       med=1.11ms  max=2.9s    p(90)=1.8ms   p(95)=3.52ms  
+      { expected_response:true }.......: avg=9.26ms  min=877.37µs med=1.11ms  max=2.9s    p(90)=1.8ms   p(95)=3.52ms  
+    http_req_failed....................: 0.00%   39 out of 2157144
+    http_req_receiving.................: avg=47.27µs min=0s       med=23.13µs max=73.52ms p(90)=89.62µs p(95)=127.04µs
+    http_req_sending...................: avg=56.36µs min=0s       med=7.35µs  max=1.82s   p(90)=16.63µs p(95)=25.49µs 
+    http_req_tls_handshaking...........: avg=0s      min=0s       med=0s      max=0s      p(90)=0s      p(95)=0s      
+    http_req_waiting...................: avg=9.16ms  min=0s       med=1.06ms  max=2.61s   p(90)=1.72ms  p(95)=3.39ms  
+    http_reqs..........................: 2157144 1198.411013/s
+
+    EXECUTION
+    dropped_iterations.................: 1429    0.793887/s
+    iteration_duration.................: avg=18.76ms min=1.94ms   med=2.49ms  max=2.91s   p(90)=4.82ms  p(95)=23.05ms 
+    iterations.........................: 1078572 599.205506/s
+    vus................................: 2       min=0                  max=199
+    vus_max............................: 200     min=37                 max=200
+
+    NETWORK
+    data_received......................: 259 MB  144 kB/s
+    data_sent..........................: 216 MB  120 kB/s
+
+
+  █ SCENARIO: baseline_load 
+
+    checks_total.......: 6471315 3595.168038/s
+    checks_succeeded...: 66.66%  4314210 out of 6471315
+    checks_failed......: 33.33%  2157105 out of 6471315
+
+    ✓ shop service response status is 200
+    ✗ shop version stable
+      ↳  52% — ✓ 567607 / ✗ 510965
+    ✗ shop version canary
+      ↳  47% — ✓ 510965 / ✗ 567607
+    ✓ transaction service response status is 200
+    ✗ transaction version stable
+      ↳  97% — ✓ 1046796 / ✗ 31737
+    ✗ transaction version canary
+      ↳  2% — ✓ 31737 / ✗ 1046796
+
+    CUSTOM
+    shop_version_count.................: 1078572 599.205506/s
+    shop_version_distribution..........: 100.00% 1078572 out of 1078572
+    transaction_version_count..........: 1078533 599.18384/s
+    transaction_version_distribution...: 100.00% 1078533 out of 1078533
+
+    HTTP
+    http_req_blocked...................: avg=4.87µs  min=0s     med=2.62µs  max=63.74ms p(90)=4.34µs  p(95)=5.01µs  
+    http_req_connecting................: avg=697ns   min=0s     med=0s      max=62.04ms p(90)=0s      p(95)=0s      
+    http_req_duration..................: avg=9.27ms  min=0s     med=1.11ms  max=2.9s    p(90)=1.8ms   p(95)=3.52ms  
+    http_req_failed....................: 0.00%   39 out of 2157144
+    http_req_receiving.................: avg=47.27µs min=0s     med=23.13µs max=73.52ms p(90)=89.62µs p(95)=127.04µs
+    http_req_sending...................: avg=56.36µs min=0s     med=7.35µs  max=1.82s   p(90)=16.63µs p(95)=25.49µs 
+    http_req_tls_handshaking...........: avg=0s      min=0s     med=0s      max=0s      p(90)=0s      p(95)=0s      
+    http_req_waiting...................: avg=9.16ms  min=0s     med=1.06ms  max=2.61s   p(90)=1.72ms  p(95)=3.39ms  
+    http_reqs..........................: 2157144 1198.411013/s
+
+    EXECUTION
+    dropped_iterations.................: 1429    0.793887/s
+    iteration_duration.................: avg=18.76ms min=1.94ms med=2.49ms  max=2.91s   p(90)=4.82ms  p(95)=23.05ms 
+    iterations.........................: 1078572 599.205506/s
+
+    NETWORK
+    data_received......................: 259 MB  144 kB/s
+    data_sent..........................: 216 MB  120 kB/s
+
+    ↳ GROUP: shop 
+
+      checks_total.......: 3235716 1797.616519/s
+      checks_succeeded...: 66.66%  2157144 out of 3235716
+      checks_failed......: 33.33%  1078572 out of 3235716
+
+      ✓ shop service response status is 200
+      ✗ shop version stable
+          ↳  52% — ✓ 567607 / ✗ 510965
+      ✗ shop version canary
+          ↳  47% — ✓ 510965 / ✗ 567607
+
+      CUSTOM
+      shop_version_count..........: 1078572 599.205506/s
+      shop_version_distribution...: 100.00% 1078572 out of 1078572
+
+      HTTP
+      http_req_blocked............: avg=5.42µs  min=1.06µs   med=3.11µs  max=63.74ms  p(90)=4.81µs  p(95)=5.4µs   
+      http_req_connecting.........: avg=752ns   min=0s       med=0s      max=62.04ms  p(90)=0s      p(95)=0s      
+      http_req_duration...........: avg=3.46ms  min=883.8µs  med=1.11ms  max=973.61ms p(90)=1.77ms  p(95)=3.14ms  
+      http_req_failed.............: 0.00%   0 out of 1078572
+      http_req_receiving..........: avg=48.51µs min=4.66µs   med=23.96µs max=73.52ms  p(90)=89.31µs p(95)=125.47µs
+      http_req_sending............: avg=15.18µs min=2.85µs   med=8.16µs  max=117.48ms p(90)=17.16µs p(95)=22.54µs 
+      http_req_tls_handshaking....: avg=0s      min=0s       med=0s      max=0s       p(90)=0s      p(95)=0s      
+      http_req_waiting............: avg=3.4ms   min=871.54µs med=1.05ms  max=973.51ms p(90)=1.68ms  p(95)=3.03ms  
+      http_reqs...................: 1078572 599.205506/s
+
+    ↳ GROUP: transaction 
+
+      checks_total.......: 3235599 1797.551519/s
+      checks_succeeded...: 66.66%  2157066 out of 3235599
+      checks_failed......: 33.33%  1078533 out of 3235599
+
+      ✓ transaction service response status is 200
+      ✗ transaction version stable
+          ↳  97% — ✓ 1046796 / ✗ 31737
+      ✗ transaction version canary
+          ↳  2% — ✓ 31737 / ✗ 1046796
+
+      CUSTOM
+      transaction_version_count..........: 1078533 599.18384/s
+      transaction_version_distribution...: 100.00% 1078533 out of 1078533
+
+      HTTP
+      http_req_blocked...................: avg=4.31µs  min=0s med=2.12µs  max=49.16ms p(90)=3.17µs  p(95)=3.58µs  
+      http_req_connecting................: avg=643ns   min=0s med=0s      max=49.11ms p(90)=0s      p(95)=0s      
+      http_req_duration..................: avg=15.07ms min=0s med=1.12ms  max=2.9s    p(90)=1.85ms  p(95)=4.18ms  
+      http_req_failed....................: 0.00%   39 out of 1078572
+      http_req_receiving.................: avg=46.02µs min=0s med=22.22µs max=69.16ms p(90)=89.95µs p(95)=128.78µs
+      http_req_sending...................: avg=97.54µs min=0s med=6.71µs  max=1.82s   p(90)=15.86µs p(95)=33.23µs 
+      http_req_tls_handshaking...........: avg=0s      min=0s med=0s      max=0s      p(90)=0s      p(95)=0s      
+      http_req_waiting...................: avg=14.93ms min=0s med=1.06ms  max=2.61s   p(90)=1.76ms  p(95)=4.01ms  
+      http_reqs..........................: 1078572 599.205506/s
+
+
+
