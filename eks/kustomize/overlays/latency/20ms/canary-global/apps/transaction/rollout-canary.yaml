@@ -47,7 +47,7 @@ spec:
             - name: ERROR_RATE
               value: "0"
             - name: LATENCY
-              value: "0.04"
+              value: "0.02"
             - name: JAVA_TOOL_OPTIONS
               value: "-Xmx512m -Xms256m"
           resources:
