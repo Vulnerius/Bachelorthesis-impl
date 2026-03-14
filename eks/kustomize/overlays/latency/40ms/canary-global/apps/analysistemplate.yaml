@@ -1,0 +1,19 @@
+--- # Szenario B - Global
+apiVersion: argoproj.io/v1alpha1
+kind: AnalysisTemplate
+metadata:
+  name: latency-check
+  namespace: thesis
+spec:
+  args:
+    - name: service-name
+  metrics:
+    - name: latency
+      interval: 60s
+      failureLimit: 1
+      failureCondition: len(result) > 0 && result[0] > 20
+      provider:
+        prometheus:
+          address: http://kube-prometheus-kube-prome-prometheus.monitoring.svc.cluster.local:9090
+          query: |
+            avg(avg_over_time(k6_http_req_duration_p95{group="::{{args.service-name}}", status="200"}[1m]))*1000

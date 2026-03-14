@@ -1,0 +1,21 @@
+--- # Szenario A
+apiVersion: argoproj.io/v1alpha1
+kind: AnalysisTemplate
+metadata:
+  name: error-rate-check
+  namespace: thesis
+spec:
+  args:
+    - name: latest-hash
+  metrics:
+    - name: error-rate
+      interval: 60s
+      failureLimit: 1
+      failureCondition: len(result) > 0 && result[0] > 1
+      provider:
+        prometheus:
+          address: http://kube-prometheus-kube-prome-prometheus.monitoring.svc.cluster.local:9090
+          query: |
+            (sum(rate(ktor_http_server_requests_seconds_count{status="500", pod=~".*{{args.latest-hash}}.*"}[1m])) 
+              /
+            (sum(rate(ktor_http_server_requests_seconds_count{pod=~".*{{args.latest-hash}}.*"}[1m])))) * 100

@@ -1,0 +1,78 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: transaction-service-rollout
+  namespace: thesis
+spec:
+  replicas: 3
+  minReadySeconds: 20
+  strategy:
+    canary:
+      analysis:
+        templates:
+          - templateName: error-rate-check
+        args:
+          - name: latest-hash
+            valueFrom:
+              podTemplateHashValue: Latest
+      steps:
+        - setWeight: 10
+        - pause: { duration: 5m }
+        - setWeight: 50
+        - pause: { duration: 5m }
+        - setWeight: 75
+        - pause: { duration: 5m }
+        - setWeight: 100
+        - pause: { duration: 5m }
+  selector:
+    matchLabels:
+      app: transaction
+  template:
+    metadata:
+      labels:
+        app: transaction
+        version: canary
+    spec:
+      nodeSelector:
+        role: app-node
+      containers:
+        - name: transaction
+          image: ghcr.io/vulnerius/transaction-service:v1.1.1
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+          env:
+            - name: VERSION
+              value: "canary"
+            - name: ERROR_RATE
+              value: "0"
+            - name: LATENCY
+              value: "0.04"
+            - name: JAVA_TOOL_OPTIONS
+              value: "-Xmx512m -Xms256m"
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "512Mi"
+            limits:
+              cpu: "250m"
+              memory: "1Gi"
+          readinessProbe:
+            httpGet:
+              path: /ready
+              port: 8080
+            initialDelaySeconds: 10
+            periodSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 10
+            periodSeconds: 3
+          lifecycle:
+            preStop:
+              exec:
+                command: [ "/bin/sh", "-c", "sleep 20" ]
+      imagePullSecrets:
+        - name: ghcr-image-pull-secret
