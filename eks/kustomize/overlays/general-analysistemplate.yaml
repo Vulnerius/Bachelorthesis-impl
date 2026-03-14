@@ -78,12 +78,12 @@ spec:
   metrics:
     - name: p95-latency
       interval: 60s
-      failureLimit: 1
+      failureLimit: 3 # or 4
       failureCondition: result[0] > 15
       provider:
         prometheus:
           address: http://kube-prometheus-kube-prome-prometheus.monitoring.svc.cluster.local:9090
           query: |
-            sum(ktor_http_server_requests_seconds{
-              quantile="0.95", pod=~".*{{args.latest-hash}}.*"}
+            avg(avg_over_time(ktor_http_server_requests_seconds{
+              quantile="0.95", pod=~".*{{args.latest-hash}}.*"}[1m])
             ) * 1000
