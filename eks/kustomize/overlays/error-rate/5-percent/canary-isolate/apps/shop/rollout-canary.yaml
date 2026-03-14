@@ -9,12 +9,12 @@ spec:
   minReadySeconds: 20
   strategy:
     canary:
-      analysis:
-        templates:
-          - templateName: error-rate-check
-        args:
-          - name: service-name
-            value: shop
+#      analysis:
+#        templates:
+#          - templateName: error-rate-check
+#        args:
+#          - name: service-name
+#            value: shop
       steps:
         - setWeight: 10
         - pause: { duration: 5m }
