@@ -57,7 +57,7 @@ spec:
     - name: p95-latency
       interval: 60s
       failureLimit: 1
-      failureCondition: result[0] > 20
+      failureCondition: result[0] > 15
       provider:
         prometheus:
           address: http://kube-prometheus-kube-prome-prometheus.monitoring.svc.cluster.local:9090
@@ -79,7 +79,7 @@ spec:
     - name: p95-latency
       interval: 60s
       failureLimit: 1
-      failureCondition: result[0] > 20
+      failureCondition: result[0] > 15
       provider:
         prometheus:
           address: http://kube-prometheus-kube-prome-prometheus.monitoring.svc.cluster.local:9090

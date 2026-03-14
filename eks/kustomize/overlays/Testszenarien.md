@@ -20,4 +20,4 @@ Im zweiten Versuchsdurchlauf wird die Fehlerrate auf 5% gesetzt.
 
 Obwohl das 90. und 99. Perzentil als SLO beschrieben wurden, wird für das Testszenario das 95. Perzentil als Maßstab gewählt.
 
-Im Versuchslauf wird die doppelte Latenz zum SLO eingefügt.
+Im Versuchslauf wird die SLO Latenz zusätzlich eingefügt.

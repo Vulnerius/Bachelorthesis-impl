@@ -1,4 +1,4 @@
---- # Szenario B - Global
+--- # Szenario B - Isolate
 apiVersion: argoproj.io/v1alpha1
 kind: AnalysisTemplate
 metadata:
@@ -6,14 +6,16 @@ metadata:
   namespace: thesis
 spec:
   args:
-    - name: service-name
+    - name: latest-hash
   metrics:
     - name: latency
       interval: 60s
       failureLimit: 1
-      failureCondition: len(result) > 0 && result[0] > 20
+      failureCondition: len(result) > 0 && result[0] > 15
       provider:
         prometheus:
           address: http://kube-prometheus-kube-prome-prometheus.monitoring.svc.cluster.local:9090
           query: |
-            avg(avg_over_time(k6_http_req_duration_p95{group="::{{args.service-name}}", status="200"}[1m]))*1000
+            sum(ktor_http_server_requests_seconds{
+              quantile="0.95", pod=~".*{{args.latest-hash}}.*"}
+            ) * 1000

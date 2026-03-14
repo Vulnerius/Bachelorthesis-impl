@@ -11,10 +11,11 @@ spec:
     canary:
       analysis:
         templates:
-          - templateName: latency-check
+          - templateName: error-rate-check
         args:
-          - name: service-name
-            value: transaction
+          - name: latest-hash
+            valueFrom:
+              podTemplateHashValue: Latest
       steps:
         - setWeight: 10
         - pause: { duration: 5m }
@@ -47,7 +48,7 @@ spec:
             - name: ERROR_RATE
               value: "0"
             - name: LATENCY
-              value: "0.02"
+              value: "0.015"
             - name: JAVA_TOOL_OPTIONS
               value: "-Xmx512m -Xms256m"
           resources:
