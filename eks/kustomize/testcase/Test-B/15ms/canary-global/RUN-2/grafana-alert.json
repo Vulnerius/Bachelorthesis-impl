@@ -1,4 +1,4 @@
 {
-  "firingAt" : "",
-  "full-line" : ""
+  "firingAt" : "2026-03-14 15:15:00",
+  "full-line" : "Alerting\ntransaction-latency - A=44.607701, C=1.000000\n2026-03-14 15:15:00"
 }
