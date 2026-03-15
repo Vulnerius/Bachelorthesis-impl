@@ -52,7 +52,7 @@ Diese Arbeit ist während der initialen 6 Monate AWS Free-Tier entstanden.
 | 14.03.  | 19:52            | 39.74$  | -0.26$                |   |
 | 15.03.  | 04:19            | 34.91$  | -4.83$                |   |
 | 15.03.  | 12:01            | 30.63$  | -4.28$                |   |
-| Gesamt: | 8 Tage 7Stunden  | 102.23$ |                       |   |
+| Gesamt: | 8 Tage 7Stunden  |         | -102.23$              |   |
 
 ### Cost Analyze by Service
 ![aws-cost-overview](docs-without-code/aws-cost-overview.png)
