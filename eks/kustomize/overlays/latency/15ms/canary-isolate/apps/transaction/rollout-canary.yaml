@@ -11,7 +11,7 @@ spec:
     canary:
       analysis:
         templates:
-          - templateName: error-rate-check
+          - templateName: latency-check
         args:
           - name: latest-hash
             valueFrom:

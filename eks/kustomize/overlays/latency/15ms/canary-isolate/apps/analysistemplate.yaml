@@ -17,5 +17,5 @@ spec:
           address: http://kube-prometheus-kube-prome-prometheus.monitoring.svc.cluster.local:9090
           query: |
             avg(avg_over_time(ktor_http_server_requests_seconds{
-              quantile="0.95", pod=~".*{{args.latest-hash}}.*"}[1m])
-            ) * 1000
+              quantile="0.95", pod=~".*{{args.latest-hash}}.*", status="200", route="/pay"
+            }[1m])) * 1000
