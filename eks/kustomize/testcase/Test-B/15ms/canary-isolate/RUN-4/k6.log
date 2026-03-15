@@ -1,0 +1,296 @@
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 6479790 3599.878348/s
+    checks_succeeded...: 66.66%  4319860 out of 6479790
+    checks_failed......: 33.33%  2159930 out of 6479790
+
+    ✓ shop service response status is 200
+    ✗ shop version stable
+      ↳  49% — ✓ 530941 / ✗ 549024
+    ✗ shop version canary
+      ↳  50% — ✓ 549024 / ✗ 530941
+    ✓ transaction service response status is 200
+    ✗ transaction version stable
+      ↳  98% — ✓ 1066717 / ✗ 13248
+    ✗ transaction version canary
+      ↳  1% — ✓ 13248 / ✗ 1066717
+
+    CUSTOM
+    shop_version_count.................: 1079965 599.979725/s
+    shop_version_distribution..........: 100.00% 1079965 out of 1079965
+    transaction_version_count..........: 1079965 599.979725/s
+    transaction_version_distribution...: 100.00% 1079965 out of 1079965
+
+    HTTP
+    http_req_blocked...................: avg=3.97µs  min=795ns    med=2.43µs  max=60.5ms   p(90)=4.03µs  p(95)=4.71µs  
+    http_req_connecting................: avg=189ns   min=0s       med=0s      max=26.25ms  p(90)=0s      p(95)=0s      
+    http_req_duration..................: avg=1.65ms  min=878.29µs med=1.1ms   max=269.57ms p(90)=1.59ms  p(95)=2.54ms  
+      { expected_response:true }.......: avg=1.65ms  min=878.29µs med=1.1ms   max=269.57ms p(90)=1.59ms  p(95)=2.54ms  
+    http_req_failed....................: 0.00%   0 out of 2159930
+    http_req_receiving.................: avg=45.19µs min=4.52µs   med=23.65µs max=50.56ms  p(90)=82.42µs p(95)=119.59µs
+    http_req_sending...................: avg=14.4µs  min=2.62µs   med=6.7µs   max=63.08ms  p(90)=15.37µs p(95)=22.13µs 
+    http_req_tls_handshaking...........: avg=0s      min=0s       med=0s      max=0s       p(90)=0s      p(95)=0s      
+    http_req_waiting...................: avg=1.59ms  min=864.19µs med=1.05ms  max=269.55ms p(90)=1.51ms  p(95)=2.42ms  
+    http_reqs..........................: 2159930 1199.959449/s
+
+    EXECUTION
+    dropped_iterations.................: 36      0.02/s
+    iteration_duration.................: avg=3.52ms  min=1.92ms   med=2.43ms  max=279.21ms p(90)=3.72ms  p(95)=6.9ms   
+    iterations.........................: 1079965 599.979725/s
+    vus................................: 1       min=0                  max=33
+    vus_max............................: 47      min=38                 max=47
+
+    NETWORK
+    data_received......................: 259 MB  144 kB/s
+    data_sent..........................: 216 MB  120 kB/s
+
+
+  █ SCENARIO: baseline_load 
+
+    checks_total.......: 6479790 3599.878348/s
+    checks_succeeded...: 66.66%  4319860 out of 6479790
+    checks_failed......: 33.33%  2159930 out of 6479790
+
+    ✓ shop service response status is 200
+    ✗ shop version stable
+      ↳  49% — ✓ 530941 / ✗ 549024
+    ✗ shop version canary
+      ↳  50% — ✓ 549024 / ✗ 530941
+    ✓ transaction service response status is 200
+    ✗ transaction version stable
+      ↳  98% — ✓ 1066717 / ✗ 13248
+    ✗ transaction version canary
+      ↳  1% — ✓ 13248 / ✗ 1066717
+
+    CUSTOM
+    shop_version_count.................: 1079965 599.979725/s
+    shop_version_distribution..........: 100.00% 1079965 out of 1079965
+    transaction_version_count..........: 1079965 599.979725/s
+    transaction_version_distribution...: 100.00% 1079965 out of 1079965
+
+    HTTP
+    http_req_blocked...................: avg=3.97µs  min=795ns    med=2.43µs  max=60.5ms   p(90)=4.03µs  p(95)=4.71µs  
+    http_req_connecting................: avg=189ns   min=0s       med=0s      max=26.25ms  p(90)=0s      p(95)=0s      
+    http_req_duration..................: avg=1.65ms  min=878.29µs med=1.1ms   max=269.57ms p(90)=1.59ms  p(95)=2.54ms  
+    http_req_failed....................: 0.00%   0 out of 2159930
+    http_req_receiving.................: avg=45.19µs min=4.52µs   med=23.65µs max=50.56ms  p(90)=82.42µs p(95)=119.59µs
+    http_req_sending...................: avg=14.4µs  min=2.62µs   med=6.7µs   max=63.08ms  p(90)=15.37µs p(95)=22.13µs 
+    http_req_tls_handshaking...........: avg=0s      min=0s       med=0s      max=0s       p(90)=0s      p(95)=0s      
+    http_req_waiting...................: avg=1.59ms  min=864.19µs med=1.05ms  max=269.55ms p(90)=1.51ms  p(95)=2.42ms  
+    http_reqs..........................: 2159930 1199.959449/s
+
+    EXECUTION
+    dropped_iterations.................: 36      0.02/s
+    iteration_duration.................: avg=3.52ms  min=1.92ms   med=2.43ms  max=279.21ms p(90)=3.72ms  p(95)=6.9ms   
+    iterations.........................: 1079965 599.979725/s
+
+    NETWORK
+    data_received......................: 259 MB  144 kB/s
+    data_sent..........................: 216 MB  120 kB/s
+
+    ↳ GROUP: shop 
+
+      checks_total.......: 3239895 1799.939174/s
+      checks_succeeded...: 66.66%  2159930 out of 3239895
+      checks_failed......: 33.33%  1079965 out of 3239895
+
+      ✓ shop service response status is 200
+      ✗ shop version stable
+          ↳  49% — ✓ 530941 / ✗ 549024
+      ✗ shop version canary
+          ↳  50% — ✓ 549024 / ✗ 530941
+
+      CUSTOM
+      shop_version_count..........: 1079965 599.979725/s
+      shop_version_distribution...: 100.00% 1079965 out of 1079965
+
+      HTTP
+      http_req_blocked............: avg=4.71µs  min=976ns    med=2.84µs  max=40.13ms  p(90)=4.54µs  p(95)=5.07µs  
+      http_req_connecting.........: avg=243ns   min=0s       med=0s      max=25.56ms  p(90)=0s      p(95)=0s      
+      http_req_duration...........: avg=1.52ms  min=891.44µs med=1.1ms   max=269.57ms p(90)=1.59ms  p(95)=2.47ms  
+      http_req_failed.............: 0.00%   0 out of 1079965
+      http_req_receiving..........: avg=44.53µs min=4.52µs   med=23.95µs max=42.66ms  p(90)=80.09µs p(95)=115.95µs
+      http_req_sending............: avg=13.67µs min=2.62µs   med=7.38µs  max=63.08ms  p(90)=16.08µs p(95)=20.98µs 
+      http_req_tls_handshaking....: avg=0s      min=0s       med=0s      max=0s       p(90)=0s      p(95)=0s      
+      http_req_waiting............: avg=1.46ms  min=872.52µs med=1.05ms  max=269.55ms p(90)=1.51ms  p(95)=2.37ms  
+      http_reqs...................: 1079965 599.979725/s
+
+    ↳ GROUP: transaction 
+
+      checks_total.......: 3239895 1799.939174/s
+      checks_succeeded...: 66.66%  2159930 out of 3239895
+      checks_failed......: 33.33%  1079965 out of 3239895
+
+      ✓ transaction service response status is 200
+      ✗ transaction version stable
+          ↳  98% — ✓ 1066717 / ✗ 13248
+      ✗ transaction version canary
+          ↳  1% — ✓ 13248 / ✗ 1066717
+
+      CUSTOM
+      transaction_version_count..........: 1079965 599.979725/s
+      transaction_version_distribution...: 100.00% 1079965 out of 1079965
+
+      HTTP
+      http_req_blocked...................: avg=3.23µs  min=795ns    med=2.02µs max=60.5ms   p(90)=3.06µs  p(95)=3.42µs  
+      http_req_connecting................: avg=135ns   min=0s       med=0s     max=26.25ms  p(90)=0s      p(95)=0s      
+      http_req_duration..................: avg=1.79ms  min=878.29µs med=1.1ms  max=225.7ms  p(90)=1.59ms  p(95)=2.62ms  
+      http_req_failed....................: 0.00%   0 out of 1079965
+      http_req_receiving.................: avg=45.85µs min=4.54µs   med=23.3µs max=50.56ms  p(90)=84.62µs p(95)=123.56µs
+      http_req_sending...................: avg=15.13µs min=2.7µs    med=6.15µs max=46.52ms  p(90)=14.33µs p(95)=25.32µs 
+      http_req_tls_handshaking...........: avg=0s      min=0s       med=0s     max=0s       p(90)=0s      p(95)=0s      
+      http_req_waiting...................: avg=1.72ms  min=864.19µs med=1.05ms max=225.55ms p(90)=1.51ms  p(95)=2.48ms  
+      http_reqs..........................: 1079965 599.979725/s
+
+
+
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 6479508 3599.720403/s
+    checks_succeeded...: 66.66%  4319672 out of 6479508
+    checks_failed......: 33.33%  2159836 out of 6479508
+
+    ✓ shop service response status is 200
+    ✗ shop version stable
+      ↳  53% — ✓ 578204 / ✗ 501714
+    ✗ shop version canary
+      ↳  46% — ✓ 501714 / ✗ 578204
+    ✓ transaction service response status is 200
+    ✗ transaction version stable
+      ↳  99% — ✓ 1076473 / ✗ 3445
+    ✗ transaction version canary
+      ↳  0% — ✓ 3445 / ✗ 1076473
+
+    CUSTOM
+    shop_version_count.................: 1079918 599.9534/s
+    shop_version_distribution..........: 100.00% 1079918 out of 1079918
+    transaction_version_count..........: 1079918 599.9534/s
+    transaction_version_distribution...: 100.00% 1079918 out of 1079918
+
+    HTTP
+    http_req_blocked...................: avg=3.97µs  min=819ns    med=2.41µs  max=62.45ms  p(90)=4.01µs  p(95)=4.71µs  
+    http_req_connecting................: avg=304ns   min=0s       med=0s      max=61.85ms  p(90)=0s      p(95)=0s      
+    http_req_duration..................: avg=1.46ms  min=880.65µs med=1.09ms  max=270.92ms p(90)=1.53ms  p(95)=2.21ms  
+      { expected_response:true }.......: avg=1.46ms  min=880.65µs med=1.09ms  max=270.92ms p(90)=1.53ms  p(95)=2.21ms  
+    http_req_failed....................: 0.00%   0 out of 2159836
+    http_req_receiving.................: avg=43.94µs min=4.42µs   med=23.36µs max=53.44ms  p(90)=81.58µs p(95)=118.78µs
+    http_req_sending...................: avg=13.81µs min=2.65µs   med=6.64µs  max=42.21ms  p(90)=15.43µs p(95)=22.55µs 
+    http_req_tls_handshaking...........: avg=0s      min=0s       med=0s      max=0s       p(90)=0s      p(95)=0s      
+    http_req_waiting...................: avg=1.4ms   min=864.15µs med=1.04ms  max=270.18ms p(90)=1.45ms  p(95)=2.1ms   
+    http_reqs..........................: 2159836 1199.906801/s
+
+    EXECUTION
+    dropped_iterations.................: 83      0.046111/s
+    iteration_duration.................: avg=3.14ms  min=1.89ms   med=2.42ms  max=277.8ms  p(90)=3.43ms  p(95)=5.36ms  
+    iterations.........................: 1079918 599.9534/s
+    vus................................: 2       min=0                  max=29
+    vus_max............................: 51      min=37                 max=51
+
+    NETWORK
+    data_received......................: 259 MB  144 kB/s
+    data_sent..........................: 216 MB  120 kB/s
+
+
+  █ SCENARIO: baseline_load 
+
+    checks_total.......: 6479508 3599.720403/s
+    checks_succeeded...: 66.66%  4319672 out of 6479508
+    checks_failed......: 33.33%  2159836 out of 6479508
+
+    ✓ shop service response status is 200
+    ✗ shop version stable
+      ↳  53% — ✓ 578204 / ✗ 501714
+    ✗ shop version canary
+      ↳  46% — ✓ 501714 / ✗ 578204
+    ✓ transaction service response status is 200
+    ✗ transaction version stable
+      ↳  99% — ✓ 1076473 / ✗ 3445
+    ✗ transaction version canary
+      ↳  0% — ✓ 3445 / ✗ 1076473
+
+    CUSTOM
+    shop_version_count.................: 1079918 599.9534/s
+    shop_version_distribution..........: 100.00% 1079918 out of 1079918
+    transaction_version_count..........: 1079918 599.9534/s
+    transaction_version_distribution...: 100.00% 1079918 out of 1079918
+
+    HTTP
+    http_req_blocked...................: avg=3.97µs  min=819ns    med=2.41µs  max=62.45ms  p(90)=4.01µs  p(95)=4.71µs  
+    http_req_connecting................: avg=304ns   min=0s       med=0s      max=61.85ms  p(90)=0s      p(95)=0s      
+    http_req_duration..................: avg=1.46ms  min=880.65µs med=1.09ms  max=270.92ms p(90)=1.53ms  p(95)=2.21ms  
+    http_req_failed....................: 0.00%   0 out of 2159836
+    http_req_receiving.................: avg=43.94µs min=4.42µs   med=23.36µs max=53.44ms  p(90)=81.58µs p(95)=118.78µs
+    http_req_sending...................: avg=13.81µs min=2.65µs   med=6.64µs  max=42.21ms  p(90)=15.43µs p(95)=22.55µs 
+    http_req_tls_handshaking...........: avg=0s      min=0s       med=0s      max=0s       p(90)=0s      p(95)=0s      
+    http_req_waiting...................: avg=1.4ms   min=864.15µs med=1.04ms  max=270.18ms p(90)=1.45ms  p(95)=2.1ms   
+    http_reqs..........................: 2159836 1199.906801/s
+
+    EXECUTION
+    dropped_iterations.................: 83      0.046111/s
+    iteration_duration.................: avg=3.14ms  min=1.89ms   med=2.42ms  max=277.8ms  p(90)=3.43ms  p(95)=5.36ms  
+    iterations.........................: 1079918 599.9534/s
+
+    NETWORK
+    data_received......................: 259 MB  144 kB/s
+    data_sent..........................: 216 MB  120 kB/s
+
+    ↳ GROUP: shop 
+
+      checks_total.......: 3239754 1799.860201/s
+      checks_succeeded...: 66.66%  2159836 out of 3239754
+      checks_failed......: 33.33%  1079918 out of 3239754
+
+      ✓ shop service response status is 200
+      ✗ shop version stable
+          ↳  53% — ✓ 578204 / ✗ 501714
+      ✗ shop version canary
+          ↳  46% — ✓ 501714 / ✗ 578204
+
+      CUSTOM
+      shop_version_count..........: 1079918 599.9534/s
+      shop_version_distribution...: 100.00% 1079918 out of 1079918
+
+      HTTP
+      http_req_blocked............: avg=4.57µs  min=936ns    med=2.83µs  max=61.88ms  p(90)=4.54µs  p(95)=5.05µs  
+      http_req_connecting.........: avg=373ns   min=0s       med=0s      max=61.85ms  p(90)=0s      p(95)=0s      
+      http_req_duration...........: avg=1.5ms   min=880.65µs med=1.1ms   max=270.92ms p(90)=1.56ms  p(95)=2.33ms  
+      http_req_failed.............: 0.00%   0 out of 1079918
+      http_req_receiving..........: avg=43.42µs min=4.46µs   med=23.74µs max=51.56ms  p(90)=79.48µs p(95)=115.26µs
+      http_req_sending............: avg=13.25µs min=2.79µs   med=7.34µs  max=42.21ms  p(90)=15.86µs p(95)=20.66µs 
+      http_req_tls_handshaking....: avg=0s      min=0s       med=0s      max=0s       p(90)=0s      p(95)=0s      
+      http_req_waiting............: avg=1.44ms  min=864.15µs med=1.04ms  max=270.18ms p(90)=1.49ms  p(95)=2.23ms  
+      http_reqs...................: 1079918 599.9534/s
+
+    ↳ GROUP: transaction 
+
+      checks_total.......: 3239754 1799.860201/s
+      checks_succeeded...: 66.66%  2159836 out of 3239754
+      checks_failed......: 33.33%  1079918 out of 3239754
+
+      ✓ transaction service response status is 200
+      ✗ transaction version stable
+          ↳  99% — ✓ 1076473 / ✗ 3445
+      ✗ transaction version canary
+          ↳  0% — ✓ 3445 / ✗ 1076473
+
+      CUSTOM
+      transaction_version_count..........: 1079918 599.9534/s
+      transaction_version_distribution...: 100.00% 1079918 out of 1079918
+
+      HTTP
+      http_req_blocked...................: avg=3.36µs  min=819ns    med=1.99µs  max=62.45ms  p(90)=3.04µs  p(95)=3.39µs  
+      http_req_connecting................: avg=235ns   min=0s       med=0s      max=61.4ms   p(90)=0s      p(95)=0s      
+      http_req_duration..................: avg=1.43ms  min=882.84µs med=1.09ms  max=139.06ms p(90)=1.49ms  p(95)=2.1ms   
+      http_req_failed....................: 0.00%   0 out of 1079918
+      http_req_receiving.................: avg=44.46µs min=4.42µs   med=22.94µs max=53.44ms  p(90)=83.63µs p(95)=122.37µs
+      http_req_sending...................: avg=14.36µs min=2.65µs   med=6.06µs  max=32.19ms  p(90)=14.73µs p(95)=28.65µs 
+      http_req_tls_handshaking...........: avg=0s      min=0s       med=0s      max=0s       p(90)=0s      p(95)=0s      
+      http_req_waiting...................: avg=1.37ms  min=867.68µs med=1.04ms  max=139.03ms p(90)=1.42ms  p(95)=1.98ms  
+      http_reqs..........................: 1079918 599.9534/s
+
+
+

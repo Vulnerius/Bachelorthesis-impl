@@ -1,0 +1,231 @@
+{
+    "apiVersion": "argoproj.io/v1alpha1",
+    "kind": "Rollout",
+    "metadata": {
+        "annotations": {
+            "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"argoproj.io/v1alpha1\",\"kind\":\"Rollout\",\"metadata\":{\"annotations\":{},\"name\":\"transaction-service-rollout\",\"namespace\":\"thesis\"},\"spec\":{\"minReadySeconds\":20,\"replicas\":3,\"selector\":{\"matchLabels\":{\"app\":\"transaction\"}},\"strategy\":{\"canary\":{\"analysis\":{\"args\":[{\"name\":\"latest-hash\",\"valueFrom\":{\"podTemplateHashValue\":\"Latest\"}}],\"templates\":[{\"templateName\":\"latency-check\"}]},\"steps\":[{\"setWeight\":10},{\"pause\":{\"duration\":\"5m\"}},{\"setWeight\":50},{\"pause\":{\"duration\":\"5m\"}},{\"setWeight\":75},{\"pause\":{\"duration\":\"5m\"}},{\"setWeight\":100},{\"pause\":{\"duration\":\"5m\"}}]}},\"template\":{\"metadata\":{\"labels\":{\"app\":\"transaction\",\"version\":\"canary\"}},\"spec\":{\"containers\":[{\"env\":[{\"name\":\"VERSION\",\"value\":\"canary\"},{\"name\":\"ERROR_RATE\",\"value\":\"0\"},{\"name\":\"LATENCY\",\"value\":\"0.015\"},{\"name\":\"JAVA_TOOL_OPTIONS\",\"value\":\"-Xmx512m -Xms256m\"}],\"image\":\"ghcr.io/vulnerius/transaction-service:v1.1.1\",\"imagePullPolicy\":\"IfNotPresent\",\"lifecycle\":{\"preStop\":{\"exec\":{\"command\":[\"/bin/sh\",\"-c\",\"sleep 20\"]}}},\"livenessProbe\":{\"httpGet\":{\"path\":\"/health\",\"port\":8080},\"initialDelaySeconds\":10,\"periodSeconds\":3},\"name\":\"transaction\",\"ports\":[{\"containerPort\":8080}],\"readinessProbe\":{\"httpGet\":{\"path\":\"/ready\",\"port\":8080},\"initialDelaySeconds\":10,\"periodSeconds\":5},\"resources\":{\"limits\":{\"cpu\":\"250m\",\"memory\":\"1Gi\"},\"requests\":{\"cpu\":\"100m\",\"memory\":\"512Mi\"}}}],\"imagePullSecrets\":[{\"name\":\"ghcr-image-pull-secret\"}],\"nodeSelector\":{\"role\":\"app-node\"}}}}}\n",
+            "rollout.argoproj.io/revision": "82"
+        },
+        "creationTimestamp": "2026-03-12T22:50:12Z",
+        "generation": 110,
+        "name": "transaction-service-rollout",
+        "namespace": "thesis",
+        "resourceVersion": "3554816",
+        "uid": "dc46c54d-3be6-4d17-af5a-1128b55b9f67"
+    },
+    "spec": {
+        "minReadySeconds": 20,
+        "replicas": 3,
+        "selector": {
+            "matchLabels": {
+                "app": "transaction"
+            }
+        },
+        "strategy": {
+            "canary": {
+                "analysis": {
+                    "analysisRunMetadata": {},
+                    "args": [
+                        {
+                            "name": "latest-hash",
+                            "valueFrom": {
+                                "podTemplateHashValue": "Latest"
+                            }
+                        }
+                    ],
+                    "templates": [
+                        {
+                            "templateName": "latency-check"
+                        }
+                    ]
+                },
+                "steps": [
+                    {
+                        "setWeight": 10
+                    },
+                    {
+                        "pause": {
+                            "duration": "5m"
+                        }
+                    },
+                    {
+                        "setWeight": 50
+                    },
+                    {
+                        "pause": {
+                            "duration": "5m"
+                        }
+                    },
+                    {
+                        "setWeight": 75
+                    },
+                    {
+                        "pause": {
+                            "duration": "5m"
+                        }
+                    },
+                    {
+                        "setWeight": 100
+                    },
+                    {
+                        "pause": {
+                            "duration": "5m"
+                        }
+                    }
+                ]
+            }
+        },
+        "template": {
+            "metadata": {
+                "labels": {
+                    "app": "transaction",
+                    "version": "canary"
+                }
+            },
+            "spec": {
+                "containers": [
+                    {
+                        "env": [
+                            {
+                                "name": "VERSION",
+                                "value": "canary"
+                            },
+                            {
+                                "name": "ERROR_RATE",
+                                "value": "0"
+                            },
+                            {
+                                "name": "LATENCY",
+                                "value": "0.015"
+                            },
+                            {
+                                "name": "JAVA_TOOL_OPTIONS",
+                                "value": "-Xmx512m -Xms256m"
+                            }
+                        ],
+                        "image": "ghcr.io/vulnerius/transaction-service:v1.1.1",
+                        "imagePullPolicy": "IfNotPresent",
+                        "lifecycle": {
+                            "preStop": {
+                                "exec": {
+                                    "command": [
+                                        "/bin/sh",
+                                        "-c",
+                                        "sleep 20"
+                                    ]
+                                }
+                            }
+                        },
+                        "livenessProbe": {
+                            "httpGet": {
+                                "path": "/health",
+                                "port": 8080
+                            },
+                            "initialDelaySeconds": 10,
+                            "periodSeconds": 3
+                        },
+                        "name": "transaction",
+                        "ports": [
+                            {
+                                "containerPort": 8080,
+                                "protocol": "TCP"
+                            }
+                        ],
+                        "readinessProbe": {
+                            "httpGet": {
+                                "path": "/ready",
+                                "port": 8080
+                            },
+                            "initialDelaySeconds": 10,
+                            "periodSeconds": 5
+                        },
+                        "resources": {
+                            "limits": {
+                                "cpu": "250m",
+                                "memory": "1Gi"
+                            },
+                            "requests": {
+                                "cpu": "100m",
+                                "memory": "512Mi"
+                            }
+                        }
+                    }
+                ],
+                "imagePullSecrets": [
+                    {
+                        "name": "ghcr-image-pull-secret"
+                    }
+                ],
+                "nodeSelector": {
+                    "role": "app-node"
+                }
+            }
+        }
+    },
+    "status": {
+        "HPAReplicas": 3,
+        "abort": true,
+        "abortedAt": "2026-03-15T10:22:32Z",
+        "availableReplicas": 3,
+        "blueGreen": {},
+        "canary": {
+            "currentBackgroundAnalysisRunStatus": {
+                "message": "Metric \"latency\" assessed Failed due to failed (2) \u003e failureLimit (1)",
+                "name": "transaction-service-rollout-b88d845c9-82",
+                "status": "Failed"
+            }
+        },
+        "conditions": [
+            {
+                "lastTransitionTime": "2026-03-14T19:48:18Z",
+                "lastUpdateTime": "2026-03-14T19:48:18Z",
+                "message": "Rollout has minimum availability",
+                "reason": "AvailableReason",
+                "status": "True",
+                "type": "Available"
+            },
+            {
+                "lastTransitionTime": "2026-03-15T10:14:32Z",
+                "lastUpdateTime": "2026-03-15T10:14:32Z",
+                "message": "Rollout is not healthy",
+                "reason": "RolloutHealthy",
+                "status": "False",
+                "type": "Healthy"
+            },
+            {
+                "lastTransitionTime": "2026-03-15T10:14:32Z",
+                "lastUpdateTime": "2026-03-15T10:14:32Z",
+                "message": "RolloutCompleted",
+                "reason": "RolloutCompleted",
+                "status": "False",
+                "type": "Completed"
+            },
+            {
+                "lastTransitionTime": "2026-03-15T10:20:47Z",
+                "lastUpdateTime": "2026-03-15T10:20:47Z",
+                "message": "Rollout is paused",
+                "reason": "RolloutPaused",
+                "status": "True",
+                "type": "Paused"
+            },
+            {
+                "lastTransitionTime": "2026-03-15T10:22:32Z",
+                "lastUpdateTime": "2026-03-15T10:22:32Z",
+                "message": "Rollout aborted update to revision 82: Metric \"latency\" assessed Failed due to failed (2) \u003e failureLimit (1)",
+                "reason": "RolloutAborted",
+                "status": "False",
+                "type": "Progressing"
+            }
+        ],
+        "currentPodHash": "b88d845c9",
+        "currentStepHash": "74cc54dc74",
+        "currentStepIndex": 0,
+        "message": "RolloutAborted: Rollout aborted update to revision 82: Metric \"latency\" assessed Failed due to failed (2) \u003e failureLimit (1)",
+        "observedGeneration": "110",
+        "phase": "Degraded",
+        "readyReplicas": 3,
+        "replicas": 3,
+        "selector": "app=transaction",
+        "stableRS": "57b6648fb7"
+    }
+}
