@@ -1,0 +1,3474 @@
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:42:21Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "shop-service-rollout-78d9d67677-72d8r",
+                "namespace": "thesis",
+                "resourceVersion": "3374439",
+                "uid": "aaa4bf21-bf8a-47a5-b290-7faaf240d5d2"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:42:21Z",
+            "message": "Successfully assigned thesis/shop-service-rollout-78d9d67677-72d8r to ip-192-168-151-30.eu-central-1.compute.internal",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:42:21Z",
+                "name": "shop-service-rollout-78d9d67677-72d8r.189cd9b8d4be589b",
+                "namespace": "thesis",
+                "resourceVersion": "3374443",
+                "uid": "7d839131-e6b2-4c2e-8a16-1d6ca8b63de1"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:42:21Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-78d9d67677-72d8r",
+                "namespace": "thesis",
+                "resourceVersion": "3374440",
+                "uid": "aaa4bf21-bf8a-47a5-b290-7faaf240d5d2"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:42:21Z",
+            "message": "Container image \"ghcr.io/vulnerius/shop-service:v1.1.1\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:42:21Z",
+                "name": "shop-service-rollout-78d9d67677-72d8r.189cd9b8f7499ece",
+                "namespace": "thesis",
+                "resourceVersion": "3374450",
+                "uid": "b977a6ca-ff74-4bf1-b9b6-785820fa188c"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:42:21Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-78d9d67677-72d8r",
+                "namespace": "thesis",
+                "resourceVersion": "3374440",
+                "uid": "aaa4bf21-bf8a-47a5-b290-7faaf240d5d2"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:42:21Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:42:21Z",
+                "name": "shop-service-rollout-78d9d67677-72d8r.189cd9b8f887bb58",
+                "namespace": "thesis",
+                "resourceVersion": "3374451",
+                "uid": "838933b0-0687-4317-b30d-e78ca6e7bf1f"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:42:21Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-78d9d67677-72d8r",
+                "namespace": "thesis",
+                "resourceVersion": "3374440",
+                "uid": "aaa4bf21-bf8a-47a5-b290-7faaf240d5d2"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:42:21Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:42:21Z",
+                "name": "shop-service-rollout-78d9d67677-72d8r.189cd9b8fd28b666",
+                "namespace": "thesis",
+                "resourceVersion": "3374454",
+                "uid": "41e012df-be3c-4205-aa6a-2e787d21fd73"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:46:29Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-78d9d67677-72d8r",
+                "namespace": "thesis",
+                "resourceVersion": "3374440",
+                "uid": "aaa4bf21-bf8a-47a5-b290-7faaf240d5d2"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:46:29Z",
+            "message": "Readiness probe failed: Get \"http://192.168.154.255:8080/ready\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:46:29Z",
+                "name": "shop-service-rollout-78d9d67677-72d8r.189cd9f28dfa8e93",
+                "namespace": "thesis",
+                "resourceVersion": "3375703",
+                "uid": "1205e270-1a47-4c52-9390-f00315f8c8a4"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-15T00:04:34Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-78d9d67677-72d8r",
+                "namespace": "thesis",
+                "resourceVersion": "3374440",
+                "uid": "aaa4bf21-bf8a-47a5-b290-7faaf240d5d2"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-15T00:04:34Z",
+            "message": "Stopping container shop",
+            "metadata": {
+                "creationTimestamp": "2026-03-15T00:04:34Z",
+                "name": "shop-service-rollout-78d9d67677-72d8r.189cdaef2f82c78b",
+                "namespace": "thesis",
+                "resourceVersion": "3380944",
+                "uid": "847f3183-8dda-4bb2-a91a-6f0a024f31c9"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-15T00:04:58Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-78d9d67677-72d8r",
+                "namespace": "thesis",
+                "resourceVersion": "3374440",
+                "uid": "aaa4bf21-bf8a-47a5-b290-7faaf240d5d2"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-15T00:05:03Z",
+            "message": "Readiness probe failed: Get \"http://192.168.154.255:8080/ready\": dial tcp 192.168.154.255:8080: connect: connection refused",
+            "metadata": {
+                "creationTimestamp": "2026-03-15T00:04:58Z",
+                "name": "shop-service-rollout-78d9d67677-72d8r.189cdaf4c0c3f771",
+                "namespace": "thesis",
+                "resourceVersion": "3381080",
+                "uid": "a23cd717-45ab-4721-a2d0-79abf32a3122"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:41:17Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "shop-service-rollout-78d9d67677-d2qwj",
+                "namespace": "thesis",
+                "resourceVersion": "3374062",
+                "uid": "8e5aad4b-34f2-49c3-a48e-bd17ed03f1e0"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:41:17Z",
+            "message": "Successfully assigned thesis/shop-service-rollout-78d9d67677-d2qwj to ip-192-168-151-30.eu-central-1.compute.internal",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:41:17Z",
+                "name": "shop-service-rollout-78d9d67677-d2qwj.189cd9aa06bd1062",
+                "namespace": "thesis",
+                "resourceVersion": "3374070",
+                "uid": "2a960c4e-baa8-4c51-a1c8-a717a1af827e"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:41:18Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-78d9d67677-d2qwj",
+                "namespace": "thesis",
+                "resourceVersion": "3374066",
+                "uid": "8e5aad4b-34f2-49c3-a48e-bd17ed03f1e0"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:41:18Z",
+            "message": "Container image \"ghcr.io/vulnerius/shop-service:v1.1.1\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:41:18Z",
+                "name": "shop-service-rollout-78d9d67677-d2qwj.189cd9aa2c1d8413",
+                "namespace": "thesis",
+                "resourceVersion": "3374088",
+                "uid": "5db3e2b8-18f1-455a-a924-50dea6da498b"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:41:18Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-78d9d67677-d2qwj",
+                "namespace": "thesis",
+                "resourceVersion": "3374066",
+                "uid": "8e5aad4b-34f2-49c3-a48e-bd17ed03f1e0"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:41:18Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:41:18Z",
+                "name": "shop-service-rollout-78d9d67677-d2qwj.189cd9aa2d5739c5",
+                "namespace": "thesis",
+                "resourceVersion": "3374089",
+                "uid": "b6c71c45-1535-4eed-90f7-b5f88f2cb51a"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:41:18Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-78d9d67677-d2qwj",
+                "namespace": "thesis",
+                "resourceVersion": "3374066",
+                "uid": "8e5aad4b-34f2-49c3-a48e-bd17ed03f1e0"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:41:18Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:41:18Z",
+                "name": "shop-service-rollout-78d9d67677-d2qwj.189cd9aa31f8c22a",
+                "namespace": "thesis",
+                "resourceVersion": "3374090",
+                "uid": "8bdc0cc0-17b7-495b-8dae-a172d03c8456"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:53:22Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-78d9d67677-d2qwj",
+                "namespace": "thesis",
+                "resourceVersion": "3374066",
+                "uid": "8e5aad4b-34f2-49c3-a48e-bd17ed03f1e0"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:53:22Z",
+            "message": "Stopping container shop",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:53:22Z",
+                "name": "shop-service-rollout-78d9d67677-d2qwj.189cda52c91e32ea",
+                "namespace": "thesis",
+                "resourceVersion": "3377712",
+                "uid": "71d307a0-f250-4c4a-b96d-12a2d240ddd7"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:53:43Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-78d9d67677-d2qwj",
+                "namespace": "thesis",
+                "resourceVersion": "3374066",
+                "uid": "8e5aad4b-34f2-49c3-a48e-bd17ed03f1e0"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:53:48Z",
+            "message": "Readiness probe failed: Get \"http://192.168.143.6:8080/ready\": dial tcp 192.168.143.6:8080: connect: connection refused",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:53:43Z",
+                "name": "shop-service-rollout-78d9d67677-d2qwj.189cda57c858776b",
+                "namespace": "thesis",
+                "resourceVersion": "3377870",
+                "uid": "c7c4f0bc-c45e-4633-84c4-ea7cb3617fc0"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:14:42Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-78d9d67677-jxppl",
+                "namespace": "thesis",
+                "resourceVersion": "3358295",
+                "uid": "c595e346-4ece-4e13-abb9-a57c353887a2"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:14:42Z",
+            "message": "Stopping container shop",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:14:42Z",
+                "name": "shop-service-rollout-78d9d67677-jxppl.189cd8368d9ffdd2",
+                "namespace": "thesis",
+                "resourceVersion": "3366611",
+                "uid": "bbb6101b-6bfd-45b1-b6ee-8424bbb88265"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:15:05Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-78d9d67677-jxppl",
+                "namespace": "thesis",
+                "resourceVersion": "3358295",
+                "uid": "c595e346-4ece-4e13-abb9-a57c353887a2"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:15:10Z",
+            "message": "Readiness probe failed: Get \"http://192.168.152.84:8080/ready\": dial tcp 192.168.152.84:8080: connect: connection refused",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:15:05Z",
+                "name": "shop-service-rollout-78d9d67677-jxppl.189cd83bfbde4056",
+                "namespace": "thesis",
+                "resourceVersion": "3366748",
+                "uid": "63000edb-11a9-4866-a686-95558f22faca"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:41:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "shop-service-rollout-78d9d67677-pb2q4",
+                "namespace": "thesis",
+                "resourceVersion": "3374251",
+                "uid": "9bab3c35-5e72-4cbf-887b-d8997cca706a"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:41:49Z",
+            "message": "Successfully assigned thesis/shop-service-rollout-78d9d67677-pb2q4 to ip-192-168-151-30.eu-central-1.compute.internal",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:41:49Z",
+                "name": "shop-service-rollout-78d9d67677-pb2q4.189cd9b15ff40692",
+                "namespace": "thesis",
+                "resourceVersion": "3374255",
+                "uid": "3d787c49-095f-44da-9f2b-239f5167d0e6"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:41:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-78d9d67677-pb2q4",
+                "namespace": "thesis",
+                "resourceVersion": "3374252",
+                "uid": "9bab3c35-5e72-4cbf-887b-d8997cca706a"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:41:49Z",
+            "message": "Container image \"ghcr.io/vulnerius/shop-service:v1.1.1\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:41:49Z",
+                "name": "shop-service-rollout-78d9d67677-pb2q4.189cd9b184ec596c",
+                "namespace": "thesis",
+                "resourceVersion": "3374263",
+                "uid": "f2e0be01-25ee-4573-bc6d-312b12f2c80a"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:41:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-78d9d67677-pb2q4",
+                "namespace": "thesis",
+                "resourceVersion": "3374252",
+                "uid": "9bab3c35-5e72-4cbf-887b-d8997cca706a"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:41:49Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:41:49Z",
+                "name": "shop-service-rollout-78d9d67677-pb2q4.189cd9b1862585ac",
+                "namespace": "thesis",
+                "resourceVersion": "3374264",
+                "uid": "f82b0961-72b0-4616-afaa-51f3cc42795b"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:41:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-78d9d67677-pb2q4",
+                "namespace": "thesis",
+                "resourceVersion": "3374252",
+                "uid": "9bab3c35-5e72-4cbf-887b-d8997cca706a"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:41:49Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:41:49Z",
+                "name": "shop-service-rollout-78d9d67677-pb2q4.189cd9b18a5b2cbb",
+                "namespace": "thesis",
+                "resourceVersion": "3374267",
+                "uid": "408af615-fd12-4261-bd7d-a97654b306b7"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:59:00Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-78d9d67677-pb2q4",
+                "namespace": "thesis",
+                "resourceVersion": "3374252",
+                "uid": "9bab3c35-5e72-4cbf-887b-d8997cca706a"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:59:00Z",
+            "message": "Stopping container shop",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:59:00Z",
+                "name": "shop-service-rollout-78d9d67677-pb2q4.189cdaa18024b816",
+                "namespace": "thesis",
+                "resourceVersion": "3379381",
+                "uid": "ebf16a51-0bc9-4357-b352-4b65567889cd"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:59:20Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-78d9d67677-pb2q4",
+                "namespace": "thesis",
+                "resourceVersion": "3374252",
+                "uid": "9bab3c35-5e72-4cbf-887b-d8997cca706a"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:59:25Z",
+            "message": "Readiness probe failed: Get \"http://192.168.151.184:8080/ready\": dial tcp 192.168.151.184:8080: connect: connection refused",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:59:20Z",
+                "name": "shop-service-rollout-78d9d67677-pb2q4.189cdaa6445a8327",
+                "namespace": "thesis",
+                "resourceVersion": "3379525",
+                "uid": "fea194dc-0230-4bf2-bfd1-2a2a754f4d57"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:59:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-78d9d67677-pb2q4",
+                "namespace": "thesis",
+                "resourceVersion": "3374252",
+                "uid": "9bab3c35-5e72-4cbf-887b-d8997cca706a"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:59:31Z",
+            "message": "Readiness probe failed: Get \"http://192.168.151.184:8080/ready\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:59:31Z",
+                "name": "shop-service-rollout-78d9d67677-pb2q4.189cdaa8d3ff4b6c",
+                "namespace": "thesis",
+                "resourceVersion": "3379561",
+                "uid": "c6798e72-3d72-4aad-af4b-a30887270ba7"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:14:42Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "shop-service-rollout-78d9d67677",
+                "namespace": "thesis",
+                "resourceVersion": "3366604",
+                "uid": "82658064-f9d7-41ad-9371-b091e2967e63"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:14:42Z",
+            "message": "Deleted pod: shop-service-rollout-78d9d67677-jxppl",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:14:42Z",
+                "name": "shop-service-rollout-78d9d67677.189cd8368cba8294",
+                "namespace": "thesis",
+                "resourceVersion": "3366609",
+                "uid": "5560bfb4-f008-44af-9a0f-1079d00ade83"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:41:17Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "shop-service-rollout-78d9d67677",
+                "namespace": "thesis",
+                "resourceVersion": "3374058",
+                "uid": "82658064-f9d7-41ad-9371-b091e2967e63"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:41:17Z",
+            "message": "Created pod: shop-service-rollout-78d9d67677-d2qwj",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:41:17Z",
+                "name": "shop-service-rollout-78d9d67677.189cd9aa056dd7d8",
+                "namespace": "thesis",
+                "resourceVersion": "3374064",
+                "uid": "59fd178f-d85b-4222-a08a-d503e4b4d63c"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:41:49Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "shop-service-rollout-78d9d67677",
+                "namespace": "thesis",
+                "resourceVersion": "3374248",
+                "uid": "82658064-f9d7-41ad-9371-b091e2967e63"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:41:49Z",
+            "message": "Created pod: shop-service-rollout-78d9d67677-pb2q4",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:41:49Z",
+                "name": "shop-service-rollout-78d9d67677.189cd9b15f6e685c",
+                "namespace": "thesis",
+                "resourceVersion": "3374253",
+                "uid": "e2bda28c-931d-4d8e-80ff-ed0e61c2e161"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:42:21Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "shop-service-rollout-78d9d67677",
+                "namespace": "thesis",
+                "resourceVersion": "3374429",
+                "uid": "82658064-f9d7-41ad-9371-b091e2967e63"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:42:21Z",
+            "message": "Created pod: shop-service-rollout-78d9d67677-72d8r",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:42:21Z",
+                "name": "shop-service-rollout-78d9d67677.189cd9b8d478cab2",
+                "namespace": "thesis",
+                "resourceVersion": "3374442",
+                "uid": "cd8e4b2c-b9c9-4f78-a3ac-a11cc28d5a7c"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:53:22Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "shop-service-rollout-78d9d67677",
+                "namespace": "thesis",
+                "resourceVersion": "3377699",
+                "uid": "82658064-f9d7-41ad-9371-b091e2967e63"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:53:22Z",
+            "message": "Deleted pod: shop-service-rollout-78d9d67677-d2qwj",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:53:22Z",
+                "name": "shop-service-rollout-78d9d67677.189cda52c7737fa0",
+                "namespace": "thesis",
+                "resourceVersion": "3377703",
+                "uid": "981f839c-af36-4095-bef2-2bcf1df07cc3"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:59:00Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "shop-service-rollout-78d9d67677",
+                "namespace": "thesis",
+                "resourceVersion": "3379377",
+                "uid": "82658064-f9d7-41ad-9371-b091e2967e63"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:59:00Z",
+            "message": "Deleted pod: shop-service-rollout-78d9d67677-pb2q4",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:59:00Z",
+                "name": "shop-service-rollout-78d9d67677.189cdaa182186472",
+                "namespace": "thesis",
+                "resourceVersion": "3379385",
+                "uid": "9ab3b288-ba8d-4d36-a8fa-6fadf2a087e5"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-15T00:04:34Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "shop-service-rollout-78d9d67677",
+                "namespace": "thesis",
+                "resourceVersion": "3380942",
+                "uid": "82658064-f9d7-41ad-9371-b091e2967e63"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-15T00:04:34Z",
+            "message": "Deleted pod: shop-service-rollout-78d9d67677-72d8r",
+            "metadata": {
+                "creationTimestamp": "2026-03-15T00:04:34Z",
+                "name": "shop-service-rollout-78d9d67677.189cdaef2fdb4707",
+                "namespace": "thesis",
+                "resourceVersion": "3380949",
+                "uid": "bb3d88fc-793c-417f-a3d6-2f5547943c47"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:42:21Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-bc76fbf89-8gn2b",
+                "namespace": "thesis",
+                "resourceVersion": "3361760",
+                "uid": "020a0be8-0a35-4306-a96f-3a3ac35c0715"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:42:21Z",
+            "message": "Stopping container shop",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:42:21Z",
+                "name": "shop-service-rollout-bc76fbf89-8gn2b.189cd9b8ce942a3e",
+                "namespace": "thesis",
+                "resourceVersion": "3374428",
+                "uid": "684f1a09-351c-4650-b75f-251581b6dfcd"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:42:43Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-bc76fbf89-8gn2b",
+                "namespace": "thesis",
+                "resourceVersion": "3361760",
+                "uid": "020a0be8-0a35-4306-a96f-3a3ac35c0715"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:42:48Z",
+            "message": "Readiness probe failed: Get \"http://192.168.134.51:8080/ready\": dial tcp 192.168.134.51:8080: connect: connection refused",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:42:43Z",
+                "name": "shop-service-rollout-bc76fbf89-8gn2b.189cd9be0554716e",
+                "namespace": "thesis",
+                "resourceVersion": "3374587",
+                "uid": "3a98a302-3785-45cb-8678-57f6a4b73513"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:47:46Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "shop-service-rollout-bc76fbf89-8nhxj",
+                "namespace": "thesis",
+                "resourceVersion": "3376063",
+                "uid": "336f53c1-34e1-480d-b6c4-bffd074d1835"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:47:46Z",
+            "message": "Successfully assigned thesis/shop-service-rollout-bc76fbf89-8nhxj to ip-192-168-151-30.eu-central-1.compute.internal",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:47:46Z",
+                "name": "shop-service-rollout-bc76fbf89-8nhxj.189cda0482622bc8",
+                "namespace": "thesis",
+                "resourceVersion": "3376066",
+                "uid": "d945c4df-f303-4702-8c5f-d67057ddb3fe"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:47:46Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-bc76fbf89-8nhxj",
+                "namespace": "thesis",
+                "resourceVersion": "3376064",
+                "uid": "336f53c1-34e1-480d-b6c4-bffd074d1835"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:47:46Z",
+            "message": "Container image \"ghcr.io/vulnerius/shop-service:v1.1.1\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:47:46Z",
+                "name": "shop-service-rollout-bc76fbf89-8nhxj.189cda04a714df9a",
+                "namespace": "thesis",
+                "resourceVersion": "3376100",
+                "uid": "89bf26ab-d5ab-4aed-876e-0602cee47e9e"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:47:46Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-bc76fbf89-8nhxj",
+                "namespace": "thesis",
+                "resourceVersion": "3376064",
+                "uid": "336f53c1-34e1-480d-b6c4-bffd074d1835"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:47:46Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:47:46Z",
+                "name": "shop-service-rollout-bc76fbf89-8nhxj.189cda04a87aa7ef",
+                "namespace": "thesis",
+                "resourceVersion": "3376101",
+                "uid": "2104bac1-f8f1-4798-91b0-14f78e0b7975"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:47:46Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-bc76fbf89-8nhxj",
+                "namespace": "thesis",
+                "resourceVersion": "3376064",
+                "uid": "336f53c1-34e1-480d-b6c4-bffd074d1835"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:47:46Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:47:46Z",
+                "name": "shop-service-rollout-bc76fbf89-8nhxj.189cda04ac935cea",
+                "namespace": "thesis",
+                "resourceVersion": "3376103",
+                "uid": "1553b13d-996f-4c4d-b081-fcf1f90e5b32"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:47:58Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-bc76fbf89-8nhxj",
+                "namespace": "thesis",
+                "resourceVersion": "3376064",
+                "uid": "336f53c1-34e1-480d-b6c4-bffd074d1835"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:47:58Z",
+            "message": "Readiness probe failed: Get \"http://192.168.145.230:8080/ready\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:47:58Z",
+                "name": "shop-service-rollout-bc76fbf89-8nhxj.189cda077dcb58b0",
+                "namespace": "thesis",
+                "resourceVersion": "3376170",
+                "uid": "71b10baf-d1a5-46e3-a845-ce9e81ee98be"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:47:59Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-bc76fbf89-8nhxj",
+                "namespace": "thesis",
+                "resourceVersion": "3376064",
+                "uid": "336f53c1-34e1-480d-b6c4-bffd074d1835"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:47:59Z",
+            "message": "Liveness probe failed: Get \"http://192.168.145.230:8080/health\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:47:59Z",
+                "name": "shop-service-rollout-bc76fbf89-8nhxj.189cda079e62c48f",
+                "namespace": "thesis",
+                "resourceVersion": "3376176",
+                "uid": "6c833a43-5da4-4c19-ba3e-f099bd9aab0f"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:41:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-bc76fbf89-gzmmb",
+                "namespace": "thesis",
+                "resourceVersion": "3365067",
+                "uid": "8f385505-4048-4e6e-8832-a862e93354a4"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:41:49Z",
+            "message": "Stopping container shop",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:41:49Z",
+                "name": "shop-service-rollout-bc76fbf89-gzmmb.189cd9b15c88fbdf",
+                "namespace": "thesis",
+                "resourceVersion": "3374245",
+                "uid": "a1d07ccd-2ad2-4983-a471-41a3a8b686ff"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:42:12Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-bc76fbf89-gzmmb",
+                "namespace": "thesis",
+                "resourceVersion": "3365067",
+                "uid": "8f385505-4048-4e6e-8832-a862e93354a4"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:42:17Z",
+            "message": "Readiness probe failed: Get \"http://192.168.145.230:8080/ready\": dial tcp 192.168.145.230:8080: connect: connection refused",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:42:12Z",
+                "name": "shop-service-rollout-bc76fbf89-gzmmb.189cd9b6e4e82849",
+                "namespace": "thesis",
+                "resourceVersion": "3374404",
+                "uid": "d04029ab-a504-481e-b690-30d99e0e89e6"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:59:00Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "shop-service-rollout-bc76fbf89-lk92z",
+                "namespace": "thesis",
+                "resourceVersion": "3379388",
+                "uid": "89474dfc-f614-4802-aa2c-75d78d557a57"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:59:00Z",
+            "message": "Successfully assigned thesis/shop-service-rollout-bc76fbf89-lk92z to ip-192-168-151-30.eu-central-1.compute.internal",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:59:00Z",
+                "name": "shop-service-rollout-bc76fbf89-lk92z.189cdaa1894e9452",
+                "namespace": "thesis",
+                "resourceVersion": "3379390",
+                "uid": "c1ba21fd-b129-440a-a6ea-a8f14b0e6e58"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:59:01Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-bc76fbf89-lk92z",
+                "namespace": "thesis",
+                "resourceVersion": "3379389",
+                "uid": "89474dfc-f614-4802-aa2c-75d78d557a57"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:59:01Z",
+            "message": "Container image \"ghcr.io/vulnerius/shop-service:v1.1.1\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:59:01Z",
+                "name": "shop-service-rollout-bc76fbf89-lk92z.189cdaa1b255077a",
+                "namespace": "thesis",
+                "resourceVersion": "3379402",
+                "uid": "4a9674db-43b1-4eac-b4e1-6e95a135da56"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:59:01Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-bc76fbf89-lk92z",
+                "namespace": "thesis",
+                "resourceVersion": "3379389",
+                "uid": "89474dfc-f614-4802-aa2c-75d78d557a57"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:59:01Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:59:01Z",
+                "name": "shop-service-rollout-bc76fbf89-lk92z.189cdaa1b3f8f0fd",
+                "namespace": "thesis",
+                "resourceVersion": "3379403",
+                "uid": "ce8d8c02-116a-4b66-add4-5c89953f90e8"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:59:01Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-bc76fbf89-lk92z",
+                "namespace": "thesis",
+                "resourceVersion": "3379389",
+                "uid": "89474dfc-f614-4802-aa2c-75d78d557a57"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:59:01Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:59:01Z",
+                "name": "shop-service-rollout-bc76fbf89-lk92z.189cdaa1b89b2588",
+                "namespace": "thesis",
+                "resourceVersion": "3379404",
+                "uid": "12c14c3b-9a9e-44eb-8222-ff6cc3044202"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:59:13Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-bc76fbf89-lk92z",
+                "namespace": "thesis",
+                "resourceVersion": "3379389",
+                "uid": "89474dfc-f614-4802-aa2c-75d78d557a57"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:59:13Z",
+            "message": "Liveness probe failed: Get \"http://192.168.134.8:8080/health\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:59:13Z",
+                "name": "shop-service-rollout-bc76fbf89-lk92z.189cdaa4a2fbab0c",
+                "namespace": "thesis",
+                "resourceVersion": "3379466",
+                "uid": "57b09456-4da0-4f94-a505-ed87609a1d7b"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:42:53Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-bc76fbf89-t9hr8",
+                "namespace": "thesis",
+                "resourceVersion": "3363385",
+                "uid": "3f75604c-0e64-4d7e-addb-6ee2a6615cce"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:42:53Z",
+            "message": "Stopping container shop",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:42:53Z",
+                "name": "shop-service-rollout-bc76fbf89-t9hr8.189cd9c0421e2423",
+                "namespace": "thesis",
+                "resourceVersion": "3374621",
+                "uid": "1babe88e-4ba3-46e6-9e0b-a73173fbde7b"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:43:15Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-bc76fbf89-t9hr8",
+                "namespace": "thesis",
+                "resourceVersion": "3363385",
+                "uid": "3f75604c-0e64-4d7e-addb-6ee2a6615cce"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:43:20Z",
+            "message": "Readiness probe failed: Get \"http://192.168.158.104:8080/ready\": dial tcp 192.168.158.104:8080: connect: connection refused",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:43:15Z",
+                "name": "shop-service-rollout-bc76fbf89-t9hr8.189cd9c57f01de31",
+                "namespace": "thesis",
+                "resourceVersion": "3374754",
+                "uid": "8ac0b1e8-b6eb-45ee-be83-ef5e020a7777"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:53:22Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "shop-service-rollout-bc76fbf89-ts8xk",
+                "namespace": "thesis",
+                "resourceVersion": "3377707",
+                "uid": "898dae95-15b0-425c-aa9f-25010da189a8"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:53:22Z",
+            "message": "Successfully assigned thesis/shop-service-rollout-bc76fbf89-ts8xk to ip-192-168-151-30.eu-central-1.compute.internal",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:53:22Z",
+                "name": "shop-service-rollout-bc76fbf89-ts8xk.189cda52cf4bafe1",
+                "namespace": "thesis",
+                "resourceVersion": "3377717",
+                "uid": "0f8c53a6-0e0d-487b-a4da-8020072d2c87"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:53:23Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-bc76fbf89-ts8xk",
+                "namespace": "thesis",
+                "resourceVersion": "3377714",
+                "uid": "898dae95-15b0-425c-aa9f-25010da189a8"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:53:23Z",
+            "message": "Container image \"ghcr.io/vulnerius/shop-service:v1.1.1\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:53:23Z",
+                "name": "shop-service-rollout-bc76fbf89-ts8xk.189cda52fa83281b",
+                "namespace": "thesis",
+                "resourceVersion": "3377723",
+                "uid": "4f0ca9a1-3cf2-4763-b78e-f9fcbc892e8a"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:53:23Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-bc76fbf89-ts8xk",
+                "namespace": "thesis",
+                "resourceVersion": "3377714",
+                "uid": "898dae95-15b0-425c-aa9f-25010da189a8"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:53:23Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:53:23Z",
+                "name": "shop-service-rollout-bc76fbf89-ts8xk.189cda52fbfeef0d",
+                "namespace": "thesis",
+                "resourceVersion": "3377724",
+                "uid": "0d5fa7fe-8c7e-4006-a254-f46b7d047783"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:53:23Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-bc76fbf89-ts8xk",
+                "namespace": "thesis",
+                "resourceVersion": "3377714",
+                "uid": "898dae95-15b0-425c-aa9f-25010da189a8"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:53:23Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:53:23Z",
+                "name": "shop-service-rollout-bc76fbf89-ts8xk.189cda5301fba6ec",
+                "namespace": "thesis",
+                "resourceVersion": "3377725",
+                "uid": "31c5908c-6716-42e4-9f3e-974f6b977eed"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:53:35Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-bc76fbf89-ts8xk",
+                "namespace": "thesis",
+                "resourceVersion": "3377714",
+                "uid": "898dae95-15b0-425c-aa9f-25010da189a8"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:53:35Z",
+            "message": "Liveness probe failed: Get \"http://192.168.136.130:8080/health\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:53:35Z",
+                "name": "shop-service-rollout-bc76fbf89-ts8xk.189cda55ecd1ea80",
+                "namespace": "thesis",
+                "resourceVersion": "3377794",
+                "uid": "e2986ae5-7595-475d-b343-c8404b8413d5"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:53:36Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{shop}",
+                "kind": "Pod",
+                "name": "shop-service-rollout-bc76fbf89-ts8xk",
+                "namespace": "thesis",
+                "resourceVersion": "3377714",
+                "uid": "898dae95-15b0-425c-aa9f-25010da189a8"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:53:36Z",
+            "message": "Readiness probe failed: Get \"http://192.168.136.130:8080/ready\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:53:36Z",
+                "name": "shop-service-rollout-bc76fbf89-ts8xk.189cda55f9d52d8c",
+                "namespace": "thesis",
+                "resourceVersion": "3377796",
+                "uid": "ecfa6f7c-a961-4f20-b198-95cf5273ef2d"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:41:49Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "shop-service-rollout-bc76fbf89",
+                "namespace": "thesis",
+                "resourceVersion": "3374237",
+                "uid": "a82943ee-bc15-42bd-8448-be728256d2d9"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:41:49Z",
+            "message": "Deleted pod: shop-service-rollout-bc76fbf89-gzmmb",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:41:49Z",
+                "name": "shop-service-rollout-bc76fbf89.189cd9b15bb282c0",
+                "namespace": "thesis",
+                "resourceVersion": "3374242",
+                "uid": "f50ce028-8ded-4df0-a806-39fb132d14e4"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:42:21Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "shop-service-rollout-bc76fbf89",
+                "namespace": "thesis",
+                "resourceVersion": "3374425",
+                "uid": "a82943ee-bc15-42bd-8448-be728256d2d9"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:42:21Z",
+            "message": "Deleted pod: shop-service-rollout-bc76fbf89-8gn2b",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:42:21Z",
+                "name": "shop-service-rollout-bc76fbf89.189cd9b8cec0d721",
+                "namespace": "thesis",
+                "resourceVersion": "3374434",
+                "uid": "80d57263-939d-452a-b136-2a483613db19"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:42:53Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "shop-service-rollout-bc76fbf89",
+                "namespace": "thesis",
+                "resourceVersion": "3374615",
+                "uid": "a82943ee-bc15-42bd-8448-be728256d2d9"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:42:53Z",
+            "message": "Deleted pod: shop-service-rollout-bc76fbf89-t9hr8",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:42:53Z",
+                "name": "shop-service-rollout-bc76fbf89.189cd9c04244bdb0",
+                "namespace": "thesis",
+                "resourceVersion": "3374619",
+                "uid": "c82b4661-a61d-41d9-b2ca-7752fffd8205"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:47:46Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "shop-service-rollout-bc76fbf89",
+                "namespace": "thesis",
+                "resourceVersion": "3376062",
+                "uid": "a82943ee-bc15-42bd-8448-be728256d2d9"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:47:46Z",
+            "message": "Created pod: shop-service-rollout-bc76fbf89-8nhxj",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:47:46Z",
+                "name": "shop-service-rollout-bc76fbf89.189cda04820390db",
+                "namespace": "thesis",
+                "resourceVersion": "3376067",
+                "uid": "d29f718c-44e2-499f-beb8-d5036ec4286b"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:53:22Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "shop-service-rollout-bc76fbf89",
+                "namespace": "thesis",
+                "resourceVersion": "3377706",
+                "uid": "a82943ee-bc15-42bd-8448-be728256d2d9"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:53:22Z",
+            "message": "Created pod: shop-service-rollout-bc76fbf89-ts8xk",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:53:22Z",
+                "name": "shop-service-rollout-bc76fbf89.189cda52ca246843",
+                "namespace": "thesis",
+                "resourceVersion": "3377708",
+                "uid": "e389882c-80b1-4035-a5a5-7234a8f50453"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:59:00Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "shop-service-rollout-bc76fbf89",
+                "namespace": "thesis",
+                "resourceVersion": "3379379",
+                "uid": "a82943ee-bc15-42bd-8448-be728256d2d9"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:59:00Z",
+            "message": "Created pod: shop-service-rollout-bc76fbf89-lk92z",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:59:00Z",
+                "name": "shop-service-rollout-bc76fbf89.189cdaa18a135734",
+                "namespace": "thesis",
+                "resourceVersion": "3379393",
+                "uid": "f75f7174-608f-4a95-b82f-ebd987849613"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 16,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-13T08:55:25Z",
+            "involvedObject": {
+                "apiVersion": "argoproj.io/v1alpha1",
+                "kind": "Rollout",
+                "name": "shop-service-rollout",
+                "namespace": "thesis",
+                "resourceVersion": "3351267",
+                "uid": "a61b57fa-8ca0-481d-888c-b84e8db45a3b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:53:22Z",
+            "message": "Rollout step 2/8 completed (pause: 5m)",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T22:26:32Z",
+                "name": "shop-service-rollout.189c5abdea44f2e3",
+                "namespace": "thesis",
+                "resourceVersion": "3377697",
+                "uid": "819558cb-1572-4ae9-9bce-1c876ad1d067"
+            },
+            "reason": "RolloutStepCompleted",
+            "reportingComponent": "rollouts-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "rollouts-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 16,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-13T09:00:58Z",
+            "involvedObject": {
+                "apiVersion": "argoproj.io/v1alpha1",
+                "kind": "Rollout",
+                "name": "shop-service-rollout",
+                "namespace": "thesis",
+                "resourceVersion": "3352912",
+                "uid": "a61b57fa-8ca0-481d-888c-b84e8db45a3b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:59:00Z",
+            "message": "Rollout step 4/8 completed (pause: 5m)",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T22:32:09Z",
+                "name": "shop-service-rollout.189c5b0b7305a12a",
+                "namespace": "thesis",
+                "resourceVersion": "3379378",
+                "uid": "3da3fe55-c3af-4699-bb15-9514718238e8"
+            },
+            "reason": "RolloutStepCompleted",
+            "reportingComponent": "rollouts-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "rollouts-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 16,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-13T09:06:35Z",
+            "involvedObject": {
+                "apiVersion": "argoproj.io/v1alpha1",
+                "kind": "Rollout",
+                "name": "shop-service-rollout",
+                "namespace": "thesis",
+                "resourceVersion": "3354571",
+                "uid": "a61b57fa-8ca0-481d-888c-b84e8db45a3b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-15T00:04:34Z",
+            "message": "Rollout step 6/8 completed (pause: 5m)",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T22:37:46Z",
+                "name": "shop-service-rollout.189c5b59e9919b38",
+                "namespace": "thesis",
+                "resourceVersion": "3380940",
+                "uid": "6ec9fc8b-dcb0-4bba-b975-c8404cfab868"
+            },
+            "reason": "RolloutStepCompleted",
+            "reportingComponent": "rollouts-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "rollouts-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 16,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-13T09:11:35Z",
+            "involvedObject": {
+                "apiVersion": "argoproj.io/v1alpha1",
+                "kind": "Rollout",
+                "name": "shop-service-rollout",
+                "namespace": "thesis",
+                "resourceVersion": "3355951",
+                "uid": "a61b57fa-8ca0-481d-888c-b84e8db45a3b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-15T00:09:34Z",
+            "message": "Rollout step 8/8 completed (pause: 5m)",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T22:42:46Z",
+                "name": "shop-service-rollout.189c5b9fc2cf2408",
+                "namespace": "thesis",
+                "resourceVersion": "3382325",
+                "uid": "c2cdfed4-c893-4b50-959f-6eae5f305bc8"
+            },
+            "reason": "RolloutStepCompleted",
+            "reportingComponent": "rollouts-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "rollouts-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:41:17Z",
+            "involvedObject": {
+                "apiVersion": "argoproj.io/v1alpha1",
+                "kind": "Rollout",
+                "name": "shop-service-rollout",
+                "namespace": "thesis",
+                "resourceVersion": "3374055",
+                "uid": "a61b57fa-8ca0-481d-888c-b84e8db45a3b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:41:17Z",
+            "message": "Rollout updated to revision 59",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:41:17Z",
+                "name": "shop-service-rollout.189cd9aa01b96ad2",
+                "namespace": "thesis",
+                "resourceVersion": "3374057",
+                "uid": "72c5e78f-5bce-4af3-ae3b-2908671b9770"
+            },
+            "reason": "RolloutUpdated",
+            "reportingComponent": "rollouts-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "rollouts-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:41:17Z",
+            "involvedObject": {
+                "apiVersion": "argoproj.io/v1alpha1",
+                "kind": "Rollout",
+                "name": "shop-service-rollout",
+                "namespace": "thesis",
+                "resourceVersion": "3374055",
+                "uid": "a61b57fa-8ca0-481d-888c-b84e8db45a3b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:41:17Z",
+            "message": "Rollout not completed, started update to revision 59 (78d9d67677)",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:41:17Z",
+                "name": "shop-service-rollout.189cd9aa01c256b6",
+                "namespace": "thesis",
+                "resourceVersion": "3374060",
+                "uid": "b5e15cf5-9a9e-4cb4-9a4f-ff65875028c1"
+            },
+            "reason": "RolloutNotCompleted",
+            "reportingComponent": "rollouts-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "rollouts-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:41:17Z",
+            "involvedObject": {
+                "apiVersion": "argoproj.io/v1alpha1",
+                "kind": "Rollout",
+                "name": "shop-service-rollout",
+                "namespace": "thesis",
+                "resourceVersion": "3374056",
+                "uid": "a61b57fa-8ca0-481d-888c-b84e8db45a3b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:41:17Z",
+            "message": "Scaled up ReplicaSet shop-service-rollout-78d9d67677 (revision 59) from 0 to 1",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:41:17Z",
+                "name": "shop-service-rollout.189cd9aa03f0a239",
+                "namespace": "thesis",
+                "resourceVersion": "3374061",
+                "uid": "929cb197-ee52-4fc7-a101-2d8a845223bd"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "rollouts-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "rollouts-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:41:49Z",
+            "involvedObject": {
+                "apiVersion": "argoproj.io/v1alpha1",
+                "kind": "Rollout",
+                "name": "shop-service-rollout",
+                "namespace": "thesis",
+                "resourceVersion": "3374148",
+                "uid": "a61b57fa-8ca0-481d-888c-b84e8db45a3b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:41:49Z",
+            "message": "Scaled down ReplicaSet shop-service-rollout-bc76fbf89 (revision 58) from 3 to 2",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:41:49Z",
+                "name": "shop-service-rollout.189cd9b15a86662c",
+                "namespace": "thesis",
+                "resourceVersion": "3374244",
+                "uid": "fb11a965-337b-4dbf-86a3-883097d64005"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "rollouts-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "rollouts-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:41:49Z",
+            "involvedObject": {
+                "apiVersion": "argoproj.io/v1alpha1",
+                "kind": "Rollout",
+                "name": "shop-service-rollout",
+                "namespace": "thesis",
+                "resourceVersion": "3374239",
+                "uid": "a61b57fa-8ca0-481d-888c-b84e8db45a3b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:41:49Z",
+            "message": "Scaled up ReplicaSet shop-service-rollout-78d9d67677 (revision 59) from 1 to 2",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:41:49Z",
+                "name": "shop-service-rollout.189cd9b15e427a8e",
+                "namespace": "thesis",
+                "resourceVersion": "3374249",
+                "uid": "1bc9af5a-b69e-4373-9693-cb6a63d0c3cc"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "rollouts-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "rollouts-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:47:46Z",
+            "involvedObject": {
+                "apiVersion": "argoproj.io/v1alpha1",
+                "kind": "Rollout",
+                "name": "shop-service-rollout",
+                "namespace": "thesis",
+                "resourceVersion": "3376059",
+                "uid": "a61b57fa-8ca0-481d-888c-b84e8db45a3b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:47:46Z",
+            "message": "Rollout updated to revision 60",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:47:46Z",
+                "name": "shop-service-rollout.189cda047e9c51d6",
+                "namespace": "thesis",
+                "resourceVersion": "3376060",
+                "uid": "e015de2b-834e-4b92-9648-fce8d2220dcd"
+            },
+            "reason": "RolloutUpdated",
+            "reportingComponent": "rollouts-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "rollouts-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:55:46Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "transaction-service-rollout-57b6648fb7-lxd69",
+                "namespace": "thesis",
+                "resourceVersion": "3378436",
+                "uid": "e6f5819f-f064-4435-8a6a-5d088ed780b3"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:55:46Z",
+            "message": "Successfully assigned thesis/transaction-service-rollout-57b6648fb7-lxd69 to ip-192-168-151-30.eu-central-1.compute.internal",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:55:46Z",
+                "name": "transaction-service-rollout-57b6648fb7-lxd69.189cda7444e308c6",
+                "namespace": "thesis",
+                "resourceVersion": "3378440",
+                "uid": "e14d27e7-087b-4163-9676-9dbd173844aa"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:55:46Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{transaction}",
+                "kind": "Pod",
+                "name": "transaction-service-rollout-57b6648fb7-lxd69",
+                "namespace": "thesis",
+                "resourceVersion": "3378437",
+                "uid": "e6f5819f-f064-4435-8a6a-5d088ed780b3"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:55:46Z",
+            "message": "Container image \"ghcr.io/vulnerius/transaction-service:v1.1.1\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:55:46Z",
+                "name": "transaction-service-rollout-57b6648fb7-lxd69.189cda746a98f139",
+                "namespace": "thesis",
+                "resourceVersion": "3378449",
+                "uid": "485db55a-5b1e-48ce-b245-02a4f6314f55"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:55:46Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{transaction}",
+                "kind": "Pod",
+                "name": "transaction-service-rollout-57b6648fb7-lxd69",
+                "namespace": "thesis",
+                "resourceVersion": "3378437",
+                "uid": "e6f5819f-f064-4435-8a6a-5d088ed780b3"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:55:46Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:55:46Z",
+                "name": "transaction-service-rollout-57b6648fb7-lxd69.189cda746be92db5",
+                "namespace": "thesis",
+                "resourceVersion": "3378450",
+                "uid": "4aade990-bbe2-48da-ad3b-2679f2205014"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:55:46Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{transaction}",
+                "kind": "Pod",
+                "name": "transaction-service-rollout-57b6648fb7-lxd69",
+                "namespace": "thesis",
+                "resourceVersion": "3378437",
+                "uid": "e6f5819f-f064-4435-8a6a-5d088ed780b3"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:55:46Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:55:46Z",
+                "name": "transaction-service-rollout-57b6648fb7-lxd69.189cda7471f3810c",
+                "namespace": "thesis",
+                "resourceVersion": "3378451",
+                "uid": "b44839d1-6f6d-4cef-a0d5-21a3528aae41"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:55:59Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{transaction}",
+                "kind": "Pod",
+                "name": "transaction-service-rollout-57b6648fb7-lxd69",
+                "namespace": "thesis",
+                "resourceVersion": "3378437",
+                "uid": "e6f5819f-f064-4435-8a6a-5d088ed780b3"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:55:59Z",
+            "message": "Liveness probe failed: Get \"http://192.168.143.6:8080/health\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:55:59Z",
+                "name": "transaction-service-rollout-57b6648fb7-lxd69.189cda7760b1621b",
+                "namespace": "thesis",
+                "resourceVersion": "3378514",
+                "uid": "f7a1acbb-4036-4025-8cde-9caba1253e05"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:55:59Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{transaction}",
+                "kind": "Pod",
+                "name": "transaction-service-rollout-57b6648fb7-lxd69",
+                "namespace": "thesis",
+                "resourceVersion": "3378437",
+                "uid": "e6f5819f-f064-4435-8a6a-5d088ed780b3"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:55:59Z",
+            "message": "Readiness probe failed: Get \"http://192.168.143.6:8080/ready\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:55:59Z",
+                "name": "transaction-service-rollout-57b6648fb7-lxd69.189cda776594d8ba",
+                "namespace": "thesis",
+                "resourceVersion": "3378515",
+                "uid": "85b6b88c-f6ad-48c3-8662-3de96c7a8853"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:53:18Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{transaction}",
+                "kind": "Pod",
+                "name": "transaction-service-rollout-57b6648fb7-vtw47",
+                "namespace": "thesis",
+                "resourceVersion": "3364120",
+                "uid": "78671187-e639-4cd7-8c34-76bb9770ed03"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:53:18Z",
+            "message": "Stopping container transaction",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:53:18Z",
+                "name": "transaction-service-rollout-57b6648fb7-vtw47.189cda51c9d230c5",
+                "namespace": "thesis",
+                "resourceVersion": "3377654",
+                "uid": "a5b56cc7-bdf8-4230-864a-927c2693e17a"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:53:39Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{transaction}",
+                "kind": "Pod",
+                "name": "transaction-service-rollout-57b6648fb7-vtw47",
+                "namespace": "thesis",
+                "resourceVersion": "3364120",
+                "uid": "78671187-e639-4cd7-8c34-76bb9770ed03"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:53:44Z",
+            "message": "Readiness probe failed: Get \"http://192.168.134.8:8080/ready\": dial tcp 192.168.134.8:8080: connect: connection refused",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:53:39Z",
+                "name": "transaction-service-rollout-57b6648fb7-vtw47.189cda56addc7d84",
+                "namespace": "thesis",
+                "resourceVersion": "3377843",
+                "uid": "17aa4009-eb94-4658-95ff-6618269e2d5d"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:53:18Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "transaction-service-rollout-57b6648fb7",
+                "namespace": "thesis",
+                "resourceVersion": "3377651",
+                "uid": "bd976004-812e-4837-bf70-2f0afc09dff2"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:53:18Z",
+            "message": "Deleted pod: transaction-service-rollout-57b6648fb7-vtw47",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:53:18Z",
+                "name": "transaction-service-rollout-57b6648fb7.189cda51c9d26724",
+                "namespace": "thesis",
+                "resourceVersion": "3377658",
+                "uid": "77dd600a-cd95-4353-8171-adfe8a40ec61"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:55:46Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "transaction-service-rollout-57b6648fb7",
+                "namespace": "thesis",
+                "resourceVersion": "3378427",
+                "uid": "bd976004-812e-4837-bf70-2f0afc09dff2"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:55:46Z",
+            "message": "Created pod: transaction-service-rollout-57b6648fb7-lxd69",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:55:46Z",
+                "name": "transaction-service-rollout-57b6648fb7.189cda7444ab94e2",
+                "namespace": "thesis",
+                "resourceVersion": "3378438",
+                "uid": "6edff093-369a-41be-9989-a59202ba6a97"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:47:46Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "transaction-service-rollout-64cc9fdd5b-5x4g9",
+                "namespace": "thesis",
+                "resourceVersion": "3376081",
+                "uid": "bd803cd6-7b14-4dc0-8862-e2ece8c5b905"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:47:46Z",
+            "message": "Successfully assigned thesis/transaction-service-rollout-64cc9fdd5b-5x4g9 to ip-192-168-151-30.eu-central-1.compute.internal",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:47:46Z",
+                "name": "transaction-service-rollout-64cc9fdd5b-5x4g9.189cda048eb849f8",
+                "namespace": "thesis",
+                "resourceVersion": "3376088",
+                "uid": "b27ca713-8d4a-4d7d-81e6-6933b947a0f5"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:47:47Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{transaction}",
+                "kind": "Pod",
+                "name": "transaction-service-rollout-64cc9fdd5b-5x4g9",
+                "namespace": "thesis",
+                "resourceVersion": "3376085",
+                "uid": "bd803cd6-7b14-4dc0-8862-e2ece8c5b905"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:47:47Z",
+            "message": "Container image \"ghcr.io/vulnerius/transaction-service:v1.1.1\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:47:47Z",
+                "name": "transaction-service-rollout-64cc9fdd5b-5x4g9.189cda04b642a5a0",
+                "namespace": "thesis",
+                "resourceVersion": "3376109",
+                "uid": "a1bd7413-ce31-4399-bac4-0eac42c58aaf"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:47:47Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{transaction}",
+                "kind": "Pod",
+                "name": "transaction-service-rollout-64cc9fdd5b-5x4g9",
+                "namespace": "thesis",
+                "resourceVersion": "3376085",
+                "uid": "bd803cd6-7b14-4dc0-8862-e2ece8c5b905"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:47:47Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:47:47Z",
+                "name": "transaction-service-rollout-64cc9fdd5b-5x4g9.189cda04b798d4d1",
+                "namespace": "thesis",
+                "resourceVersion": "3376110",
+                "uid": "eef1f32c-0f28-46de-9116-8a2799517b94"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:47:47Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{transaction}",
+                "kind": "Pod",
+                "name": "transaction-service-rollout-64cc9fdd5b-5x4g9",
+                "namespace": "thesis",
+                "resourceVersion": "3376085",
+                "uid": "bd803cd6-7b14-4dc0-8862-e2ece8c5b905"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:47:47Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:47:47Z",
+                "name": "transaction-service-rollout-64cc9fdd5b-5x4g9.189cda04bbf00ed9",
+                "namespace": "thesis",
+                "resourceVersion": "3376111",
+                "uid": "41dacb24-899d-43ca-ba46-64edf916835b"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:56:23Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{transaction}",
+                "kind": "Pod",
+                "name": "transaction-service-rollout-64cc9fdd5b-5x4g9",
+                "namespace": "thesis",
+                "resourceVersion": "3376085",
+                "uid": "bd803cd6-7b14-4dc0-8862-e2ece8c5b905"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:56:23Z",
+            "message": "Stopping container transaction",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:56:23Z",
+                "name": "transaction-service-rollout-64cc9fdd5b-5x4g9.189cda7cd9a0fbc1",
+                "namespace": "thesis",
+                "resourceVersion": "3378640",
+                "uid": "853e7d4e-075e-4f9c-8675-c8277552b57f"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:56:43Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{transaction}",
+                "kind": "Pod",
+                "name": "transaction-service-rollout-64cc9fdd5b-5x4g9",
+                "namespace": "thesis",
+                "resourceVersion": "3376085",
+                "uid": "bd803cd6-7b14-4dc0-8862-e2ece8c5b905"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:56:48Z",
+            "message": "Readiness probe failed: Get \"http://192.168.134.51:8080/ready\": dial tcp 192.168.134.51:8080: connect: connection refused",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:56:43Z",
+                "name": "transaction-service-rollout-64cc9fdd5b-5x4g9.189cda81b6ed48ae",
+                "namespace": "thesis",
+                "resourceVersion": "3378766",
+                "uid": "093506a5-b085-4cd2-8933-7214be28fd8f"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:55:46Z",
+            "involvedObject": {
+                "apiVersion": "argoproj.io/v1alpha1",
+                "kind": "AnalysisRun",
+                "name": "transaction-service-rollout-64cc9fdd5b-62",
+                "namespace": "thesis",
+                "resourceVersion": "3378145",
+                "uid": "f581c2a7-5937-4867-be61-8f75d69779ad"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:55:46Z",
+            "message": "Metric 'error-rate' Completed. Result: Failed",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:55:46Z",
+                "name": "transaction-service-rollout-64cc9fdd5b-62.189cda743b66420e",
+                "namespace": "thesis",
+                "resourceVersion": "3378420",
+                "uid": "fca42af1-d273-4c11-92f2-e412eb49ee67"
+            },
+            "reason": "MetricFailed",
+            "reportingComponent": "rollouts-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "rollouts-controller"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:55:46Z",
+            "involvedObject": {
+                "apiVersion": "argoproj.io/v1alpha1",
+                "kind": "AnalysisRun",
+                "name": "transaction-service-rollout-64cc9fdd5b-62",
+                "namespace": "thesis",
+                "resourceVersion": "3378145",
+                "uid": "f581c2a7-5937-4867-be61-8f75d69779ad"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:55:46Z",
+            "message": "Analysis Completed. Result: Failed",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:55:46Z",
+                "name": "transaction-service-rollout-64cc9fdd5b-62.189cda743bb49d20",
+                "namespace": "thesis",
+                "resourceVersion": "3378422",
+                "uid": "40229490-2a7d-4582-8686-5fd46b36bb43"
+            },
+            "reason": "AnalysisRunFailed",
+            "reportingComponent": "rollouts-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "rollouts-controller"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:53:18Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "transaction-service-rollout-64cc9fdd5b-nlstw",
+                "namespace": "thesis",
+                "resourceVersion": "3377661",
+                "uid": "3133fa5d-ef67-4a55-90a5-ca92cd765fc5"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:53:18Z",
+            "message": "Successfully assigned thesis/transaction-service-rollout-64cc9fdd5b-nlstw to ip-192-168-151-30.eu-central-1.compute.internal",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:53:18Z",
+                "name": "transaction-service-rollout-64cc9fdd5b-nlstw.189cda51cdb44ba6",
+                "namespace": "thesis",
+                "resourceVersion": "3377668",
+                "uid": "f4242f66-e84a-4a77-ae1c-05c68d8726ea"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:53:18Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{transaction}",
+                "kind": "Pod",
+                "name": "transaction-service-rollout-64cc9fdd5b-nlstw",
+                "namespace": "thesis",
+                "resourceVersion": "3377666",
+                "uid": "3133fa5d-ef67-4a55-90a5-ca92cd765fc5"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:53:18Z",
+            "message": "Container image \"ghcr.io/vulnerius/transaction-service:v1.1.1\" already present on machine and can be accessed by the pod",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:53:18Z",
+                "name": "transaction-service-rollout-64cc9fdd5b-nlstw.189cda51f6c2f495",
+                "namespace": "thesis",
+                "resourceVersion": "3377676",
+                "uid": "79eca592-c29a-40e9-8a5f-1635ff8f0275"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:53:18Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{transaction}",
+                "kind": "Pod",
+                "name": "transaction-service-rollout-64cc9fdd5b-nlstw",
+                "namespace": "thesis",
+                "resourceVersion": "3377666",
+                "uid": "3133fa5d-ef67-4a55-90a5-ca92cd765fc5"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:53:18Z",
+            "message": "Container created",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:53:18Z",
+                "name": "transaction-service-rollout-64cc9fdd5b-nlstw.189cda51f82158b4",
+                "namespace": "thesis",
+                "resourceVersion": "3377677",
+                "uid": "cfc46a86-0cf6-4fc9-befe-30ebaf0c415c"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:53:18Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{transaction}",
+                "kind": "Pod",
+                "name": "transaction-service-rollout-64cc9fdd5b-nlstw",
+                "namespace": "thesis",
+                "resourceVersion": "3377666",
+                "uid": "3133fa5d-ef67-4a55-90a5-ca92cd765fc5"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:53:18Z",
+            "message": "Container started",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:53:18Z",
+                "name": "transaction-service-rollout-64cc9fdd5b-nlstw.189cda51fdfff228",
+                "namespace": "thesis",
+                "resourceVersion": "3377679",
+                "uid": "4c1d7050-fad7-41c9-9f07-9f1358d7f492"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:53:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{transaction}",
+                "kind": "Pod",
+                "name": "transaction-service-rollout-64cc9fdd5b-nlstw",
+                "namespace": "thesis",
+                "resourceVersion": "3377666",
+                "uid": "3133fa5d-ef67-4a55-90a5-ca92cd765fc5"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:53:31Z",
+            "message": "Readiness probe failed: Get \"http://192.168.158.104:8080/ready\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:53:31Z",
+                "name": "transaction-service-rollout-64cc9fdd5b-nlstw.189cda54d0812161",
+                "namespace": "thesis",
+                "resourceVersion": "3377764",
+                "uid": "ebd174b8-8996-4dfe-9fa0-953ec90a61a3"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:53:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{transaction}",
+                "kind": "Pod",
+                "name": "transaction-service-rollout-64cc9fdd5b-nlstw",
+                "namespace": "thesis",
+                "resourceVersion": "3377666",
+                "uid": "3133fa5d-ef67-4a55-90a5-ca92cd765fc5"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:53:31Z",
+            "message": "Liveness probe failed: Get \"http://192.168.158.104:8080/health\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:53:31Z",
+                "name": "transaction-service-rollout-64cc9fdd5b-nlstw.189cda54e7fb5258",
+                "namespace": "thesis",
+                "resourceVersion": "3377768",
+                "uid": "b160300a-cf86-448d-b0cc-af7c79fb4657"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:55:46Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{transaction}",
+                "kind": "Pod",
+                "name": "transaction-service-rollout-64cc9fdd5b-nlstw",
+                "namespace": "thesis",
+                "resourceVersion": "3377666",
+                "uid": "3133fa5d-ef67-4a55-90a5-ca92cd765fc5"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:55:46Z",
+            "message": "Stopping container transaction",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:55:46Z",
+                "name": "transaction-service-rollout-64cc9fdd5b-nlstw.189cda74408c4a8b",
+                "namespace": "thesis",
+                "resourceVersion": "3378428",
+                "uid": "a3024008-b186-48cf-963a-973766296aca"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:56:10Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{transaction}",
+                "kind": "Pod",
+                "name": "transaction-service-rollout-64cc9fdd5b-nlstw",
+                "namespace": "thesis",
+                "resourceVersion": "3377666",
+                "uid": "3133fa5d-ef67-4a55-90a5-ca92cd765fc5"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:56:15Z",
+            "message": "Readiness probe failed: Get \"http://192.168.158.104:8080/ready\": dial tcp 192.168.158.104:8080: connect: connection refused",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:56:10Z",
+                "name": "transaction-service-rollout-64cc9fdd5b-nlstw.189cda79d321ea43",
+                "namespace": "thesis",
+                "resourceVersion": "3378593",
+                "uid": "c7c7f33b-1ded-4331-ab66-f6d8a0a89e90"
+            },
+            "reason": "Unhealthy",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "ip-192-168-151-30.eu-central-1.compute.internal",
+            "source": {
+                "component": "kubelet",
+                "host": "ip-192-168-151-30.eu-central-1.compute.internal"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:47:46Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "transaction-service-rollout-64cc9fdd5b",
+                "namespace": "thesis",
+                "resourceVersion": "3376079",
+                "uid": "90526764-dd2c-49d4-aea7-7719803f7035"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:47:46Z",
+            "message": "Created pod: transaction-service-rollout-64cc9fdd5b-5x4g9",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:47:46Z",
+                "name": "transaction-service-rollout-64cc9fdd5b.189cda048e341d8b",
+                "namespace": "thesis",
+                "resourceVersion": "3376084",
+                "uid": "8d135f73-c1f6-4bc7-b412-32953b195b39"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:53:18Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "transaction-service-rollout-64cc9fdd5b",
+                "namespace": "thesis",
+                "resourceVersion": "3377653",
+                "uid": "90526764-dd2c-49d4-aea7-7719803f7035"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:53:18Z",
+            "message": "Created pod: transaction-service-rollout-64cc9fdd5b-nlstw",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:53:18Z",
+                "name": "transaction-service-rollout-64cc9fdd5b.189cda51cc16142d",
+                "namespace": "thesis",
+                "resourceVersion": "3377665",
+                "uid": "0ab071b0-3755-49ce-8aa1-86e7fc0d45ed"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:55:46Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "transaction-service-rollout-64cc9fdd5b",
+                "namespace": "thesis",
+                "resourceVersion": "3378425",
+                "uid": "90526764-dd2c-49d4-aea7-7719803f7035"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:55:46Z",
+            "message": "Deleted pod: transaction-service-rollout-64cc9fdd5b-nlstw",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:55:46Z",
+                "name": "transaction-service-rollout-64cc9fdd5b.189cda7440b9799e",
+                "namespace": "thesis",
+                "resourceVersion": "3378432",
+                "uid": "59397935-05d8-49a9-87b1-fd68f4ce49b7"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:56:23Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "transaction-service-rollout-64cc9fdd5b",
+                "namespace": "thesis",
+                "resourceVersion": "3378636",
+                "uid": "90526764-dd2c-49d4-aea7-7719803f7035"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:56:23Z",
+            "message": "Deleted pod: transaction-service-rollout-64cc9fdd5b-5x4g9",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:56:23Z",
+                "name": "transaction-service-rollout-64cc9fdd5b.189cda7cd983b479",
+                "namespace": "thesis",
+                "resourceVersion": "3378639",
+                "uid": "f5e5ba86-8ff8-4a27-8932-e4f93559b559"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 18,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-13T08:50:22Z",
+            "involvedObject": {
+                "apiVersion": "argoproj.io/v1alpha1",
+                "kind": "Rollout",
+                "name": "transaction-service-rollout",
+                "namespace": "thesis",
+                "resourceVersion": "3335845",
+                "uid": "dc46c54d-3be6-4d17-af5a-1128b55b9f67"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:48:18Z",
+            "message": "Rollout step 1/8 completed (setWeight: 10)",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T21:26:31Z",
+                "name": "transaction-service-rollout.189c5a7760cfac68",
+                "namespace": "thesis",
+                "resourceVersion": "3376269",
+                "uid": "14dab861-306d-4574-97c1-fb2338d2a273"
+            },
+            "reason": "RolloutStepCompleted",
+            "reportingComponent": "rollouts-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "rollouts-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 46,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-13T08:50:22Z",
+            "involvedObject": {
+                "apiVersion": "argoproj.io/v1alpha1",
+                "kind": "Rollout",
+                "name": "transaction-service-rollout",
+                "namespace": "thesis",
+                "resourceVersion": "3376270",
+                "uid": "dc46c54d-3be6-4d17-af5a-1128b55b9f67"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:48:18Z",
+            "message": "Rollout is paused (CanaryPauseStep)",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:48:18Z",
+                "name": "transaction-service-rollout.189c5a7766fe0d7d",
+                "namespace": "thesis",
+                "resourceVersion": "3376273",
+                "uid": "08e173a0-5ba7-4c32-b05d-6d864396c08b"
+            },
+            "reason": "RolloutPaused",
+            "reportingComponent": "rollouts-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "rollouts-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 17,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-13T08:55:22Z",
+            "involvedObject": {
+                "apiVersion": "argoproj.io/v1alpha1",
+                "kind": "Rollout",
+                "name": "transaction-service-rollout",
+                "namespace": "thesis",
+                "resourceVersion": "3335940",
+                "uid": "dc46c54d-3be6-4d17-af5a-1128b55b9f67"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:53:18Z",
+            "message": "Rollout step 2/8 completed (pause: 5m)",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T21:31:31Z",
+                "name": "transaction-service-rollout.189c5abd376c0077",
+                "namespace": "thesis",
+                "resourceVersion": "3377648",
+                "uid": "18c61f57-f9b9-4be6-84c7-04dba710d02f"
+            },
+            "reason": "RolloutStepCompleted",
+            "reportingComponent": "rollouts-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "rollouts-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 32,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-13T08:55:22Z",
+            "involvedObject": {
+                "apiVersion": "argoproj.io/v1alpha1",
+                "kind": "Rollout",
+                "name": "transaction-service-rollout",
+                "namespace": "thesis",
+                "resourceVersion": "3376274",
+                "uid": "dc46c54d-3be6-4d17-af5a-1128b55b9f67"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:53:18Z",
+            "message": "Rollout is resumed",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:53:18Z",
+                "name": "transaction-service-rollout.189c5abd3eed309d",
+                "namespace": "thesis",
+                "resourceVersion": "3377650",
+                "uid": "9ce24d48-03a6-4e23-a460-b8c59a345694"
+            },
+            "reason": "RolloutResumed",
+            "reportingComponent": "rollouts-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "rollouts-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:41:17Z",
+            "involvedObject": {
+                "apiVersion": "argoproj.io/v1alpha1",
+                "kind": "Rollout",
+                "name": "transaction-service-rollout",
+                "namespace": "thesis",
+                "resourceVersion": "3374071",
+                "uid": "dc46c54d-3be6-4d17-af5a-1128b55b9f67"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:41:17Z",
+            "message": "Rollout updated to revision 61",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:41:17Z",
+                "name": "transaction-service-rollout.189cd9aa086d6ca7",
+                "namespace": "thesis",
+                "resourceVersion": "3374075",
+                "uid": "3b1ac805-c3a4-43cf-babc-fa542126b0a1"
+            },
+            "reason": "RolloutUpdated",
+            "reportingComponent": "rollouts-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "rollouts-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:47:46Z",
+            "involvedObject": {
+                "apiVersion": "argoproj.io/v1alpha1",
+                "kind": "Rollout",
+                "name": "transaction-service-rollout",
+                "namespace": "thesis",
+                "resourceVersion": "3376073",
+                "uid": "dc46c54d-3be6-4d17-af5a-1128b55b9f67"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:47:46Z",
+            "message": "Rollout updated to revision 62",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:47:46Z",
+                "name": "transaction-service-rollout.189cda048abc7ec8",
+                "namespace": "thesis",
+                "resourceVersion": "3376074",
+                "uid": "25f003ec-d30b-4174-b317-8ea6a80fcc44"
+            },
+            "reason": "RolloutUpdated",
+            "reportingComponent": "rollouts-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "rollouts-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:47:46Z",
+            "involvedObject": {
+                "apiVersion": "argoproj.io/v1alpha1",
+                "kind": "Rollout",
+                "name": "transaction-service-rollout",
+                "namespace": "thesis",
+                "resourceVersion": "3376073",
+                "uid": "dc46c54d-3be6-4d17-af5a-1128b55b9f67"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:47:46Z",
+            "message": "Rollout not completed, started update to revision 62 (64cc9fdd5b)",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:47:46Z",
+                "name": "transaction-service-rollout.189cda048acf7700",
+                "namespace": "thesis",
+                "resourceVersion": "3376076",
+                "uid": "66951e72-c1a4-4250-99fb-cf029a6fba0e"
+            },
+            "reason": "RolloutNotCompleted",
+            "reportingComponent": "rollouts-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "rollouts-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:47:46Z",
+            "involvedObject": {
+                "apiVersion": "argoproj.io/v1alpha1",
+                "kind": "Rollout",
+                "name": "transaction-service-rollout",
+                "namespace": "thesis",
+                "resourceVersion": "3376075",
+                "uid": "dc46c54d-3be6-4d17-af5a-1128b55b9f67"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:47:46Z",
+            "message": "Scaled up ReplicaSet transaction-service-rollout-64cc9fdd5b (revision 62) from 0 to 1",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:47:46Z",
+                "name": "transaction-service-rollout.189cda048d41b103",
+                "namespace": "thesis",
+                "resourceVersion": "3376080",
+                "uid": "589d0b15-25f5-4b12-9080-37de934c5e17"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "rollouts-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "rollouts-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:47:46Z",
+            "involvedObject": {
+                "apiVersion": "argoproj.io/v1alpha1",
+                "kind": "Rollout",
+                "name": "transaction-service-rollout",
+                "namespace": "thesis",
+                "resourceVersion": "3376082",
+                "uid": "dc46c54d-3be6-4d17-af5a-1128b55b9f67"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:47:46Z",
+            "message": "Background Analysis Run 'transaction-service-rollout-64cc9fdd5b-62' Status New: 'Running' Previous: ''",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:47:46Z",
+                "name": "transaction-service-rollout.189cda048e67a2d7",
+                "namespace": "thesis",
+                "resourceVersion": "3376087",
+                "uid": "40cf7022-5f2a-4c32-a37d-dc39cc930f97"
+            },
+            "reason": "AnalysisRunRunning",
+            "reportingComponent": "rollouts-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "rollouts-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-03-14T23:55:46Z",
+            "involvedObject": {
+                "apiVersion": "argoproj.io/v1alpha1",
+                "kind": "Rollout",
+                "name": "transaction-service-rollout",
+                "namespace": "thesis",
+                "resourceVersion": "3377911",
+                "uid": "dc46c54d-3be6-4d17-af5a-1128b55b9f67"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-03-14T23:55:46Z",
+            "message": "Background Analysis Run 'transaction-service-rollout-64cc9fdd5b-62' Status New: 'Failed' Previous: 'Running'",
+            "metadata": {
+                "creationTimestamp": "2026-03-14T23:55:46Z",
+                "name": "transaction-service-rollout.189cda743d0d7150",
+                "namespace": "thesis",
+                "resourceVersion": "3378423",
+                "uid": "4a316ec4-19bc-4785-9a0d-6011dafe7fb9"
+            },
+            "reason": "AnalysisRunFailed",
+            "reportingComponent": "rollouts-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "rollouts-controller"
+            },
+            "type": "Warning"
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": "",
+        "selfLink": ""
+    }
+}

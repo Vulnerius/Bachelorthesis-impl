@@ -1,0 +1,109 @@
+LASTSEEN               FIRSTSEEN              TYPE      REASON                 OBJECT                                         MESSAGE
+2026-03-14T23:14:42Z   2026-03-14T23:14:42Z   Normal    Killing                shop-service-rollout-78d9d67677-jxppl          Stopping container shop
+2026-03-14T23:14:42Z   2026-03-14T23:14:42Z   Normal    SuccessfulDelete       shop-service-rollout-78d9d67677                Deleted pod: shop-service-rollout-78d9d67677-jxppl
+2026-03-14T23:15:10Z   2026-03-14T23:15:05Z   Warning   Unhealthy              shop-service-rollout-78d9d67677-jxppl          Readiness probe failed: Get "http://192.168.152.84:8080/ready": dial tcp 192.168.152.84:8080: connect: connection refused
+2026-03-14T23:41:17Z   2026-03-14T23:41:17Z   Normal    ScalingReplicaSet      shop-service-rollout                           Scaled up ReplicaSet shop-service-rollout-78d9d67677 (revision 59) from 0 to 1
+2026-03-14T23:41:17Z   2026-03-14T23:41:17Z   Normal    SuccessfulCreate       shop-service-rollout-78d9d67677                Created pod: shop-service-rollout-78d9d67677-d2qwj
+2026-03-14T23:41:17Z   2026-03-14T23:41:17Z   Normal    RolloutUpdated         transaction-service-rollout                    Rollout updated to revision 61
+2026-03-14T23:41:17Z   2026-03-14T23:41:17Z   Normal    RolloutNotCompleted    shop-service-rollout                           Rollout not completed, started update to revision 59 (78d9d67677)
+2026-03-14T23:41:17Z   2026-03-14T23:41:17Z   Normal    Scheduled              shop-service-rollout-78d9d67677-d2qwj          Successfully assigned thesis/shop-service-rollout-78d9d67677-d2qwj to ip-192-168-151-30.eu-central-1.compute.internal
+2026-03-14T23:41:17Z   2026-03-14T23:41:17Z   Normal    RolloutUpdated         shop-service-rollout                           Rollout updated to revision 59
+2026-03-14T23:41:18Z   2026-03-14T23:41:18Z   Normal    Created                shop-service-rollout-78d9d67677-d2qwj          Container created
+2026-03-14T23:41:18Z   2026-03-14T23:41:18Z   Normal    Started                shop-service-rollout-78d9d67677-d2qwj          Container started
+2026-03-14T23:41:18Z   2026-03-14T23:41:18Z   Normal    Pulled                 shop-service-rollout-78d9d67677-d2qwj          Container image "ghcr.io/vulnerius/shop-service:v1.1.1" already present on machine and can be accessed by the pod
+2026-03-14T23:41:49Z   2026-03-14T23:41:49Z   Normal    ScalingReplicaSet      shop-service-rollout                           Scaled up ReplicaSet shop-service-rollout-78d9d67677 (revision 59) from 1 to 2
+2026-03-14T23:41:49Z   2026-03-14T23:41:49Z   Normal    SuccessfulCreate       shop-service-rollout-78d9d67677                Created pod: shop-service-rollout-78d9d67677-pb2q4
+2026-03-14T23:41:49Z   2026-03-14T23:41:49Z   Normal    Created                shop-service-rollout-78d9d67677-pb2q4          Container created
+2026-03-14T23:41:49Z   2026-03-14T23:41:49Z   Normal    Scheduled              shop-service-rollout-78d9d67677-pb2q4          Successfully assigned thesis/shop-service-rollout-78d9d67677-pb2q4 to ip-192-168-151-30.eu-central-1.compute.internal
+2026-03-14T23:41:49Z   2026-03-14T23:41:49Z   Normal    ScalingReplicaSet      shop-service-rollout                           Scaled down ReplicaSet shop-service-rollout-bc76fbf89 (revision 58) from 3 to 2
+2026-03-14T23:41:49Z   2026-03-14T23:41:49Z   Normal    SuccessfulDelete       shop-service-rollout-bc76fbf89                 Deleted pod: shop-service-rollout-bc76fbf89-gzmmb
+2026-03-14T23:41:49Z   2026-03-14T23:41:49Z   Normal    Started                shop-service-rollout-78d9d67677-pb2q4          Container started
+2026-03-14T23:41:49Z   2026-03-14T23:41:49Z   Normal    Killing                shop-service-rollout-bc76fbf89-gzmmb           Stopping container shop
+2026-03-14T23:41:49Z   2026-03-14T23:41:49Z   Normal    Pulled                 shop-service-rollout-78d9d67677-pb2q4          Container image "ghcr.io/vulnerius/shop-service:v1.1.1" already present on machine and can be accessed by the pod
+2026-03-14T23:42:17Z   2026-03-14T23:42:12Z   Warning   Unhealthy              shop-service-rollout-bc76fbf89-gzmmb           Readiness probe failed: Get "http://192.168.145.230:8080/ready": dial tcp 192.168.145.230:8080: connect: connection refused
+2026-03-14T23:42:21Z   2026-03-14T23:42:21Z   Normal    Started                shop-service-rollout-78d9d67677-72d8r          Container started
+2026-03-14T23:42:21Z   2026-03-14T23:42:21Z   Normal    SuccessfulDelete       shop-service-rollout-bc76fbf89                 Deleted pod: shop-service-rollout-bc76fbf89-8gn2b
+2026-03-14T23:42:21Z   2026-03-14T23:42:21Z   Normal    Created                shop-service-rollout-78d9d67677-72d8r          Container created
+2026-03-14T23:42:21Z   2026-03-14T23:42:21Z   Normal    Scheduled              shop-service-rollout-78d9d67677-72d8r          Successfully assigned thesis/shop-service-rollout-78d9d67677-72d8r to ip-192-168-151-30.eu-central-1.compute.internal
+2026-03-14T23:42:21Z   2026-03-14T23:42:21Z   Normal    Pulled                 shop-service-rollout-78d9d67677-72d8r          Container image "ghcr.io/vulnerius/shop-service:v1.1.1" already present on machine and can be accessed by the pod
+2026-03-14T23:42:21Z   2026-03-14T23:42:21Z   Normal    Killing                shop-service-rollout-bc76fbf89-8gn2b           Stopping container shop
+2026-03-14T23:42:21Z   2026-03-14T23:42:21Z   Normal    SuccessfulCreate       shop-service-rollout-78d9d67677                Created pod: shop-service-rollout-78d9d67677-72d8r
+2026-03-14T23:42:48Z   2026-03-14T23:42:43Z   Warning   Unhealthy              shop-service-rollout-bc76fbf89-8gn2b           Readiness probe failed: Get "http://192.168.134.51:8080/ready": dial tcp 192.168.134.51:8080: connect: connection refused
+2026-03-14T23:42:53Z   2026-03-14T23:42:53Z   Normal    SuccessfulDelete       shop-service-rollout-bc76fbf89                 Deleted pod: shop-service-rollout-bc76fbf89-t9hr8
+2026-03-14T23:42:53Z   2026-03-14T23:42:53Z   Normal    Killing                shop-service-rollout-bc76fbf89-t9hr8           Stopping container shop
+2026-03-14T23:43:20Z   2026-03-14T23:43:15Z   Warning   Unhealthy              shop-service-rollout-bc76fbf89-t9hr8           Readiness probe failed: Get "http://192.168.158.104:8080/ready": dial tcp 192.168.158.104:8080: connect: connection refused
+2026-03-14T23:46:29Z   2026-03-14T23:46:29Z   Warning   Unhealthy              shop-service-rollout-78d9d67677-72d8r          Readiness probe failed: Get "http://192.168.154.255:8080/ready": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2026-03-14T23:47:46Z   2026-03-14T23:47:46Z   Normal    Created                shop-service-rollout-bc76fbf89-8nhxj           Container created
+2026-03-14T23:47:46Z   2026-03-14T23:47:46Z   Normal    Started                shop-service-rollout-bc76fbf89-8nhxj           Container started
+2026-03-14T23:47:46Z   2026-03-14T23:47:46Z   Normal    Pulled                 shop-service-rollout-bc76fbf89-8nhxj           Container image "ghcr.io/vulnerius/shop-service:v1.1.1" already present on machine and can be accessed by the pod
+2026-03-14T23:47:46Z   2026-03-14T23:47:46Z   Normal    Scheduled              shop-service-rollout-bc76fbf89-8nhxj           Successfully assigned thesis/shop-service-rollout-bc76fbf89-8nhxj to ip-192-168-151-30.eu-central-1.compute.internal
+2026-03-14T23:47:46Z   2026-03-14T23:47:46Z   Normal    SuccessfulCreate       transaction-service-rollout-64cc9fdd5b         Created pod: transaction-service-rollout-64cc9fdd5b-5x4g9
+2026-03-14T23:47:46Z   2026-03-14T23:47:46Z   Normal    RolloutUpdated         transaction-service-rollout                    Rollout updated to revision 62
+2026-03-14T23:47:46Z   2026-03-14T23:47:46Z   Normal    RolloutNotCompleted    transaction-service-rollout                    Rollout not completed, started update to revision 62 (64cc9fdd5b)
+2026-03-14T23:47:46Z   2026-03-14T23:47:46Z   Normal    AnalysisRunRunning     transaction-service-rollout                    Background Analysis Run 'transaction-service-rollout-64cc9fdd5b-62' Status New: 'Running' Previous: ''
+2026-03-14T23:47:46Z   2026-03-14T23:47:46Z   Normal    ScalingReplicaSet      transaction-service-rollout                    Scaled up ReplicaSet transaction-service-rollout-64cc9fdd5b (revision 62) from 0 to 1
+2026-03-14T23:47:46Z   2026-03-14T23:47:46Z   Normal    Scheduled              transaction-service-rollout-64cc9fdd5b-5x4g9   Successfully assigned thesis/transaction-service-rollout-64cc9fdd5b-5x4g9 to ip-192-168-151-30.eu-central-1.compute.internal
+2026-03-14T23:47:46Z   2026-03-14T23:47:46Z   Normal    SuccessfulCreate       shop-service-rollout-bc76fbf89                 Created pod: shop-service-rollout-bc76fbf89-8nhxj
+2026-03-14T23:47:46Z   2026-03-14T23:47:46Z   Normal    RolloutUpdated         shop-service-rollout                           Rollout updated to revision 60
+2026-03-14T23:47:47Z   2026-03-14T23:47:47Z   Normal    Created                transaction-service-rollout-64cc9fdd5b-5x4g9   Container created
+2026-03-14T23:47:47Z   2026-03-14T23:47:47Z   Normal    Started                transaction-service-rollout-64cc9fdd5b-5x4g9   Container started
+2026-03-14T23:47:47Z   2026-03-14T23:47:47Z   Normal    Pulled                 transaction-service-rollout-64cc9fdd5b-5x4g9   Container image "ghcr.io/vulnerius/transaction-service:v1.1.1" already present on machine and can be accessed by the pod
+2026-03-14T23:47:58Z   2026-03-14T23:47:58Z   Warning   Unhealthy              shop-service-rollout-bc76fbf89-8nhxj           Readiness probe failed: Get "http://192.168.145.230:8080/ready": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2026-03-14T23:47:59Z   2026-03-14T23:47:59Z   Warning   Unhealthy              shop-service-rollout-bc76fbf89-8nhxj           Liveness probe failed: Get "http://192.168.145.230:8080/health": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2026-03-14T23:48:18Z   2026-03-13T08:50:22Z   Normal    RolloutPaused          transaction-service-rollout                    Rollout is paused (CanaryPauseStep)
+2026-03-14T23:48:18Z   2026-03-13T08:50:22Z   Normal    RolloutStepCompleted   transaction-service-rollout                    Rollout step 1/8 completed (setWeight: 10)
+2026-03-14T23:53:18Z   2026-03-14T23:53:18Z   Normal    Pulled                 transaction-service-rollout-64cc9fdd5b-nlstw   Container image "ghcr.io/vulnerius/transaction-service:v1.1.1" already present on machine and can be accessed by the pod
+2026-03-14T23:53:18Z   2026-03-14T23:53:18Z   Normal    SuccessfulCreate       transaction-service-rollout-64cc9fdd5b         Created pod: transaction-service-rollout-64cc9fdd5b-nlstw
+2026-03-14T23:53:18Z   2026-03-13T08:55:22Z   Normal    RolloutResumed         transaction-service-rollout                    Rollout is resumed
+2026-03-14T23:53:18Z   2026-03-14T23:53:18Z   Normal    Created                transaction-service-rollout-64cc9fdd5b-nlstw   Container created
+2026-03-14T23:53:18Z   2026-03-13T08:55:22Z   Normal    RolloutStepCompleted   transaction-service-rollout                    Rollout step 2/8 completed (pause: 5m)
+2026-03-14T23:53:18Z   2026-03-14T23:53:18Z   Normal    Started                transaction-service-rollout-64cc9fdd5b-nlstw   Container started
+2026-03-14T23:53:18Z   2026-03-14T23:53:18Z   Normal    Killing                transaction-service-rollout-57b6648fb7-vtw47   Stopping container transaction
+2026-03-14T23:53:18Z   2026-03-14T23:53:18Z   Normal    Scheduled              transaction-service-rollout-64cc9fdd5b-nlstw   Successfully assigned thesis/transaction-service-rollout-64cc9fdd5b-nlstw to ip-192-168-151-30.eu-central-1.compute.internal
+2026-03-14T23:53:18Z   2026-03-14T23:53:18Z   Normal    SuccessfulDelete       transaction-service-rollout-57b6648fb7         Deleted pod: transaction-service-rollout-57b6648fb7-vtw47
+2026-03-14T23:53:22Z   2026-03-14T23:53:22Z   Normal    Killing                shop-service-rollout-78d9d67677-d2qwj          Stopping container shop
+2026-03-14T23:53:22Z   2026-03-14T23:53:22Z   Normal    SuccessfulCreate       shop-service-rollout-bc76fbf89                 Created pod: shop-service-rollout-bc76fbf89-ts8xk
+2026-03-14T23:53:22Z   2026-03-14T23:53:22Z   Normal    Scheduled              shop-service-rollout-bc76fbf89-ts8xk           Successfully assigned thesis/shop-service-rollout-bc76fbf89-ts8xk to ip-192-168-151-30.eu-central-1.compute.internal
+2026-03-14T23:53:22Z   2026-03-14T23:53:22Z   Normal    SuccessfulDelete       shop-service-rollout-78d9d67677                Deleted pod: shop-service-rollout-78d9d67677-d2qwj
+2026-03-14T23:53:22Z   2026-03-13T08:55:25Z   Normal    RolloutStepCompleted   shop-service-rollout                           Rollout step 2/8 completed (pause: 5m)
+2026-03-14T23:53:23Z   2026-03-14T23:53:23Z   Normal    Pulled                 shop-service-rollout-bc76fbf89-ts8xk           Container image "ghcr.io/vulnerius/shop-service:v1.1.1" already present on machine and can be accessed by the pod
+2026-03-14T23:53:23Z   2026-03-14T23:53:23Z   Normal    Created                shop-service-rollout-bc76fbf89-ts8xk           Container created
+2026-03-14T23:53:23Z   2026-03-14T23:53:23Z   Normal    Started                shop-service-rollout-bc76fbf89-ts8xk           Container started
+2026-03-14T23:53:31Z   2026-03-14T23:53:31Z   Warning   Unhealthy              transaction-service-rollout-64cc9fdd5b-nlstw   Liveness probe failed: Get "http://192.168.158.104:8080/health": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2026-03-14T23:53:31Z   2026-03-14T23:53:31Z   Warning   Unhealthy              transaction-service-rollout-64cc9fdd5b-nlstw   Readiness probe failed: Get "http://192.168.158.104:8080/ready": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2026-03-14T23:53:35Z   2026-03-14T23:53:35Z   Warning   Unhealthy              shop-service-rollout-bc76fbf89-ts8xk           Liveness probe failed: Get "http://192.168.136.130:8080/health": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2026-03-14T23:53:36Z   2026-03-14T23:53:36Z   Warning   Unhealthy              shop-service-rollout-bc76fbf89-ts8xk           Readiness probe failed: Get "http://192.168.136.130:8080/ready": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2026-03-14T23:53:44Z   2026-03-14T23:53:39Z   Warning   Unhealthy              transaction-service-rollout-57b6648fb7-vtw47   Readiness probe failed: Get "http://192.168.134.8:8080/ready": dial tcp 192.168.134.8:8080: connect: connection refused
+2026-03-14T23:53:48Z   2026-03-14T23:53:43Z   Warning   Unhealthy              shop-service-rollout-78d9d67677-d2qwj          Readiness probe failed: Get "http://192.168.143.6:8080/ready": dial tcp 192.168.143.6:8080: connect: connection refused
+2026-03-14T23:55:46Z   2026-03-14T23:55:46Z   Warning   AnalysisRunFailed      transaction-service-rollout-64cc9fdd5b-62      Analysis Completed. Result: Failed
+2026-03-14T23:55:46Z   2026-03-14T23:55:46Z   Normal    Started                transaction-service-rollout-57b6648fb7-lxd69   Container started
+2026-03-14T23:55:46Z   2026-03-14T23:55:46Z   Normal    Created                transaction-service-rollout-57b6648fb7-lxd69   Container created
+2026-03-14T23:55:46Z   2026-03-14T23:55:46Z   Normal    Pulled                 transaction-service-rollout-57b6648fb7-lxd69   Container image "ghcr.io/vulnerius/transaction-service:v1.1.1" already present on machine and can be accessed by the pod
+2026-03-14T23:55:46Z   2026-03-14T23:55:46Z   Normal    Scheduled              transaction-service-rollout-57b6648fb7-lxd69   Successfully assigned thesis/transaction-service-rollout-57b6648fb7-lxd69 to ip-192-168-151-30.eu-central-1.compute.internal
+2026-03-14T23:55:46Z   2026-03-14T23:55:46Z   Warning   AnalysisRunFailed      transaction-service-rollout                    Background Analysis Run 'transaction-service-rollout-64cc9fdd5b-62' Status New: 'Failed' Previous: 'Running'
+2026-03-14T23:55:46Z   2026-03-14T23:55:46Z   Normal    Killing                transaction-service-rollout-64cc9fdd5b-nlstw   Stopping container transaction
+2026-03-14T23:55:46Z   2026-03-14T23:55:46Z   Normal    SuccessfulDelete       transaction-service-rollout-64cc9fdd5b         Deleted pod: transaction-service-rollout-64cc9fdd5b-nlstw
+2026-03-14T23:55:46Z   2026-03-14T23:55:46Z   Warning   MetricFailed           transaction-service-rollout-64cc9fdd5b-62      Metric 'error-rate' Completed. Result: Failed
+2026-03-14T23:55:46Z   2026-03-14T23:55:46Z   Normal    SuccessfulCreate       transaction-service-rollout-57b6648fb7         Created pod: transaction-service-rollout-57b6648fb7-lxd69
+2026-03-14T23:55:59Z   2026-03-14T23:55:59Z   Warning   Unhealthy              transaction-service-rollout-57b6648fb7-lxd69   Readiness probe failed: Get "http://192.168.143.6:8080/ready": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2026-03-14T23:55:59Z   2026-03-14T23:55:59Z   Warning   Unhealthy              transaction-service-rollout-57b6648fb7-lxd69   Liveness probe failed: Get "http://192.168.143.6:8080/health": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2026-03-14T23:56:15Z   2026-03-14T23:56:10Z   Warning   Unhealthy              transaction-service-rollout-64cc9fdd5b-nlstw   Readiness probe failed: Get "http://192.168.158.104:8080/ready": dial tcp 192.168.158.104:8080: connect: connection refused
+2026-03-14T23:56:23Z   2026-03-14T23:56:23Z   Normal    Killing                transaction-service-rollout-64cc9fdd5b-5x4g9   Stopping container transaction
+2026-03-14T23:56:23Z   2026-03-14T23:56:23Z   Normal    SuccessfulDelete       transaction-service-rollout-64cc9fdd5b         Deleted pod: transaction-service-rollout-64cc9fdd5b-5x4g9
+2026-03-14T23:56:48Z   2026-03-14T23:56:43Z   Warning   Unhealthy              transaction-service-rollout-64cc9fdd5b-5x4g9   Readiness probe failed: Get "http://192.168.134.51:8080/ready": dial tcp 192.168.134.51:8080: connect: connection refused
+2026-03-14T23:59:00Z   2026-03-13T09:00:58Z   Normal    RolloutStepCompleted   shop-service-rollout                           Rollout step 4/8 completed (pause: 5m)
+2026-03-14T23:59:00Z   2026-03-14T23:59:00Z   Normal    Killing                shop-service-rollout-78d9d67677-pb2q4          Stopping container shop
+2026-03-14T23:59:00Z   2026-03-14T23:59:00Z   Normal    Scheduled              shop-service-rollout-bc76fbf89-lk92z           Successfully assigned thesis/shop-service-rollout-bc76fbf89-lk92z to ip-192-168-151-30.eu-central-1.compute.internal
+2026-03-14T23:59:00Z   2026-03-14T23:59:00Z   Normal    SuccessfulCreate       shop-service-rollout-bc76fbf89                 Created pod: shop-service-rollout-bc76fbf89-lk92z
+2026-03-14T23:59:00Z   2026-03-14T23:59:00Z   Normal    SuccessfulDelete       shop-service-rollout-78d9d67677                Deleted pod: shop-service-rollout-78d9d67677-pb2q4
+2026-03-14T23:59:01Z   2026-03-14T23:59:01Z   Normal    Pulled                 shop-service-rollout-bc76fbf89-lk92z           Container image "ghcr.io/vulnerius/shop-service:v1.1.1" already present on machine and can be accessed by the pod
+2026-03-14T23:59:01Z   2026-03-14T23:59:01Z   Normal    Started                shop-service-rollout-bc76fbf89-lk92z           Container started
+2026-03-14T23:59:01Z   2026-03-14T23:59:01Z   Normal    Created                shop-service-rollout-bc76fbf89-lk92z           Container created
+2026-03-14T23:59:13Z   2026-03-14T23:59:13Z   Warning   Unhealthy              shop-service-rollout-bc76fbf89-lk92z           Liveness probe failed: Get "http://192.168.134.8:8080/health": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2026-03-14T23:59:25Z   2026-03-14T23:59:20Z   Warning   Unhealthy              shop-service-rollout-78d9d67677-pb2q4          Readiness probe failed: Get "http://192.168.151.184:8080/ready": dial tcp 192.168.151.184:8080: connect: connection refused
+2026-03-14T23:59:31Z   2026-03-14T23:59:31Z   Warning   Unhealthy              shop-service-rollout-78d9d67677-pb2q4          Readiness probe failed: Get "http://192.168.151.184:8080/ready": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2026-03-15T00:04:34Z   2026-03-15T00:04:34Z   Normal    SuccessfulDelete       shop-service-rollout-78d9d67677                Deleted pod: shop-service-rollout-78d9d67677-72d8r
+2026-03-15T00:04:34Z   2026-03-13T09:06:35Z   Normal    RolloutStepCompleted   shop-service-rollout                           Rollout step 6/8 completed (pause: 5m)
+2026-03-15T00:04:34Z   2026-03-15T00:04:34Z   Normal    Killing                shop-service-rollout-78d9d67677-72d8r          Stopping container shop
+2026-03-15T00:05:03Z   2026-03-15T00:04:58Z   Warning   Unhealthy              shop-service-rollout-78d9d67677-72d8r          Readiness probe failed: Get "http://192.168.154.255:8080/ready": dial tcp 192.168.154.255:8080: connect: connection refused
+2026-03-15T00:09:34Z   2026-03-13T09:11:35Z   Normal    RolloutStepCompleted   shop-service-rollout                           Rollout step 8/8 completed (pause: 5m)
