@@ -29,6 +29,9 @@ Zur Durchführung und den Testszenarien geht es [hier](eks/kustomize/overlays/Te
 ![SysArchBaEKSCluster](docs-without-code/sys-arch.jpg)
 
 ## Cost-Overview
+
+Diese Arbeit ist während der initialen 6 Monate AWS Free-Tier entstanden.
+
 | Datum   | Uhrzeit | Betrag  | Differenz zum Vorwert |   |
 |---------|---------|---------|-----------------------|---|
 | 07.03.  | 08:33   | 132.86$ |                       |   |
