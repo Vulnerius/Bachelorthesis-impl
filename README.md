@@ -11,3 +11,8 @@ Bachelorthesis-zdd-k8s
 - Argo Rollout [Argo Rollout](https://miro.medium.com/v2/resize:fit:1246/1%2AZJ10oT9u3uqJVT-Rkyb0bQ.png) - v1.8.4
 - Kotlin / Ktor [Ktor](https://blog.jetbrains.com/wp-content/uploads/2018/11/kotlin-Ktor.png) - 2.3.0 / v3.4.0
 - Cilium [Cilium](https://avatars.githubusercontent.com/u/21054566?s=280&v=4) - 1.18.6
+
+
+## Architecture
+
+[SysArchBaEKSCluster](docs-without-code/sys-arch.jpg)
