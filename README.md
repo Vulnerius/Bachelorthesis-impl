@@ -16,17 +16,17 @@ Bachelorthesis-zdd-k8s
 Zur Durchführung und den Testszenarien geht es [hier](eks/kustomize/overlays/Testszenarien.md)
 
 ## Tech-Stack:
-- EKS / K8s + Helm [K8s](https://about.gitlab.com/images/applications/apps/eks.png) - v1.35
-- K6 [![K6](https://grafana.com/media/docs/k6/GrafanaLogo_k6_orange_icon.svg)](https://grafana.com/docs/k6/latest/) - 1.3.0
-- Prometheus [![Prometheus](https://img.icons8.com/color/1200/prometheus-app.jpg)](https://prometheus.io/) - v0.89.0
-- Grafana [![Grafana](https://img.icons8.com/external-tal-revivo-color-tal-revivo/1200/external-data-visualization-and-monitoring-with-support-for-graphite-and-influxdb-logo-color-tal-revivo.jpg)](https://grafana.com/grafana/)
-- Argo Rollouts [![Argo Rollouts](https://miro.medium.com/v2/resize:fit:1246/1%2AZJ10oT9u3uqJVT-Rkyb0bQ.png)](https://argoproj.github.io/rollouts/) - v1.8.4
-- Kotlin / Ktor [![Ktor](https://blog.jetbrains.com/wp-content/uploads/2018/11/kotlin-Ktor.png)](https://ktor.io/) - 2.3.0 / v3.4.0
-- Cilium [![Cilium](https://avatars.githubusercontent.com/u/21054566?s=280&v=4)](https://cilium.io/) - 1.18.6
+- [EKS](https://aws.amazon.com/eks/) : [K8s](https://kubernetes.io/) + Helm - v1.35
+- [K6](https://grafana.com/docs/k6/latest/) - 1.3.0
+- [Prometheus](https://prometheus.io/) - v0.89.0
+- [Grafana](https://grafana.com/grafana/)
+- [Argo Rollouts](https://argoproj.github.io/rollouts/) - v1.8.4
+- [Kotlin](https://kotlinlang.org/) - 2.3.0 : [Ktor](https://ktor.io/) - v3.4.0
+- Cilium (https://cilium.io/) - 1.18.6
 
 ## Architecture
 
-[!SysArchBaEKSCluster](docs-without-code/sys-arch.jpg)
+![SysArchBaEKSCluster](docs-without-code/sys-arch.jpg)
 
 ## Cost-Overview
 Datum,Uhrzeit,Betrag,Differenz zum Vorwert
