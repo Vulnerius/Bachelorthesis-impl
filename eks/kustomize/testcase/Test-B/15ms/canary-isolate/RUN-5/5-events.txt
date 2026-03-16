@@ -1,15 +1,4 @@
 LASTSEEN               FIRSTSEEN              TYPE      REASON                 OBJECT                                        MESSAGE
-2026-03-15T10:25:47Z   2026-03-15T10:25:47Z   Normal    Scheduled              shop-service-rollout-bc76fbf89-vjr9x          Successfully assigned thesis/shop-service-rollout-bc76fbf89-vjr9x to ip-192-168-151-30.eu-central-1.compute.internal
-2026-03-15T10:25:47Z   2026-03-15T10:25:47Z   Normal    Pulled                 shop-service-rollout-bc76fbf89-vjr9x          Container image "ghcr.io/vulnerius/shop-service:v1.1.1" already present on machine and can be accessed by the pod
-2026-03-15T10:25:47Z   2026-03-15T10:25:47Z   Normal    SuccessfulCreate       shop-service-rollout-bc76fbf89                Created pod: shop-service-rollout-bc76fbf89-vjr9x
-2026-03-15T10:25:47Z   2026-03-15T10:25:47Z   Normal    Created                shop-service-rollout-bc76fbf89-vjr9x          Container created
-2026-03-15T10:25:47Z   2026-03-15T10:25:47Z   Normal    Started                shop-service-rollout-bc76fbf89-vjr9x          Container started
-2026-03-15T10:25:47Z   2026-03-15T10:25:47Z   Normal    SuccessfulDelete       shop-service-rollout-78d9d67677               Deleted pod: shop-service-rollout-78d9d67677-nht44
-2026-03-15T10:25:47Z   2026-03-15T10:25:47Z   Normal    Killing                shop-service-rollout-78d9d67677-nht44         Stopping container shop
-2026-03-15T10:26:00Z   2026-03-15T10:26:00Z   Warning   Unhealthy              shop-service-rollout-bc76fbf89-vjr9x          Liveness probe failed: Get "http://192.168.144.214:8080/health": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
-2026-03-15T10:26:00Z   2026-03-15T10:26:00Z   Warning   Unhealthy              shop-service-rollout-bc76fbf89-vjr9x          Readiness probe failed: Get "http://192.168.144.214:8080/ready": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
-2026-03-15T10:26:17Z   2026-03-15T10:26:12Z   Warning   Unhealthy              shop-service-rollout-78d9d67677-nht44         Readiness probe failed: Get "http://192.168.145.230:8080/ready": dial tcp 192.168.145.230:8080: connect: connection refused
-2026-03-15T10:26:24Z   2026-03-13T09:01:35Z   Normal    RolloutStepCompleted   shop-service-rollout                          Rollout step 5/8 completed (setWeight: 75)
 2026-03-15T10:31:24Z   2026-03-15T10:31:24Z   Normal    SuccessfulDelete       shop-service-rollout-78d9d67677               Deleted pod: shop-service-rollout-78d9d67677-vlnct
 2026-03-15T10:31:24Z   2026-03-15T10:31:24Z   Normal    Killing                shop-service-rollout-78d9d67677-vlnct         Stopping container shop
 2026-03-15T10:31:50Z   2026-03-15T10:31:45Z   Warning   Unhealthy              shop-service-rollout-78d9d67677-vlnct         Readiness probe failed: Get "http://192.168.136.130:8080/ready": dial tcp 192.168.136.130:8080: connect: connection refused

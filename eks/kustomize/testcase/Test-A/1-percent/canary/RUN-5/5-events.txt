@@ -1,22 +1,4 @@
 LASTSEEN               FIRSTSEEN              TYPE      REASON                   OBJECT                                         MESSAGE
-2026-03-12T16:52:36Z   2026-03-12T16:52:36Z   Normal    Killing                  transaction-service-rollout-57b6648fb7-9g8ds   Stopping container transaction
-2026-03-12T16:52:36Z   2026-03-12T16:52:36Z   Normal    Killing                  shop-service-rollout-78d9d67677-47464          Stopping container shop
-2026-03-12T16:52:36Z   2026-03-12T16:52:36Z   Normal    SuccessfulDelete         shop-service-rollout-78d9d67677                Deleted pod: shop-service-rollout-78d9d67677-47464
-2026-03-12T16:52:36Z   2026-03-12T16:41:21Z   Normal    RolloutResumed           shop-service-rollout                           Rollout is resumed
-2026-03-12T16:52:36Z   2026-03-12T16:52:36Z   Normal    RolloutStepCompleted     shop-service-rollout                           Rollout step 6/8 completed (pause: 5m)
-2026-03-12T16:52:36Z   2026-03-12T16:52:36Z   Normal    ScalingReplicaSet        shop-service-rollout                           Scaled down ReplicaSet shop-service-rollout-78d9d67677 (revision 1) from 1 to 0
-2026-03-12T16:52:36Z   2026-03-12T16:52:36Z   Normal    RolloutStepCompleted     transaction-service-rollout                    Rollout step 7/8 completed (setWeight: 100)
-2026-03-12T16:52:36Z   2026-03-12T16:52:36Z   Normal    RolloutStepCompleted     shop-service-rollout                           Rollout step 7/8 completed (setWeight: 100)
-2026-03-12T16:52:36Z   2026-03-12T16:41:21Z   Normal    RolloutResumed           transaction-service-rollout                    Rollout is resumed
-2026-03-12T16:52:36Z   2026-03-12T16:52:36Z   Normal    RolloutStepCompleted     transaction-service-rollout                    Rollout step 6/8 completed (pause: 5m)
-2026-03-12T16:52:36Z   2026-03-12T16:52:36Z   Normal    ScalingReplicaSet        transaction-service-rollout                    Scaled down ReplicaSet transaction-service-rollout-57b6648fb7 (revision 1) from 1 to 0
-2026-03-12T16:52:36Z   2026-03-12T16:52:36Z   Normal    SuccessfulDelete         transaction-service-rollout-57b6648fb7         Deleted pod: transaction-service-rollout-57b6648fb7-9g8ds
-2026-03-12T16:53:03Z   2026-03-12T16:52:58Z   Warning   Unhealthy                shop-service-rollout-78d9d67677-47464          Readiness probe failed: Get "http://192.168.148.67:8080/ready": dial tcp 192.168.148.67:8080: connect: connection refused
-2026-03-12T16:53:03Z   2026-03-12T16:52:58Z   Warning   Unhealthy                transaction-service-rollout-57b6648fb7-9g8ds   Readiness probe failed: Get "http://192.168.146.62:8080/ready": dial tcp 192.168.146.62:8080: connect: connection refused
-2026-03-12T16:57:36Z   2026-03-12T16:57:36Z   Normal    AnalysisRunSuccessful    shop-service-rollout-bc76fbf89-2               Analysis Completed. Result: Successful
-2026-03-12T16:57:36Z   2026-03-12T16:57:36Z   Normal    MetricSuccessful         shop-service-rollout-bc76fbf89-2               Metric 'error-rate' Completed. Result: Successful
-2026-03-12T16:57:36Z   2026-03-12T16:57:36Z   Normal    RolloutStepCompleted     shop-service-rollout                           Rollout step 8/8 completed (pause: 5m)
-2026-03-12T16:57:36Z   2026-03-12T16:57:36Z   Normal    MetricSuccessful         transaction-service-rollout-66cd886576-2       Metric 'error-rate' Completed. Result: Successful
 2026-03-12T16:57:36Z   2026-03-12T16:57:36Z   Normal    AnalysisRunSuccessful    transaction-service-rollout-66cd886576-2       Analysis Completed. Result: Successful
 2026-03-12T16:57:36Z   2026-03-12T16:57:36Z   Normal    RolloutStepCompleted     transaction-service-rollout                    Rollout step 8/8 completed (pause: 5m)
 2026-03-12T17:07:16Z   2026-03-12T17:07:16Z   Normal    Killing                  transaction-service-rollout-66cd886576-s4wbc   Stopping container transaction
