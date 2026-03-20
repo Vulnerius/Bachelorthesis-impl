@@ -5,7 +5,8 @@ Bachelorthesis-zdd-k8s
 
 ## Forschungsfrage
 
-    Wie verringern SLO gesteuerte Canary Releases den Error Budget Verbrauch im Vergleich zu Rolling Updates?
+    In welchem Maße verringert ein Canary Release mit Service-Level-Objective basierten Analysen den Verbrauch des Fehlerbudgets im Vergleich zu Rolling Updates mit statischen Alerts?
+	Diese Arbeit soll quantitativ analysieren, welcher Anteil des Errorbudgets bei der Wahl von Deployment Strategie und zugrunde liegender analysierter Metrik eingespart werden kann.
 
 ## Szenario
 
@@ -22,7 +23,7 @@ Zur Durchführung und den Testszenarien geht es [hier](eks/kustomize/overlays/Te
 - [Grafana](https://grafana.com/grafana/)
 - [Argo Rollouts](https://argoproj.github.io/rollouts/) - v1.8.4
 - [Kotlin](https://kotlinlang.org/) - 2.3.0 : [Ktor](https://ktor.io/) - v3.4.0
-- Cilium (https://cilium.io/) - 1.18.6
+- [Cilium](https://cilium.io/) - 1.18.6
 
 ## Architecture
 
@@ -35,8 +36,7 @@ Diese Arbeit ist während der initialen 6 Monate AWS Free-Tier entstanden.
 | Datum   | Uhrzeit          | Betrag  | Differenz zum Vorwert |   |
 |---------|------------------|---------|-----------------------|---|
 | 07.03.  | 08:33            | 132.86$ |                       |   |
-| 07.03.  | 12:47            | 118.66$ | -8.50$                |   |
-| 08.03.  | 12:47            | 118.66$ | -5.70$                |   |
+| 07.03.  | 12:47            | 118.66$ | -14.20$               |   |
 | 09.03.  | 01:47            | 112.44$ | -6.22$                |   | 
 | 09.03.  | 11:12            | 106.10$ | -6.34$                |   |
 | 09.03.  | 23:27            | 100.00$ | -6.10$                |   |
